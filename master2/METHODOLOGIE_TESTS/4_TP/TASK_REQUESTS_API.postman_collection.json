@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "a90514b8-6083-4f8f-88e8-ece2fadf66de",
+		"name": "YNOV M2 methodo_test TP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21985586"
+	},
+	"item": [
+		{
+			"name": "CREER TASK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"title\": \"Preparer le rapport\",\r\n \"description\": \"Finaliser le rapport pour la reunion\",\r\n \"due_date\": \"2024−12−15\",\r\n \"priority\": 3,\r\n \"difficulty\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "COMPLETE TASK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/tasks/13/complete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"13",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "VOIR TACHE ACTIVE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/tasks/active",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"active"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NETTOYER TACHE COMPLETER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/tasks/cleanup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"tasks",
+						"cleanup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SCORE TOTAL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/scores/total",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"scores",
+						"total"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

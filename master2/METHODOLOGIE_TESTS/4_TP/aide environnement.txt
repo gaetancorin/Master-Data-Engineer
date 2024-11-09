@@ -1,0 +1,30 @@
+# Lancer l'environnement virtuel, créer la BDD SQLite et l'activer, lancer le serveur:
+(pour Library)
+- aller dans terminal sur session_1
+- .\start1.ps1
+(pour  Tasks)
+- aller dans terminal sur session_2
+- .\start2.ps1
+
+/////////////////////////////
+# Pour lancer un environnement virtuel a la main(utile si on veut lancer les tests sur un autre terminal sans down le serveur)
+
+# python -m venv venv
+
+.venv\Scripts\activate
+
+/////////////////////////////////
+# Lancer tout les tests de pytest
+pytest
+ou
+pytest -s == pour avoir plus de detail/logs
+
+voir le pourcentage de lignes de code n'ayant pas de test
+pytest --cov
+
+voir l'emplacements des lignes de codes n'ayant pas de tests:
+pytest --cov=src --cov-report term-missing tests/
+
+créer un rapport html pour les lignes de codes n'ayant pas de tests:
+pytest --cov=src --cov-report=html
+
