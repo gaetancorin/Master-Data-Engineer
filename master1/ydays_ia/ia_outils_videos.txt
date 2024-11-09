@@ -1,0 +1,8 @@
+Création de vidéo tiktok:
+
+Outils utilisés:
+leonardo.ai = génération d'image
+ChatGpt3.5= génération de texte
+elevenlabs.io = génération de voix à partir du texte
+studio.d-id.com = génération de vidéo avec mouvement de lèvres à partir de l'image et de la voix
+anieraser.media.io = retrait des watermark sur la vidéo
