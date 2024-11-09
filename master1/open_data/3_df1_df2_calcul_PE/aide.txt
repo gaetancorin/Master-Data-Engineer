@@ -1,0 +1,3 @@
+Le Notebook qui calcul le PE n'est pas disponible, mais il peux etre facilement recréé grace au calcul contenu dans la présentation finale
+
+Ce notebook a été recréé

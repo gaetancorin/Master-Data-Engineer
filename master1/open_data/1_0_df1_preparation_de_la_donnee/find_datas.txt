@@ -1,0 +1,5 @@
+Sur le site de datagouv:
+
+https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/
+
+prendre les données de 2019/2020/2021/2022/2023

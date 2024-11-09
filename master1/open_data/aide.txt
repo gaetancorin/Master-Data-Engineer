@@ -1,0 +1,28 @@
+droit de mutation a titre onéreux(DMTO) = taxe reversé aux conseils départementaux suite a une vente immobilière
+client = conseil départementaux
+
+le client veut avoir une meilleure visibilité sur ces taxes et l'argent qu'ils vont avoir la dessus, sois avoir une meilleur visibilité entre les recettes et les dépenses.
+
+Il faut créer des axes d'analyse qui permet de analyser le passé pour en tiré des conclusions, ne utilisant des opendatas.
+voir les taux directeur,
+taux bancaire de crédit immo, 
+evenement de conjoncture economique, 
+evenement evenementiel
+
+Il faut comprendre, analyser la valeur foncière pour comprendre la taxe.
+
+La principale source sera "data.gouv.fr", chercher le "fichier de valeur foncière" mise a jour 2 fois dans l'année en octobre et avril.(normalement avril2024 disponible sur le portail)
+https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/
+
+filtrer sur "vente" et "vente en l état futur d achevement" sur la col "nature de la mutation"
+
+col "local": faire une aggregation pour rassembler maison et garage ensemble par exemple
+
+- sur chaque valeur, il va falloir calculer la taxe  au taux de droit commun. Pour cela, aller sur le site de l IGEDD pour trouver la taxe par departement.
+
+- données de l'IGEDD: travailler sur le departement 31
+DMTO = 3 taxes
+calculer les pourcentage de repartitions des 3 taxes
+
+objectif 2 petit c = rajouter les taux d'interet
+

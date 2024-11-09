@@ -1,0 +1,4 @@
+Sur le df_ti_pe_complet, les colonnes "taux d'interet", "nom_commune", "longitude", "latitude" sont rajouter par rapport au résultat du df final du calcul de PE que j'ai réalisé.
+
+C'est parce que des collègues ont travailler dessus et je n'ai pas les notebooks de ces transformations.
+
