@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="title">
+        <h1>Chatbot liée au COVID-19</h1>
+        <a href="/">
+            <button >relancer le chatbot</button>
+        </a>
+    </div>
+    <div class="chat-container">
+      <div class="chatbot">
+        <p>{{ chat_text }}</p>
+      </div>
+
+      <form class="user" action="/analysing" method="post">
+        <textarea id="user-input" name="user-input" placeholder="Votre réponse..." required></textarea>
+        <button type="submit" class="send-button">Envoyer</button>
+      </form>
+    </div>
+</body>
+</html>
