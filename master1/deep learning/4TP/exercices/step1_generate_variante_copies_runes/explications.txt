@@ -1,0 +1,2 @@
+l'algo de traitement d'image et de vidéos sert a créer des copies de l'images avec des angles et zoom différents (utiles pour notree algos)
+Le notebook ici correspond au code utilisé par le collègue, mais sans l'adaptation. Ce code a besoin d'être adapté pour fonctionner avec nos runes.

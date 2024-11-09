@@ -1,0 +1,3 @@
+1er= faire programme de regression avec des données statique
+
+2eme = faire un reseau récurent = tracker la bourse et prendre des décisions

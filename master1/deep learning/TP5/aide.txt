@@ -1,0 +1,28 @@
+temps: 1h30 /2h
+sujet:
+-dessiner réseau de neurone, expliquer a quoi il peux servir
+
+-analyse de courbe d'apprentissage
+
+-décrire a quoi peut servir tel chose dans un réseau de neurone, ce à quoi il peux servir etc. l'adapter pour un autre usage.
+
+note: (a verifier je suis pas sur)
+
+batchnormalization = permet de normalisé les valeurs
+
+leakyrelu= permet d'envoyé un signal fort ?
+
+relu = permet de renvoyé un signal fort
+
+maxpooling2D= resume les données en image avec moins de pixel
+
+Conv2D = augmente la taille de l'image par 2
+
+defaultconv2d(filters=128) = crée des filtres qui pourront chercher des caractéristiques sur l'image
+
+flatten= met le signal a plat
+
+dense(unit=64, activation='relu') = crée un reseau de neuronne
+dropout(0.5) = efface 50% des valeurs pour éviter le surentrainement
+
+le reseau de neuronne est surdimensionné par rapport a la tache réalisé
