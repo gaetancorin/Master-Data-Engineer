@@ -1,0 +1,43 @@
+fichier "Missing data in surveys":
+1.4 Problématique et objectifs de l’´etude comparative
+	(page 2, Standard form and filtered form questions)
+	le problème des sondages et des réponse "je ne sais pas", une donnée manquante peut être une information qui doit être prit en compte
+
+
+2.1 Taxonomie de type de valeurs nulles dans les jeux de données:
+		(page 1, "Classification of missing data"), page5
+		-Missing Completely at Random (MCAR) or ignorable missingness
+			(données manquantes sans aucun autre lien avec le reste)
+		-Missing at Random (MAR),
+			(données manquantes en lien avec les autres colonnes)
+		-Missing Not at Random (MNAR), also known as non-ignorable missingness
+			(données manquantes en lien avec sa propre valeur réel (ex: >50 000))
+
+2.2 Stratégies existantes pour gérer les valeurs nulles
+	(page3, Deletion methods)
+	-méthode “exclude by listwise” or Complete Case Analysis (CCA)
+		(consiste a supprimer l'ensemble de la row si une donnée est manquante)
+	-“exclude by pairwise” or Available Case Analysis (ACA)
+		(consiste a separer le df en groupes ou on retire une colonne de data manquante sur chaque 		groupe pour ne perdre aucune données)
+
+	(page4, Imputation methods)
+	-“replace by mean” or “mean substitution”
+		(remplacer par la moyenne des valeurs de la colonne, utiliser une autre méthode ?)
+	-Multiple imputation
+		(consiste a créer plusieurs df qui utilise plusieurs méthodes différentes d'estimation de données manquantes, puis a les rassembler afin de liser le resultat)
+
+	(page 4, likehood methods)
+	 -likelihood methods (méthodes de vraisemblance) 
+	(méthode qui estime les paramètres d'un modèle probabiliste en maximisant la vraisemblance des données observées.)
+		- Expectation-Maximisation (EM)
+			L’espérance-maximisation
+ 		- Full Information Maximum likelihood (FIML)
+			méthode d’information maximale de vraisemblance
+
+	dans le domaine de la psychologie, l'American Psychological Association (APA) déconseille l'utilisation de la suppression partielle ou totale par cas, car ces méthodes peuvent introduire des biais et affecter la validité des analyses.
+
+
+3 Méthodologie de comparaison
+	(page5)
+	
+
