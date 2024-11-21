@@ -1,0 +1,890 @@
+video_id,title,publishedAt,channelId,description,view_count,like_count,favorite_count,comment_count,tags,defaultLanguage
+3zUvIuOGFqY,"Machine Learning Made Easy on Kubernetes. DevOps for Data Scientists - Brian Redmond, Microsoft",2019-10-02T02:59:23Z,UCfX55Sx5hEFjoC3cNs6mCUQ,"Machine Learning Made Easy on Kubernetes. DevOps for Data Scientists - Brian Redmond, Microsoft
+
+Though machine learning and AI are immensely powerful, these solutions are by no means easy. In many cases, there are many diverse components that are not designed to work together. Additionally, these models are most efficient when running on large scale clusters that can be more difficult to manage. Configuration and deployment is often left to data scientists who are wasting time on infrastructure and not on data science itself.Kubernetes to the rescue! In this session I will talk about how machine learning can be greatly improved by implementing ML solutions on top of Kubernetes with containers. I will be discussing each stage of a typical workflow including: data preparation/versioning, model training, testing and validation, monitoring, and CI/CD and automation. Demos will include tooling such as Tensorflow/Kubeflow, Pachyderm, Argo, etc.This talk is for both data scientists and infrastructure/SRE teams alike helping bring the benefits of DevOps to AI and machine learning.",1789,34,0,N/A,,N/A
+fNv48vW94kM,Docker and Kubernetes for Data Science,2019-10-08T07:00:06Z,UCwBs8TLOogwyGd0GxHCp-Dw,"#datascience #kubernetes #docker
+
+Docker is the most popular container environment and kubernetes platform for orchestrating containers. There are 3 major areas where Docker and Kubernetes can help accelerate data science initiatives
+
+1.Infrastructure 
+2.Tooling and Reproducible
+3.Deployment and Scaling
+
+Benefits for Data Science project include
+
+- Efficient usage of infrastructure
+- Bring in parity between development and production
+- Manage multiple versions of tools efficiently
+- Seamless scaling to meet business demand
+- Ease of migration of models to production
+- Zero downtime deployment",7456,182,0,9,"AI, Artificial Intelligence, Machine learning, ML, Dev Ops, Data Engineering, Cloud, Data science, datascience, kubernetes, docker, devops, yt:cc=on, infrastructure",N/A
+bRyACb5AV6o,"Kubernetes, Data Science and Machine Learning",2019-08-21T15:31:25Z,UCSOBt9qe3u5-TtIK1pgeCdQ,"Enabling support for data processing, data analytics, and machine learning workloads in Kubernetes has been one of the goals of the open-source community. During this meetup, we’ll discuss the growing use of Kubernetes for data science and machine learning workloads. We’ll examine how new Kubernetes extensibility features such as custom resources and custom controllers are used for applications and frameworks integration. Apache Spark 2.3.’s native support is the latest indication of this growing trend. We’ll demo a few examples of data science workloads running on Kubernetes clusters setup by our Kublr platform.",119,1,0,0,"kubernetes, data science, machine learning",N/A
+i8vrWFZW2xk,Andy Terrel | Dev Ops meets Data Science Taking models from prototype to production with Docker,2016-10-24T22:07:50Z,UCOjD18EJYcsBog4IozkF_7w,"PyData DC 2016
+
+We present the evolution of a model to a production API that can scale to large e-commerce needs. On the journey we discuss metrics of success and how to use the Kubernetes cluster manager and associated tools for deploy. In addition to the use of these tools we highlight how to make use of the cluster management system for further testing and experimentation with your models.
+
+The chasm between data science and dev ops is often wide and impenetrable, but the two fields have more in common than meets the eye. Every data scientist will be able to lean in and help their career by investing in a basic understanding the basic principles of dev ops. In this talk I present the notions of service level indicators, objectives, and agreements. I cover the rigorous monitoring and testing of services. Finally we demonstrate how to build a basic data science workflow and push to production level APIs with Docker and Kubernetes.
+
+Kubernetes is an opinionated container cluster manager with an easy to use, robust interface. It can be use on very small and very large clusters. Docker is a container system that allows one to build code in an isolated environment. Paired with a container manager such as Kubernetes we are able to manage millions of instances as needed for a production deployment. These tools are two of many different options but are considered among the best open source solutions available. 00:00 Welcome!
+00:10 Help us add time stamps or captions to this video! See the description for details.
+
+Want to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",1439,15,0,0,,N/A
+nct39X2-oMM,Docker & Kubernetes for the Data Scientist,2022-07-27T09:11:47Z,UCn_9T5oprhCz9whckcRcEgg,"Deployment == Return on investment. This session looks to show you how to do that for Machine Learning. 
+Speaker: Terry McCann https://SQLbits.com/speakers/Terry_McCann
+
+http://SQLbits.com/Sessions/Docker__Kubernetes_for_the_Data_Scientist
+ Tags: Azure,deployment,AWS,Big data analytics,AI and data science,gcp,DataOps,Intelligence and Analytics,Developing",869,16,0,0,"AI and data science, AWS, Azure, Big data analytics, DataOps, Developing, Intelligence and Analytics, deployment, gcp",N/A
+Q5Syi14rv2c,The State of AI and Machine Learning Operations in 2019 - Alejandro Saucedo,2019-07-16T00:35:36Z,UCvqbFHwN-nwalWPjPUKpvTA,"Join us for Kubernetes Forums Seoul, Sydney, Bengaluru and Delhi - learn more at kubecon.io
+
+Don't miss KubeCon + CloudNativeCon 2020 events in Amsterdam March 30 - April 2, Shanghai July 28-30 and Boston November 17-20! Learn more at kubecon.io. The conference features presentations from developers and end users of Kubernetes, Prometheus, Envoy, and all of the other CNCF-hosted projects
+
+The State of AI and Machine Learning Operations in 2019 - Alejandro Saucedo, The Institute for Ethical AI & Machine Learning 
+
+This talk will provide key insights on the learnings I have obtained throughout my career building and deploying machine learning systems, together with some of the technologies available in the open source ""Awesome DataOps / Machine Learning Operations"" list. I will be mainly covering the open source tools and frameworks available in 2019 to help you expand your DataOps and MLOps infrastructure. This talk will cover the technologies available to support specifically around reproducibility, monitoring, compliance and orchestration of data and computations. The main technologies that will be covered include PMML, Data Version Control (DVC), ModelDB, Pachyderm and Seldon. 
+
+https://sched.co/Nrw1",1242,28,0,1,,N/A
+YOQA7oUxoR0,"Containerized Architectures for Deep Learning using TensorFlow, Keras, Kubernetes, and KubeFlow",2019-10-24T02:53:01Z,UCvlZKtekcKkBUuz8f9dhobw,"Container and cloud native technologies around Kubernetes have become the de facto standard in modern ML and AI application development. And while many data scientists and engineers tend to focus on tools, the platform that enables these tools is equally important and often overlooked.
+
+Speakers:  
+Antje Barth
+https://www.linkedin.com/in/antje-barth/
+
+Chris Fregly
+https://www.linkedin.com/in/cfregly/
+
+Let’s examine some common architecture blueprints and popular technologies used to integrate AI into existing infrastructures, and learn how you can build a production-ready containerized platform for deep learning.
+In particular, she explores Docker and Kubernetes, with its associated cloud native technologies, and its use and advantages in ML/AI environments.
+
+Eventbrite:
+
+https://www.eventbrite.com/e/1-hr-free-workshop-pipelineai-gpu-tpu-spark-ml-tensorflow-ai-kubernetes-kafka-scikit-tickets-45852865154
+
+Meetup:
+
+https://www.meetup.com/Advanced-KubeFlow/
+
+Zoom:
+
+https://zoom.us/j/690414331
+Webinar ID: 690 414 331
+
+Phone:
+
++1 646 558 8656 (US Toll) or +1 408 638 0968 (US Toll)
+
+Related Links
+
+PipelineAI Home: https://pipeline.ai
+
+PipelineAI Community Edition: https://community.pipeline.ai
+
+PipelineAI GitHub: https://github.com/PipelineAI/pipeline
+
+PipelineAI Quick Start: https://quickstart.pipeline.ai
+
+Advanced KubeFlow Meetup (SF-based, Global Reach): https://www.meetup.com/Advanced-KubeFlow/
+
+YouTube Videos: https://youtube.pipeline.ai
+
+SlideShare Presentations: https://slideshare.pipeline.ai
+
+Slack Support:
+https://joinslack.pipeline.ai
+
+Email Support: support@pipeline.ai",2502,62,0,0,"kubernetes, kubeflow, tensorflow, artificial intelligence, machine learning, pytorch, keras, docker, container, deep learning",en
+rIrNIzy6U_g,100+ Docker Concepts you Need to Know,2024-03-12T17:14:20Z,UCsBjURrPoezykLs9EqgamOA,"Learn everything you ever wanted to know about containerization is the ultimate Docker tutorial. Build Docker images, run containers, and scale your infrastructure in the cloud  with Docker 101. 
+
+#computerscience #programming #101 
+
+💬 Chat with Me on Discord
+
+https://discord.gg/fireship
+
+🔗 Resources
+
+Download Docker Desktop: https://dockr.ly/4c9PYp9
+Check out Docker Scout: https://dockr.ly/3Vd2U7H
+
+Related Videos: 
+
+Docker in 100 Seconds https://youtu.be/Gjnup-PuquQ
+Computer Science 101 https://youtu.be/-uleG_Vecis
+
+📚 Chapters
+
+🔥 Get More Content - Upgrade to PRO
+
+Upgrade at https://fireship.io/pro
+Use code YT25 for 25% off PRO access 
+
+🎨 My Editor Settings
+
+- Atom One Dark 
+- vscode-icons
+- Fira Code Font
+
+🔖 Topics Covered
+
+- What is Docker?
+- What is Kubernetes?
+- How to get started with Docker
+- How to run a Docker Container
+- Useful Docker tools
+- Fast Docker Tutorial",1044634,50846,0,1151,"webdev, app development, lesson, tutorial",N/A
+8m62o1U3XYk,GCP Fundamentals Part -3 | Google Container engine GKE | GCP Big data | GCP Machine Learning,2020-05-31T13:30:02Z,UC3wpx987p-cL7ktfkDjnBoA,"Google Kubernetes Engine (also known as GKE) is a cluster manager and orchestration system for running Docker containers in the cloud. It is a production-ready environment with guaranteed uptime, load balancing and included container networking features.
+
+Google uses the data from its Web index to initially match queries with potentially useful results. This is augmented with data from trusted sources and other sites that have been ranked for accuracy by machine‐learning algorithms designed to assess the reliability of data
+
+The cloud makes intelligent capabilities accessible without requiring advanced skills in artificial intelligence or data science. AWS, Microsoft Azure, and Google Cloud Platform offer many machine learning options that don't require deep knowledge of AI, machine learning theory, or a team of data scientists. #devops",74,4,0,0,"tutorialspoint, google cloud platform, big data, google cloud, cloud computing, machine learning, Google Cloud Platform Fundamentals, GCP Big data, GCP Machine Learning, Google Container engine GKE, google cloud platform tutorial, google cloud platform services, what is gcp app engine, google cloud platform services overview, big data analytics, gcp big data platform, gcp big data products, gcp big data solutions, gcp big data tutorial, how to use gcp for machine learning",N/A
+va2r29oWWxQ,Microsoft Azure Kubernetes - Run Docker Container,2019-03-08T04:29:38Z,UCv6Uw36LRbYnX4HDxKPguKg,"Welcome to ""The AI University"".
+
+About this video: 
+This video titled ""Microsoft Azure Kubernetes - Run Docker Container"" explains the steps to run docker container,
+
+Subtitles available in: English
+
+FOLLOW ME ON:
+Twitter:          https://twitter.com/theaiuniverse
+Facebook :    https://www.facebook.com/theaiuniversity
+Instagram:    https://www.instagram.com/theaiuniversity
+
+Tool for Keyword Research, Channel Health, Thumbnail Generation for your channel : https://www.Tubebuddy.com/theaiuniversity
+
+Videos Gear used to create this video : https://kit.com/Nitin001/the-ai-university-hd-video-kit
+
+GITHUB REPO : https://github.com/nitinkaushik01
+
+SUBSCRIBE LINK: https://www.youtube.com/c/TheAIUniversity
+
+About this Channel:
+The AI University is a channel which is on a mission to democratize the Artificial Intelligence, Big Data Hadoop and Cloud Computing education to the entire world. The aim of this channel is to impart the knowledge to the data science, data analysis, data engineering and cloud architecture aspirants as well as providing advanced knowledge to the ones who already possess some of this knowledge.
+
+Please share, comment, like and subscribe if you liked this video. If you have any specific questions then you can comment on the comment section and I'll definitely try to get back to you.
+
+*******Other AI, ML, Deep Learning, Augmented Reality related Video Series*****
+
+Deploy Machine Learning Models as Web App using Flask & Docker on Azure Cloud - http://bit.ly/2Lgnd0g
+
+Machine Learning Data Pre-processing & Data Wrangling using Python - http://bit.ly/2K6psly
+
+Machine Learning & Deep Learning Project - http://bit.ly/2L0DUwz
+
+Deep Learning Neural Network Tutorials - http://bit.ly/2K6e6hB
+
+Machine Learning & Deep Learning Bootcamp Series - http://bit.ly/2K4648Q
+
+Machine Learning using Spark MLLib - http://bit.ly/2QuKQGK
+
+Augmented Reality Free Tutorial - http://bit.ly/32ioysS
+
+Data Engineering Full Hands-on Course - http://bit.ly/2CsxSPz
+
+Hadoop, Machine & Deep Learning on Azure Cloud Tutorial Series - http://bit.ly/2K74l2I
+
+Natural Language Processing - http://bit.ly/2YtXQuF
+
+Develop Dashboard for Business Intelligence & Data Science(Plotly Dash Tutorial Series) - http://bit.ly/2Yu1Uen
+
+Data Science Tip and Tricks and Career Advice - http://bit.ly/2YvO6QE
+
+Machine Learning, Deep Learning Maths(Matrix & Vector Operations) - http://bit.ly/2YxhOEZ
+
+******************************************************************
+
+DISCLAIMER: This video and description may contain affiliate links, which means that if you click on one of the product links, I’ll receive a small commission. 
+
+#MicrosoftAzure #Kubernetes #CloudComputing",188,3,0,0,"Microsoft Azure Kubernetes - Run Docker Container, microsoft azure kubernetes, microsoft azure kubernetes service, create an azure managed kubernetes service (aks) cluster, microsoft azure kubernetes hands-on tutorial, microsoft azure kubernetes course, microsoft azure kubernetes service hands-on tutorial - introduction, microsoft azure stack kubernetes, microsoft azure kubernetes service(aks) devops",N/A
+My2puqJVbI0,2021 Cloud Computing and Big Data Lecture 12 Docker and Container Management Part2 💻,2021-11-08T23:45:23Z,UCWC4VKHmL4NZgFfKoHtANKg,"2021 Cloud Computing and Big Data Lecture 12 Docker and Container Management - Part Two 💻
+
+Parallel & Scalable Machine Learning & Deep Learning
+16 university lectures with additional practical lectures for hands-on exercises in context
+University of Iceland, School of Engineering and Natural Sciences
+Faculty of Industrial Engineering, Mechanical Engineering and Computer Science
+
+Fall 2021
+
+Course Outline
+
+1. Cloud Computing & Big Data Introduction
+2. Machine Learning Models in Clouds
+3. Apache Spark for Cloud Applications
+4. Virtualization & Data Center Design
+5. Map-Reduce Computing Paradigm
+6. Deep Learning driven by Big Data
+7. Deep Learning Applications in Clouds
+8. Infrastructure-As-A-Service (IAAS)
+9. Platform-As-A-Service (PAAS)
+10. Software-As-A-Service (SAAS)
+11. Big Data Analytics & Cloud Data Mining
+12. Docker & Container Management
+13. OpenStack Cloud Operating System
+14. Online Social Networking & Graph Databases
+15. Big Data Streaming Tools & Applications
+16. Epilogue
+
+Lecture Outline
+
+Part One: Docker & Container Management
+Cloud Service Challenge & Docker Container Example
+Benefits of Virtualization vs. Container Orchestration Approaches
+Kubernetes Container Orchestration using PyTorch for Deep Learning
+AWS Container Services Landscape & Cookpad Application Example
+Containerized Applications using AWS & MS Azure Cloud Services
+
+Part Two: Advanced Container Concepts & Examples 
+Containerized Applications in Google Cloud for Deep Learning
+Machine & Deep Learning via Containers in IBM Cloud & Alibaba
+UberCloud Containers with Packages & Cloud solutions for Engineers
+Computational Fluid Dynamics (CFD) as HPC Cloud Simulation Example
+Other Container Solutions such as Singularity & Mesos",68,0,0,0,,N/A
+PziYflu8cB8,Kubernetes Explained in 100 Seconds,2020-09-24T19:54:38Z,UCsBjURrPoezykLs9EqgamOA,"Learn the basics of Kubernetes and how it's used to scale containers to massive workloads in the in cloud, in 100 seconds. https://fireship.io/tags/docker/
+
+Docker in 100 Seconds https://youtu.be/Gjnup-PuquQ
+Full docker Tutorial https://youtu.be/gAkwW2tuIqE
+
+Official Kube docs https://kubernetes.io/
+
+#docker #100SecondsOfCode
+
+Install the quiz app 🤓
+
+iOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8
+Android https://play.google.com/store/apps/details?id=io.fireship.quizapp
+
+Upgrade to Fireship PRO at https://fireship.io/pro
+Use code lORhwXd2 for 25% off your first payment. 
+
+My VS Code Theme
+
+- Atom One Dark 
+- vscode-icons
+- Fira Code Font",1080147,36561,0,424,"app development, lesson, tutorial, 100 seconds of code, docker, kubernetes, backend devlopment, kubernetes explained",N/A
+82drrTG1EtQ,"Building End-to-End Machine Learning Workflows with Kubernetes...By Antje Barth, Amazon Web Services",2020-09-26T16:14:38Z,UCZY1BG7R4guJ50PVYmj1-mQ,"Antje Barth, Developer Evangelist, Amazon Web Services Speaker at Global #ArtificialIntelligence Virtual Conference Sep 16-18, 2020
+
+Speaker Bio:
+
+Antje is a Developer Advocate for AI and Machine Learning at Amazon Web Services (AWS) based in Düsseldorf, Germany. She is co-author of the O'Reilly Book, ""Data Science on AWS."" Antje is also co-founder of the Düsseldorf chapter of Women in Big Data. Antje frequently speaks at AI and Machine Learning conferences and meetups around the world. Besides ML/AI, Antje is passionate about helping developers leverage Big Data, container and Kubernetes platforms in the context of AI and Machine Learning. Previously, Antje worked in technical evangelism and solutions engineering at MapR and Cisco.
+
+Antje Barth: http://www.globalbigdataconference.com/seattle/global-artificial-intelligence-virtual-conference-122/speaker-details/antje-barth-113924.html
+
+Speakers: http://www.globalbigdataconference.com/seattle/global-artificial-intelligence-virtual-conference/speakers-122.html
+
+Agenda: http://www.globalbigdataconference.com/seattle/global-artificial-intelligence-virtual-conference/schedule-122.html",257,6,0,0,"AI, Artificial Intelligence, Machine Learning, Deep Learning, Big Data, Data Science, NLP, NoSQL, IoT, Tensorflow, Serverless, Kubernetes, AI Conference, Virtual Conference",N/A
+X6a_-mb5AKg,Making Docker & Python Play Nicely and Securely for Machine Learning & Data Science - Tania Allard,2020-11-19T20:15:11Z,UCBhXFK70DbOU15N2BhDQVTg,"Presented by: Tania Allard, PhD, Microsoft
+Presented at All Things Open 2020 - Big Data Track
+
+Abstract: Docker has become a standard tool for developers around the world to deploy applications in a reproducible and robust manner. The existence of Docker and Docker compose have reduced the time needed to set up new software and implementing complex technology stacks for our applications.
+
+Now, six years after the initial release of Docker, we can say with confidence that containers and containers orchestration have become some of the defaults in the current technology stacks.
+
+There are thousands of tutorials and getting started documents for those wanting to adopt Docker for apps deployment. However, if you are a Data Scientist, a researcher or someone working on scientific computing wanting to adopt Docker, the story is quite different. There are very few tutorials (in comparison to app/web) and documents focused on Docker best practices for DS and scientific computing. If you are working on DS, ML or scientific computing, this talk is for you. We'll cover best practices when building Docker containers for data-intensive applications, from optimising your image build, to ensuring your containers are secure and efficient deployment workflows. We will talk about the most common problems faced while using Docker with data-intensive applications and how you can overcome most of them. Finally, I'll give some practical and useful tips for you to improve your Docker workflows and practises.
+
+Attendees will leave the talk feeling confident about adopting Docker across a range of DS, ML and research projects.",55,N/A,0,0,"all things open, open source, ato2020, technology, Big Data, Tania Allard PhD, Microsoft, docker, Data Scientist",N/A
+pceIR_dGph4,2020 Cloud Computing and Big Data Lecture 12 Docker and Container Management Part1 💻,2020-11-18T10:29:58Z,UCWC4VKHmL4NZgFfKoHtANKg,"2020 Cloud Computing and Big Data Lecture 12 Docker and Container Management - Part One 💻
+
+Parallel & Scalable Machine Learning & Deep Learning
+16 university lectures with additional practical lectures for hands-on exercises in context
+University of Iceland, School of Engineering and Natural Sciences
+Faculty of Industrial Engineering, Mechanical Engineering and Computer Science
+
+Fall 2020
+
+Course Outline
+
+1. Cloud Computing & Big Data Introduction
+2. Machine Learning Models in Clouds
+3. Apache Spark for Cloud Applications
+4. Virtualization & Data Center Design
+5. Map-Reduce Computing Paradigm
+6. Deep Learning driven by Big Data
+7. Deep Learning Applications in Clouds
+8. Infrastructure-As-A-Service (IAAS)
+9. Platform-As-A-Service (PAAS)
+10. Software-As-A-Service (SAAS)
+11. Big Data Analytics & Cloud Data Mining
+12. Docker & Container Management
+13. OpenStack Cloud Operating System
+14. Online Social Networking & Graph Databases
+15. Big Data Streaming Tools & Applications
+16. Epilogue
+
+Lecture Outline
+
+Part One: Docker & Container Management
+Cloud Service Challenge & Docker Container Example
+Benefits of Virtualization vs. Container Orchestration Approaches
+Kubernetes Container Orchestration using PyTorch for Deep Learning
+AWS Container Services Landscape & Cookpad Application Example
+Containerized Applications using AWS & MS Azure Cloud Services
+
+Part Two: Advanced Container Concepts & Examples 
+Containerized Applications in Google Cloud for Deep Learning
+Machine & Deep Learning via Containers in IBM Cloud & Alibaba
+UberCloud Containers with Packages & Cloud solutions for Engineers
+Computational Fluid Dynamics (CFD) as HPC Cloud Simulation Example
+Other Container Solutions such as Singularity & Mesos",125,1,0,0,,N/A
+pzHwAuTMpeU,Marck Vaisman | Scaling up to Big Data Devops for Data Science,2016-10-24T22:55:10Z,UCOjD18EJYcsBog4IozkF_7w,"PyData DC 2016
+
+Scaling up R/Python from a single machine to a cluster environment can be tricky. While there are many tools available that make the launching of a cluster relatively easy, they are not focused or optimized to the specific use case of analytics but mostly on operations. Come and learn about devops tips and tricks to optimize your transition into the big data world as a data scientist. 00:00 Welcome!
+00:10 Help us add time stamps or captions to this video! See the description for details.
+
+Want to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",896,6,0,0,,N/A
+ZXTRzE8rt5A,AWS Container Day - ML with Kubernetes,2019-06-13T16:00:07Z,UCd6MoB9NC6uYN2grvUNT-Zg,"Learn more about EKS on AWS at - https://amzn.to/2KH6GSA.
+Missed the AWS Container Day 2019 in Barcelona? In this session, we discuss Machine Learning on Kubernetes and the advantages for running it on AWS. We also show you a demo of the updates to Escalator - a cluster auto scaling component tuned for batch/ML workloads, and EC2 GPU instance autoscaling.",1257,13,0,0,"AWS, Amazon Web Services, Cloud, cloud computing, AWS Cloud, EKS, Container Day, Machine Learning, ML",N/A
+ezZZHOs_0Xg,2022 Cloud Computing and Big Data Lecture 12 Docker and Container Management Part1 💻,2022-11-15T12:31:04Z,UCWC4VKHmL4NZgFfKoHtANKg,"2022 Cloud Computing and Big Data Lecture 12 Docker and Container Management - Part One 💻
+
+Cloud Computing & Big Data Course
+Parallel & Scalable Machine Learning & Deep Learning
+16 university lectures with additional practical lectures for hands-on exercises in context
+The University of Iceland, School of Engineering and Natural Sciences
+Faculty of Industrial Engineering, Mechanical Engineering and Computer Science
+
+Fall 2022
+
+Course Outline
+
+1. Cloud Computing & Big Data Introduction
+2. Machine Learning Models in Clouds
+3. Apache Spark for Cloud Applications
+4. Virtualization & Data Center Design
+5. Map-Reduce Computing Paradigm
+6. Deep Learning driven by Big Data
+7. Deep Learning Applications in Clouds
+8. Infrastructure-As-A-Service (IAAS)
+9. Platform-As-A-Service (PAAS)
+10. Software-As-A-Service (SAAS)
+11. Big Data Analytics & Cloud Data Mining
+12. Docker & Container Management
+13. OpenStack Cloud Operating System
+14. Online Social Networking & Graph Databases
+15. Big Data Streaming Tools & Applications
+16. Epilogue
+
+Lecture Outline
+
+Part One: Docker & Container Management
+Cloud Service Challenge & Docker Container Example
+Benefits of Virtualization vs. Container Orchestration Approaches
+Kubernetes Container Orchestration using PyTorch for Deep Learning
+AWS Container Services Landscape & Cookpad Application Example
+Containerized Applications using AWS & MS Azure Cloud Services
+
+Part Two: Advanced Container Concepts & Examples 
+Containerized Applications in Google Cloud for Deep Learning
+Machine & Deep Learning via Containers in IBM Cloud & Alibaba
+UberCloud Containers with Packages & Cloud solutions for Engineers
+Computational Fluid Dynamics (CFD) as HPC Cloud Simulation Example
+Other Container Solutions such as Singularity & Mesos",87,0,0,0,"cloud computing explained, what is cloud computing, cloud computing, docker tutorial, docker container, docker containers explained, singularity, singularity container, cloud computing tutorial for beginners, docker vs kubernetes, kubernetes, kuebernetes tutorials, container tutorial",N/A
+lu5zHvpQeSI,"Managing Machine Learning in Production with Kubeflow and DevOps - David Aronchick, Microsoft",2019-05-31T21:03:13Z,UCvqbFHwN-nwalWPjPUKpvTA,"Join us for Kubernetes Forums Seoul, Sydney, Bengaluru and Delhi - learn more at kubecon.io
+
+Don't miss KubeCon + CloudNativeCon 2020 events in Amsterdam March 30 - April 2, Shanghai July 28-30 and Boston November 17-20! Learn more at kubecon.io. The conference features presentations from developers and end users of Kubernetes, Prometheus, Envoy, and all of the other CNCF-hosted projects
+
+Managing Machine Learning in Production with Kubeflow and DevOps - David Aronchick, Microsoft  
+
+Kubeflow has helped bring machine learning to Kubernetes, but there’s still a significant gap relative to how to productize these workloads. While DevOps and GitOps have made huge traction in recent years, many customers struggle to apply these practices to ML workloads. 
+
+This talk will focus on ways to effectively infuse AI into production-grade applications through establishing practices around model reproducibility, validation, versioning/tracking, and safe/compliant deployment. 
+
+We will demonstrate how to run an E2E machine learning system using nothing more than Git. This will integrate DevOps, data and ML pipelines together, and show how to use multiple workload orchestrators together. 
+
+While the examples will be run using Azure Pipelines and Kubeflow, we will also show how to extend these platforms to any orchestration tool. 
+
+https://sched.co/MPar",8871,128,0,5,,N/A
+wXuSqFJVNQA,Do NOT Learn Kubernetes Without Knowing These Concepts...,2023-11-12T15:30:11Z,UCGPGirOab9EGy7VH4IwmWVQ,"Try CastAI out for FREE - https://cast.ai/travis
+
+When I was asked to deploy containers to Kubernetes at a new job, I was confident I could learn it quickly. 
+
+Well, I was wrong.
+
+Kubernetes is complex, mainly because there are underlying skills that developers do not possess which makes it confusing. 
+
+So it's vital to first learn these concepts, and only then Kubernetes will make sense. 
+
+In this video, I'll teach you what those 5 concepts are.
+
+Check out my brand new weekly programming/tech newsletter - https://geni.us/AJ91eMh
+
+Join our thriving Coding Community - https://travis.media/community/
+
+Timestamps
+00:00 Intro
+01:05 Kubernetes adoption is growing
+01:12 Concept 1
+04:50 Concept 2
+06:00 Sponsor
+07:20 Concept 3
+09:07 Concept 4
+10:20 Concept 5
+11:06 Kubernetes Course Recommendation
+12:24 Outro
+
+Video Resources
+Learn Docker in One Hour - https://youtu.be/i7ABlHngi1Q
+Learn AWS Networking For Programmers - https://youtu.be/2doSoMN2xvI
+Neworking Video - https://youtu.be/IPvYjXCsTg8
+YAML article - https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started
+Kubernetes Udemy Course Recommendation - https://geni.us/KciFOCO
+
+** Career Path Coding Tracks **
+Web Developer - https://geni.us/jBigBd
+Software Engineer - https://geni.us/AbMxjrX
+Machine Learning - https://geni.us/GporLlT
+Python Developer - https://geni.us/tv2FJBU
+DevOps Engineer - https://geni.us/MgHtJ
+
+** My Coding Blueprints **
+Learn to Code Web Developer Blueprint - https://geni.us/HoswN2
+AWS/Python Blueprint - https://geni.us/yGlFaRe
+Both FREE in the Travis Media Community
+
+** I write regularly **
+  https://travis.media
+
+** FREE EBOOKS  **
+📘 https://travis.media/ebooks
+
+LET'S CONNECT!
+📰 LinkedIn ➔ https://www.linkedin.com/in/travisdot...
+🐦 Twitter ➔ https://twitter.com/travisdotmedia​
+🙋🏼‍♂️ Website ➔ https://travis.media
+
+#kubernetes  #kubernetesforbeginners  #docker   
+
+*This video was sponsored by CastAI
+
+** Some of the links in this description may be affiliate links that I may get a little cut of. Thank you.",322225,11905,0,242,"kubernetes for beginners, kubernetes networking, kubernetes skills, learn kubernetes, kubernetes hard, kubernetes is complex, kubernetes explained, what is kubernetes used for, what is kubernetes deployment, learn kubernetes and docker, learn kubernetes step by step, learn kubernetes for beginners, learn kubernetes basics, kubernetes docker, kubernetes pods, managed kubernetes, eks, aks, aws kubernetes, yaml, kubectl commands, kubectl",en
+0qotVMX-J5s,Containerization Explained,2019-03-18T18:39:24Z,UCKWaEZ-_VweaEx1j62do_vQ,"Learn more about containerization → https://ibm.biz/BdPSfm
+Learn more about containers → https://ibm.biz/BdPSfK
+Check out the IBM Cloud Kubernetes Service → https://ibm.biz/BdPSfn
+
+In his latest lightboarding video, Sai Vennam delves into containerization and container-based technology, focusing on the portability, scalability, and increasingly Agile DevOps processes that containers facilitate.
+
+Get started for free on IBM Cloud → https://ibm.biz/sign-up-today
+
+Subscribe to see more videos like this in the future → http://ibm.biz/subscribe-now
+
+#Containerization #Kubernetes #DevOps",746139,15734,0,326,"containers, containerization, Kubernetes, Docker, Rocket, Linux, Linux kernel, c-groups, control groups, cloud foundry, runtimes, developer, node.js, application, app, vms, virtual machines, host os, operating system, hypervisor, libraries, guest os, agile, devops, portability, scalability, ibm cloud kubernetes service, manifest, yaml, image, runtime engine, docker engine, cognitive api, watson, python, cloud-native, architecture, continuous integration, continuous delivery",en-US
+b_CvqzmB51M,KubeFlow: Pythonic Machine Learning at Scale on Kubernetes | SciPy 2018 | Bailey & Aronchick,2018-07-15T21:21:23Z,UCkhm72fuzkS9fYGlGpEmj7A,"“KubeFlow marks the beginning of the end of the data scientist and/or software engineer as disparate roles. Like DevOps has merged operations and development, DataDevOps will consume data science.” - Philip Winder, an engineer and consultant at Container Solutions
+ 
+ http://container-solutions.com/tensorflow-on-kubernetes-kubeflow/
+ 
+ You've created and tuned a machine learning model, using TensorFlow, PyTorch, or scikit-learn - now what? How can you ensure that the model is deployed to your DevOps team as production-ready code, and can scale as needed on incoming data? How can you seamlessly migrate a model from your local laptop / virtual machine to a hosted server on your cloud platform of choice? 
+ 
+ This talk walks through the architecture of Kubeflow: a project dedicated to answering those questions - and to making machine learning on Kubernetes simple, portable and scalable. 
+ 
+ We will describe, in detail, the three components of the project:
+ 
+ * a JupyterHub platform for creating and managing Jupyter notebook servers that are used by data science and research groups;
+ 
+ * a Tensorflow Customer Resource for managing compute resources to a specific cluster size; and 
+ 
+ * a Tensorflow Serving container to house the machine learning work.
+ 
+ By the end of this talk, you will have a firm understanding of why Kubernetes would be useful to machine learning engineers, and how you can deploy it, today, to support your predictive models.
+ 
+ https://github.com/kubeflow/kubeflow
+
+See the full SciPy 2018 playlist at https://www.youtube.com/playlist?list=PLYx7XA2nY5Gd-tNhm79CNMe_qvi35PgUR",5265,60,0,3,"python, machine learning, Kubernetes",N/A
+J0NuOlA2xDc,Never install locally,2023-04-27T12:18:48Z,UCrsLPlwxUInDoNubOP85EWQ,"💜 Support the channel and get some nice perks:
+🔗 https://www.patreon.com/coderized
+
+🗣️ Discord is now available, come chat!
+🔗 https://discord.gg/Y7hEKnxPGf
+
+---
+
+Containers are a game-changing tool for app development and deployment, offering isolated, portable environments that include code, libraries, and OS. Unlike virtual machines (VMs), containers are lightweight and share the host system's kernel, making them faster and more resource-efficient.
+
+Developers benefit from containers as they allow working in multiple environments simultaneously without compromising the local machine. This ensures compatibility across different machines and platforms, eliminating the ""it works on my machine"" issue.
+
+Docker is a popular container platform that uses overlapping layers to form container images. These images can be extended from any previous image or layer, with numerous pre-made base images available for various requirements.
+
+Using a Dockerfile, developers can add commands to generate new file system layers or metadata layers. Multiple containers can run from a single image, with each container having its dedicated file system layer that persists until the container is deleted.
+
+Containers can communicate easily, and when an app is ready for deployment, it can be tagged with a unique version and published to a container registry. Modern cloud platforms offer built-in support for deploying containers, or you can install a compatible container runtime on your machine for more control. 
+
+Container orchestration platforms like Kubernetes enable the creation of container-based clouds, providing even greater flexibility and control in app development and deployment.
+
+---
+
+In the video, I cover:
+- Understand containers and their benefits for developers
+- Compare VMs and containers, and their resource usage
+- Maintain multiple environments with containers to avoid conflicts
+- Solve the ""it works on my machine"" problem with container consistency
+- Explore container images, Dockerfiles, and overlapping layers
+- Use pre-made and officially supported base images for projects
+- Create and run containers using Docker as a container platform
+- Communicate between containers through virtualized network layers
+- Tag and publish container images to registries for storage
+- Deploy containers using cloud platforms or compatible runtimes
+- Utilize container orchestration with Kubernetes for advanced deployments
+
+---
+
+Additions:
+
+Despite me presenting it as so, containers don't contain a true OS in the full meaning of the word. That's an oversimplification. It's more of an ""OS-like"" environment. It definitely can act in ways that you'd expect an OS to act, but there are some differences.
+
+If you use VSCode, check out ""Dev Containers"" - they are an awesome way to integrate your IDE into dedicated containerized development environments with just a single click.
+
+Sharing a Kernel with the host does come with some potential drawbacks. Most importantly is that containers would be more vulnerable to attack than VMs should the host machine be compromised. However, containers are heavily used in many large-scale production environments and security can be hardened against such attacks, so it's definitely not a bigger concern than keeping software secure in general.
+
+---
+
+00:00 - Introduction to Containers
+00:24 - Coderized
+00:27 - Containers vs. VMs
+01:09 - The Role of the Kernel
+01:32 - Benefits for Developers
+01:58 - Works on My Machine...
+02:19 - Creating a Container of Your Own
+02:34 - Container Images and Filesystem Layers
+02:47 - Banana
+02:53 - Layers in Container Images
+03:28 - Dockerfile example
+03:42 - Container Runtime Changes and Persistence
+04:09 - Accessing Running Containers
+04:22 - Communication Between Containers
+04:30 - Tagging and Publishing Container Images
+04:51 - Deployment Options and Cloud Platforms
+05:14 - Container Orchestration with Kubernetes
+05:29 - Ending and Support
+
+#devops #containerization #docker #dockercontainer #dockertutorial #dockertutorials #dockerimage #cloudcomputing #cleancode #programming #code #coder #coding #programmingtips #vscode #container #containerregistry #containerruntime",1928616,92719,0,2169,"docker, container, containerization, development, deployment, devops, dockerfile, code, programming, coder, docker tutorial for beginners, docker tutorial, what is docker, docker container, learn docker",N/A
+Q26I2ttpZHk,Continuous Deployment of AI/ML Models with Containers and Kubernetes,2020-06-05T05:08:58Z,UCZKMj3YI0wP-kq4QYpaKdEA,Learn more about how Red Hat OpenShift at https://openshift.com,628,8,0,0,,N/A
+KHF405ZrtWc,Cloud Native Machine Learning Systems at Day Two and Beyond - Sophie Watson & William Benton,2020-12-04T17:50:14Z,UCvqbFHwN-nwalWPjPUKpvTA,"Don’t miss out! Join us at our upcoming event: KubeCon + CloudNativeCon Europe 2021 Virtual from May 4–7, 2021. Learn more at https://kubecon.io. The conference features presentations from developers and end users of Kubernetes, Prometheus, Envoy, and all of the other CNCF-hosted projects. 
+
+Cloud Native Machine Learning Systems at Day Two and Beyond - Sophie Watson & William Benton, Red Hat 
+
+You’re probably already convinced that Kubernetes is the right infrastructure for your next machine learning initiative, but you may not be ready for some of the speedbumps that await you on the way. This talk will introduce some of the challenges unique to machine learning systems, prepare you for the tradeoffs you’ll face supporting practitioners and putting systems in production, and present some of the additional tools you’ll need in your DevOps toolbox as your cloud-native machine learning systems mature. You’ll learn how to negotiate pitfalls related to interactive development, reproducibility, and monitoring machine learning systems in production with concrete solutions inspired by our experience with end-users in various industries. 
+
+https://sched.co/ekC2",266,4,0,0,,N/A
+wytCjR-qdpI,Infrastructure Agnostic Machine Learning Workload Deployment,2021-07-12T17:48:04Z,UC3q8O3Bh2Le8Rj1-Q-_UUbA,"When it comes to Large Scale data processing and Machine Learning, Apache Spark is no doubt one of the top battle-tested frameworks out there for handling batched or streaming workloads.  The ease of use, built-in Machine Learning modules, and multi-language support makes it a very attractive choice for data wonks. However bootstrapping and getting off the ground could be difficult for most teams without leveraging a Spark cluster that is already pre-provisioned and provided as a managed service in the Cloud, while this is a very attractive choice to get going, in the long run, it could be a very expensive option if it’s not well managed.
+
+As an alternative to this approach, our team has been exploring and working a lot with running Spark and all our Machine Learning workloads and pipelines as containerized Docker packages on Kubernetes. This provides an infrastructure-agnostic abstraction layer for us, and as a result, it improves our operational efficiency and reduces our overall compute cost. Most importantly, we can easily target our Spark workload deployment to run on any major Cloud or On-prem infrastructure (with Kubernetes as the common denominator)  by just modifying a few configurations.
+
+In this talk, we will walk you through the process our team follows to make it easy for us to run a production deployment of our Machine Learning workloads and pipelines on Kubernetes which seamlessly allows us to port our implementation from a local Kubernetes set up on the laptop during development to either an On-prem or Cloud Kubernetes environment.
+
+Connect with us:
+Website: https://databricks.com
+Facebook: https://www.facebook.com/databricksinc
+Twitter: https://twitter.com/databricks
+LinkedIn: https://www.linkedin.com/company/databricks
+Instagram: https://www.instagram.com/databricksinc/ Databricks is proud to announce that Gartner has named us a Leader in both the 2021 Magic Quadrant for Cloud Database Management Systems and the 2021 Magic Quadrant for Data Science and Machine Learning Platforms. Download the reports here. https://databricks.com/databricks-named-leader-by-gartner",397,11,0,0,Databricks,en
+fGqE2tO5mOo,"Scaling AI & Machine Learning Workloads With Ray on AWS, Kubernetes, & BERT",2022-10-19T08:02:50Z,UCFbY6n5Ge7PJ98AtnMcD2eA,"Big Data LDN 2022, 22 Sept, 1:20pm, Modern Data Stack Theatre
+Speaker: 
+Chris Fregly, AWS
+
+Open source Ray is great for modern high-performance data processing and machine learning workloads. In this talk, I will explain distributed Ray - and how it differs from Dask and Apache Spark. I will also discuss various tips and tricks to optimizing Ray on AWS and Kubernetes. Next, I will highlight some AWS key contributions to the open source Ray project to improve performance, scalability, and operational efficiency. Lastly, I conclude the talk with a demo using Ray's AI Runtime (AIR) to train and serve a large, distributed BERT model with Amazon Elastic Kubernetes Services (EKS).",395,4,0,1,"big data ldn, bigdata, conference, bigdataldn, big data london, exhibition, big data expo, big data",N/A
+Jb-XOfaCge8,Cloud OnAir: KubeFlow: Machine Learning + Kubernetes,2018-07-09T21:40:14Z,UCJS9pqu9BzkAMNTmzNMNhvg,"Machine Learning has evolved well past being a buzz word. As Google's businesses collect more data from more sources, the need to gain insightful data and perform meaningful analysis grows. There are many options available today to achieve this but their portability is often challenging. Today, many data scientists run their models on their laptops with a single GPU but when they outgrow this, they struggle to find ways to easily move their models to the cloud.  Kubeflow provides a way to load ML workloads into a Kubernetes cluster and easily move the jobs from one machine or cluster to a much larger environment.",2220,28,0,0,"Cloud OnAir, KubeFlow, Kubernetes, Machine Learning, IT Infrastructure",N/A
+SSschIXf8Pg,Bosch DataOps: NLP Development on Kubernetes | Igor Stranjanac & Filip Novovic | DSC Europe 23,2024-07-29T13:28:29Z,UC-yt9rh6xh9Ym0vtTIA105w,"In their talk, Igor & FIlip discussed the extension of DevOps practices into data processing and machine learning lifecycles, emphasizing the transition from proof-of-concept to scalable production systems. The in-house solution leverages Kubernetes for streamlined development and staging for developers and NLP researchers. Key features include pipeline orchestration, task parallelization, and scheduling. The presentation highlighted the comprehensive design of their DataOps and MLOps system, featuring tools such as Argo Workflows, MLflow, Seldon, and infrastructure integration with Terraform and Flux, all within the AWS cloud environment.
+
+This speech by Igor Stranjanac & Filip Novovic was held on November 23rd at the Data Science Conference Europe 2023 in Belgrade.
+
+Follow us on social media :
+LinkedIn: https://www.linkedin.com/company/11184830/admin/ 
+Instagram: https://www.instagram.com/datasciconf/ 
+Facebook page: https://www.facebook.com/DataSciConference 
+Website: https://datasciconference.com/
+
+Change the world through data
+
+#datascience #ai  #ml #artificialintelligence #bigdata #dataanalytics #business",77,1,0,0,"AI, Data Science, Data, Data analytics, machine learning, ML, Natural language processsing, machine vision",N/A
+9gwcxz6D9kk,"A Docker Container Toolbox for the Data Scientist by Douglas Liming, SAS Institute Inc.",2016-10-26T17:48:05Z,UCfX55Sx5hEFjoC3cNs6mCUQ,"A Docker Container Toolbox for the Data Scientist - Douglas Liming, SAS Institute Inc.
+
+A major financial institute supports its analytic workload via docker containers with access to R, Python, and SAS. This talk discusses how we built and deployed containers with the open source tools needed for their Data Scientists to complete their work. It discusses how containers enable their IT department to meet the ad hoc, compute intensive, and scaling demands of the organization. It also covers how provisioning thin clients via Jupyter Notebooks, R Studio, and SAS Studio, empowers Data Scientists with the tool of their choice. An exciting differentiator for the Data Scientist, is the ability to send a portion of the analytic workload to run inside their Hadoop cluster. Lastly, we discuss extending the container by pushing the analytic workload to run inside the Hadoop cluster; thus enabling the Data Scientists to dive inside the data lake and harness the power of all the data.
+
+About Douglas Liming
+
+Doug Liming is an Enterprise Architect with SAS Institute in Cary, North Carolina. He was a DBA for 16 years before trading hats. He is now focusing on all things Hadoop and Hadoop within the enterprise. How Hadoop is the hub for the entire enterprise and how Open Source is now a major player.",2945,37,0,N/A,"Linux, Containers, DevOps, Docker, Open Source, Kubernetes, Linux Kernel, Cloud Computing, Cloud, Linux Kernel Development, Virtualization, Linux On The Desktop, Hypervisors, Embedded, Systems, Linux Containers, Linux Security",N/A
+JkNfH37mAp8,Containers and Big Data,2018-07-12T21:59:05Z,UC5o4P1O-WVE15EZWqayc5dw,"As containerization continues to gain momentum and become a de facto standard for application deployment, challenges around containerization of big data workloads are coming to light. Great strides have been made within the open source communities towards running big data workloads in containers, but much is left to be done.
+
+Apache Hadoop YARN is the modern distributed operating system for big data applications. It has morphed the Hadoop compute layer into a common resource-management platform that can host a wide variety of applications. At its core, YARN has a very powerful scheduler which enforces global cluster level invariants and helps sites manage user and operator expectations of elastic sharing, resource usage limits, SLAs, and more. YARN recently increased its support for Docker containerization and added a YARN service framework supporting long-running services.
+
+In this session we will explore the emerging patterns and challenges related to containers and big data workloads, including running applications such as Apache Spark, Apache HBase, and Kubernetes in containers on YARN.
+
+Speakers
+BILLIE RINALDI
+Principal Software Engineer I
+Hortonworks
+
+SHANE KUMPF
+Software Engineer
+Hortonworks",1403,11,0,0,"Apache Hadoop, Docker / Container, Cloud and Operations, dataworks summit san jose, dataworks summit 2018, dws18",N/A
+pqppGvTJm-A,MLOps: Accelerating Data Science with DevOps - Microsoft,2019-11-08T19:32:26Z,UCkAQCw5_sIZmj2IkSrNy00A,"DOES19 Las Vegas — The business impact of high-performance DevOps has been proven widely. Unfortunately, as enterprises now try to use big data with machine learning, data science tends to get left behind. Challenges that engineers and data scientists face when developing an ML-based system are reliably deploying models, managing ML assets at scale, and knowing when models are going stale. Introducing a DevOps approach to Machine learning helps solve these challenges by providing structure for collaborating and bringing models into production.  This talk covers real improvements that MLOps has brought to large enterprise customers in maintaining asset integrity across teams, accelerating model operationalization, and enabling a sophisticated AI application lifecycle. We share pointers on how you can follow the same journey in your org.
+
+MLOps: Accelerating Data Science with DevOps - Jordan Edwards and Shivani Patel
+
+Jordan Edwards, Senior Program Manager, Microsoft
+Shivani Patel, Program Manager, Microsoft
+
+Jordan Edwards is a Senior Program Manager on the Azure AI Platform team. He has worked on a number of highly performant, globally distributed systems across Bing, Cortana and Microsoft Advertising and is currently working on CI/CD experiences for the next generation of Azure Machine Learning. Jordan has been a key driver of dev-ops modernization in AI+R, including but not limited to: moving to Git, moving the organization at large to CI/CD, packaging and build language modernization, movement from monolithic services to microservice platforms and driving for a culture of friction-free devOps and flexible engineering culture. His passion is to continue driving Microsoft towards a culture which enables our engineering talent to do and achieve more.
+
+Shivani Patel is a Program Manager at Microsoft working on MLOps for the Azure Machine Learning Platform team.
+
+DOES19 Las Vegas
+DOES 2019 US
+DevOps Enterprise Summit
+https://events.itrevolution.com/us/",7194,153,0,1,"devops enterprise summit usa, does 2019, devops, does19 las vegas, devops enterprise summit, does19 us, devops enterprise summit las vegas, Jordan Edwards, Microsoft
+Shivani Patel, Microsoft, machine learning, data science",N/A
+5CXj9umwmOI,"Analytics Orchestration at Scale with Kubernetes, Tensorflow, and Kubeflow (Cloud Next '19)",2019-04-26T18:48:08Z,UCJS9pqu9BzkAMNTmzNMNhvg,"The needs for orchestrating workloads for industrial analytics go above and beyond the standard ML pipelines. Several cases involve a combination of domain specific models such as physics based models, probabilistic models and AI/ML models. In many cases, each of these models could be written in a different programming language and/or with several different libraries within the same programming language. This necessitates the need for containerized and orchestrated workloads. In some cases, different parts of the pipeline could be owned by different groups that may not want to expose the IP. 
+In addition, model calibration and optimization use cases require more than a simple DAG orchestration. In many of these cases, cyclic and conditional workflows are needed.  When dealing with Industrial IoT applications, hundreds if not thousands of models are normally built to represent a single asset. In addition, optimization and calibration use cases require executing the pipelines thousands of times for each optimization or calibration exercise. Hence scaling such complex pipelines is a key component of industrial analytics systems. We will showcase building and managing such complex pipelines using various GCP services such as GKE, TFX, PubSub and BigTable.
+
+
+Build with Google Cloud → https://bit.ly/2WQC04q
+
+Watch more: 
+Next '19 Data Analytics Sessions here → https://bit.ly/Next19DataAnalytics
+Next ‘19 All Sessions playlist → https://bit.ly/Next19AllSessions
+
+Subscribe to the GCP Channel → https://bit.ly/GCloudPlatform
+
+
+Speaker(s): Alexandre Iankoulski, Fabio Nonato
+
+
+Session ID: DA226
+product: Cloud - Containers - Google Kubernetes Engine (GKE); fullname: Alexandre Iankoulski, Fabio Nonato; event: Google Cloud Next 2019;",1444,23,0,0,"type: Conference Talk (Full production);, pr_pr: Google Cloud Next, purpose: Educate",en
+stElXPj78gA,DevOps for Data Science | DevOps Lab,2018-06-20T01:33:55Z,UC-ikyViYMM69joIAv7dlMsA,"Damian talks to Microsoft's Paige Bailey as well as MVP Terry McCann about DevOps for Data Science.
+
+These two really popular fields are not often combined, but there are some fantastic opportunities for cross-pollination of ideas. Damian, Paige and Terry discuss what's important to data scientists and where to start when it comes to a DevOps process. From using source control, testing and refreshing predictive models to operationalizing and evaluating success in production.
+
+Data scientists are rarely developers, and developers are rarely data scientists, but they can work together, using tools and techniques that still allow the experts to do what they do best!
+
+Follow Paige on Twitter: https://twitter.com/DynamicWebPaige
+Follow Terry on Twitter: https://twitter.com/SQLShark
+Follow Damian on Twitter: https://twitter.com/damovisa
+
+Resources:
+ - The DataOps Manifesto: http://dataopsmanifesto.org/
+ - Microsoft AI School: https://brdy.in/DOL-AISchool
+ - Visual Studio Team Services: https://brdy.in/DOL-VSTS
+ - Create a Free Azure Account: https://aka.ms/c9-azurefree",4117,68,0,5,"devops, data science, machine learning",N/A
+x4oIdooDzKo,Machine Learning Models in Production,2018-05-16T21:02:50Z,UC5o4P1O-WVE15EZWqayc5dw,"Data Scientists and Machine Learning practitioners, nowadays, seem to be churning out models by the dozen and they continuously experiment to find ways to improve their accuracies. They also use a variety of ML and DL frameworks & languages , and a typical organization may find that this results in a heterogenous, complicated bunch of assets that require different types of runtimes, resources and sometimes even specialized compute to operate efficiently.
+
+But what does it mean for an enterprise to actually take these models to ""production"" ? How does an organization scale inference engines out & make them available for real-time applications without significant latencies ? There needs to be different techniques for batch ,offline, inferences and instant, online scoring. Data needs to be accessed from various sources and cleansing, transformations of data needs to be enabled prior to any predictions. In many cases, there maybe no substitute for customized data handling with scripting either.
+
+Enterprises also require additional auditing and authorizations built in, approval processes and still support a ""continuous delivery"" paradigm whereby a data scientist can enable insights faster. Not all models are created equal, nor are consumers of a model - so enterprises require both metering and allocation of compute resources for SLAs.
+
+In this session, we will take a look at how machine learning is operationalized in IBM Data Science Experience, DSX, a Kubernetes based offering for the Private Cloud and optimized for the HortonWorks Hadoop Data Platform. DSX essentially brings in typical software engineering development practices to Data Science, organizing the dev-test-production for machine learning assets in much the same way as typical software deployments. We will also see what it means to deploy, monitor accuracies and even rollback models & custom scorers as well as how API based techniques enable consuming business processes and applications to remain relatively stable amidst all the chaos
+
+
+Speaker: Piotr Mierzejewski, Program Director Development IBM DSX Local, IBM",2725,20,0,0,"Artificial Intelligence and Data Science, Apache Hadoop, Apache Spark, Cloud, Docker, Container, TensorFlow, IBM DSX, DataWorks Summit Berlin, DWS18",N/A
+iuWL2acLvP4,Scaling Machine Learning Pipelines in Cloud - Salman Iqbal - NDC Oslo 2021,2022-03-02T12:47:11Z,UCTdw38Cw6jcm0atBPA39a0Q,"One of the most common hurdles with developing data science/machine learning models is to design end-to-end pipelines that can operate at scale and in real-time. Data scientists and engineers are often expected to learn, develop and maintain the infrastructure for their experiments. This process takes time away from focussing on training and developing the models.
+
+What if there was a way of abstracting away the non Machine Learning related tasks while still retaining control? This talk will discuss the merits of using Kubeflow. Kubeflow is an open source Kubernetes based platform. With the help of Kubeflow, users can:
+- Develop Machine Learning models easily and make repeatable, portable deployments on a diverse infrastructure e.g. laptop to production cluster.
+- Scale infrastructure based on the demand.
+
+This talk will also present the current use cases of Kubeflow and how teams from other industries have been utilising the cloud to scale their machine learning operations.
+
+
+Check out more of our featured speakers and talks at
+https://ndcconferences.com/
+https://ndcoslo.com/",545,9,0,0,"Cloud, Machine Learning, ML, Kubernetes, Kubeflow, Salman Iqbal, NDC, Conferences, 2021, Oslo, Live",N/A
+JkydSB4-q3M,"Kubernetizing Big Data and ML Workloads at Uber - Mayank Bansal & Min Cai, Uber",2019-11-22T20:28:52Z,UCvqbFHwN-nwalWPjPUKpvTA,"Join us for Kubernetes Forums Seoul, Sydney, Bengaluru and Delhi - learn more at kubecon.io 
+
+Don't miss KubeCon + CloudNativeCon 2020 events in Amsterdam March 30 - April 2, Shanghai July 28-30 and Boston November 17-20! Learn more at kubecon.io. The conference features presentations from developers and end users of Kubernetes, Prometheus, Envoy, and all of the other CNCF-hosted projects 
+
+Kubernetizing Big Data and ML Workloads at Uber - Mayank Bansal & Min Cai, Uber  
+
+Uber relies on Big Data and ML to make business critical decisions such as pricing, trip ETA, etc. Today, those workloads such as Hive and Spark are running on YARN. To save millions of dollars by efficient use of cluster resources, Uber is planning to use Kubernetes to co-locate BigData/ML and micro-service workloads.  Kubernetes is the de-facto standard for running micro-services. However, in comparison to YARN, it still lacks many features like hierarchical resource pools, elastic resource sharing, gang scheduling etc. To bridge this gap, we have re-architected Peloton to be a set of Kubernetes scheduler and controller plugins so that we can provide feature parity with YARN.  This talk will cover: - Learnings of running large-scale BigData/ML on Kubernetes with Peloton - Colocation of mixed workloads - Federation across zones - Feature and API parity with YARN 
+
+https://sched.co/Uaad",768,8,0,0,,N/A
+gAkwW2tuIqE,Learn Docker in 7 Easy Steps - Full Beginner's Tutorial,2020-08-24T15:54:20Z,UCsBjURrPoezykLs9EqgamOA,"A complete introduction to Docker. Learn how to Dockerize a Node.js and run manage multiple containers with Docker Compose. https://fireship.io/lessons/docker-basics-tutorial-nodejs
+
+00:00 What is Docker?
+01:54 Installation & Tooling
+02:40 Dockerfile
+06:06 Build an Image
+07:12 Run a Container
+08:52 Debugging
+09:35 Docker Compose
+
+Source code https://github.com/fireship-io/fireship.io
+Official Docker https://www.docker.com
+
+#LearnToCode #Docker 
+
+Install the quiz app 🤓
+
+iOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8
+Android https://play.google.com/store/apps/details?id=io.fireship.quizapp
+
+Upgrade to Fireship PRO at https://fireship.io/pro
+Use code lORhwXd2 for 25% off your first payment. 
+
+My VS Code Theme
+
+- Atom One Dark 
+- vscode-icons
+- Fira Code Font",2075185,73909,0,968,"webdev, app development, lesson, tutorial, nodejs, docker, dockerize, containers, docker container, docker tutorial, learn docker, docker basics",N/A
+CAVLuDtI9Bg,Big Data Clusters for the Absolute Beginner,2019-08-30T17:03:25Z,UCMh7QaP3p2WoMVG45Lw-vfQ,"SQL Server Big Data Clusters - Are you a DBA or data professional working with out-dated technology or feel your skills are quickly becoming irrelevant? Stay ahead in today's ever changing tech space and take your career to the next level.
+
+Join me, Mohammad Darab, this session to explore the cutting-edge technology that SQL Server 2019 has to offer: Big Data Clusters.
+
+Topics include:
+-Big Data Cluster architecture and its components such as: Containers, Kubernetes and the newly enhanced Polybase
+-Unique advantage of SQL Server Big Data Clusters
+-Data Virtualization, Scale-out Data Marts, and Data Hub concepts
+
+LINKS:
+Learning Resources: https://MohammadDarab.com/bdc
+
+NEWSLETTER / SOCIAL MEDIA:
+Sign Up to the Newsletter here: http://eepurl.com/gb3EIv
+Follow on Twitter: https://twitter.com/mwdarab",3552,44,0,15,"sql server, sql server 2019, big data clusters, big data cluster, sql server big data clusters, polybase, enhanced polybase, data virtualization, database administrator, dba",en
+r7YMDBmlGh4,Machine Learning on Kubernetes | Salman Iqbal,2022-12-01T10:01:50Z,UCKvT25MRlsReq1hUzwblZsQ,"In order to run Machine Learning (ML) models at scale three things are required: code, ML framework of your choice and a platform to run your code on. A number of ML frameworks exist such as TensorFlow, PyTorch, MXNet, Keras etc. When it comes to platforms, many of those exist too. Kubernetes is one such platform that runs containerised workloads. Kubernetes provides features that solve some of the challenges faced by data scientists. This talk will discuss how it helps with infrastructure management, auto scaling, auto recovery from failure, automated deployments, multi-tenancy and GPU offloading. This talk will also show how to run some of the ML Frameworks on Kubernetes such as Scikit-learn, PyTorch, MXNet & TensorFlow. The talk will also discuss when not to use Kubernetes to run your ML workloads.",3775,73,0,1,"KCDUK, Kubernetes, K8s",N/A
+48WchucU8UY,"Sergii Khomenko - From Data Science to Production - deploy, scale, enjoy!",2016-03-26T14:40:36Z,UCOjD18EJYcsBog4IozkF_7w,"PyData Amsterdam 2016
+
+Description
+
+Data cleaning is the first step of every Data Science project. Next one does Data Science. The talk covers a missing step of deployment and scaling Data Applications in production. We will go through all major steps of the process like Dockerizing application, Continuous Deployment with further AWS stack creation and rolling deploys although also covering new trends in Serverless architecture.
+
+Abstract
+
+Data Science is quite a young field. One of the definitions of Data Scientist: Person who is better at statistics than any software engineer and better at software engineering than any statistician. Hence, it's quite important to talk not only about best practices of feature generation and not overfitting but also about more of software engineering topics.
+
+The talk is based on our experience of Data Science developments at Stylight, an international fashion e-commerce company, that operates in 15 countries worldwide. We refer to our Data Applications written in R and Python, Scala; but the content is not limited to mentioned languages and applicable others.
+
+The talk consists three main parts. A first part introduces best practices of development. How to structure your development, make deployment easy and reproducible, how to make Continuous Integration and commit triggered deployments. The second part covers production deployment to AWS stack, in particular focusing on concepts of immutable infrastructure and infrastructure as code. The last part about using serverless architecture for data applications. We introduce an example of our outlier detection system, that automatically scales based on such approach. 00:00 Welcome!
+00:10 Help us add time stamps or captions to this video! See the description for details.
+
+Want to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",2742,23,0,0,,N/A
+49IaHTNry8I,Docker Data Science Pipeline,2018-07-23T21:43:07Z,UC5o4P1O-WVE15EZWqayc5dw,"At ING we needed a way to implement Data science models from exploration into production. I will do this talk from my experience on the exploration and production Hadoop environment as a senior Ops engineer. For this we are using OpenShift to run Docker containers that connect to the big data Hadoop environment.
+
+During this talk I will explain why we need this and how this is done at ING. Also how to set up a docker container running a data science model using Hive, Python, and Spark. I’ll explain how to use Docker files to build Docker images, add all the needed components inside the Docker image, and how to run different versions of software in different containers.
+
+In the end I will also give a demo of how it runs and is automated using Git with webhook connecting to Jenkins and start the docker service that will connect to a big data Hadoop environment.
+
+This is going to be a great technical talk for engineers and data scientist.",751,10,0,0,"Apache Hadoop, Apache Spark, Docker / Container",N/A
+3jJ1GhGkLY0,Creating our Own Kubernetes & Docker to Run Our Data Infrastructure | Modal,2023-05-11T18:58:49Z,UCAezwIIm1SfsqdmbQI-65pA,"ABOUT THE TALK:
+ In this talk, Erik Bernhardsson will share how Modal starts 1000s of large containers in seconds, and what they had to do under the surface to build this. This includes a custom file system written in Rust, their own container runtime, and their own container image builder. This talk will give you an idea of how containers work along with some of the low-level Linux details underneath. We'll also talk about many infrastructure tools hold data teams back, and why they deserve faster and better tools.
+
+ABOUT THE SPEAKER:
+Erik Bernhardsson is the founder and CEO of Modal, which is an infrastructure provider for data teams. Before Modal, Erik was the CTO at Better for six years, and previously spent seven years at Spotify, building the music recommendation system and running data teams.
+
+ABOUT DATA COUNCIL:
+Data Council (https://www.datacouncil.ai/) is a community and conference series that provides data professionals with the learning and networking opportunities they need to grow their careers.
+
+Make sure to subscribe to our channel for the most up-to-date talks from technical professionals on data related topics including data infrastructure, data engineering, ML systems, analytics and AI from top startups and tech companies. 
+
+FOLLOW DATA COUNCIL: 
+Twitter: https://twitter.com/DataCouncilAI 
+LinkedIn: https://www.linkedin.com/company/datacouncil-ai/",7254,294,0,7,"data infrastructure, data engineering, cloud systems, rust, docker, kubernetes",N/A
+DUPNgMRV1-I,Introducing Kubeflow (w. Special Guests Tensorflow and Apache Spark),2019-04-18T21:34:07Z,UC5o4P1O-WVE15EZWqayc5dw,"Data Science, Machine Learning, and Artificial Intelligence has exploded in popularity in the last five years, but the nagging question remains, “How to put models into production?” Engineers are typically tasked to build one-off systems to serve predictions which must be maintained amid a quickly evolving back-end serving space which has evolved from single-machine, to custom clusters, to “serverless”, to Docker, to Kubernetes. In this talk, we present KubeFlow- an open source project which makes it easy for users to move models from laptop to ML Rig to training cluster to deployment. In this talk we will discuss, “What is KubeFlow?”, “why scalability is so critical for training and model deployment?”, and other topics.
+
+Users can deploy models written in Python’s skearn, R, Tensorflow, Spark, and many more. The magic of Kubernetes allows data scientists to write models on their laptop, deploy to an ML-Rig, and then devOps can move that model into production with all of the bells and whistles such as monitoring, A/B tests, multi-arm bandits, and security.",1287,12,0,0,"dataworks summit barcelona, dws19, kubeflow, tensorflow, apache spark, holden karau",N/A
+z7ylCoq9WHY,"2021 Data Engineering Predictions & Trends | Hybrid Roles, Cloud Computing, Career Advice & More",2021-02-11T18:23:53Z,UCejelOS3lhDyxTlq_ObSxEw,"After so much change and disruption over the past year, many of us are likely glad to be looking forward at the fresh year ahead!
+
+Caroline Evans, data engineering recruiting specialist at Burtch Works, shares her top predictions and trends in this space for 2021, including:
+
+• Product-driven data engineer roles
+• Blending between Big Data Engineers and Data Scientists
+• The increasing prevalence of different types of hybrid roles
+• Remote work trends
+• Cloud computing
+
+Plus, her insights on how these trends will affect both data engineer careers and hiring.
+
+Burtch Works’ market insights have been repeatedly mentioned in the press, including The New York Times, The Wall Street Journal, Forbes, CNBC, The Economist, and more, and Burtch Works has also been recognized by Forbes as one of America’s Best Recruiting Firms for the past several years.
+
+For career tips and more information about our research:
+
+Download our salary reports for free: https://burtchworks.com/study
+Twitter: http://twitter.com/burtchworks
+LinkedIn: http://linkedin.com/company/burtch-works
+Facebook: http://facebook.com/burtchworks
+Blog: https://www.burtchworks.com/blog
+
+Burtch Works is a targeted executive recruiting firm that specializes in placing exceptional analytics and data science professionals. We work with highly-qualified professionals in many quantitative fields including data engineering, data science, predictive analytics, marketing science, marketing research, web analytics, direct marketing, web analytics, and many more.
+
+Interested in learning more about how we can help with your hiring or want to find a new opportunity? Send us an email at info@burtchworks.com",453,11,0,0,"data engineering, data governance, cloud computing, information management, information technology, IT, data structures, business intelligence, data strategy, analytics platform, SQL, data quality, ETL, data architect, python coding, engineering, json, data warehouse, data lakes, enterprise data, technology",N/A
+scEDHsr3APg,DevOps CI/CD Explained in 100 Seconds,2020-03-12T17:45:46Z,UCsBjURrPoezykLs9EqgamOA,"What is DevOps? How to setup a CI/CD pipeline?  Learn the basics of continuous integration & delivery and how it can optimize your productivity and code quality. After this, go further 👉 https://youtu.be/eB0nUzAI7M8
+
+Demo Repo https://github.com/fireship-io/225-github-actions-demo
+
+Stay tuned for a full Github Actions DevOps project. https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/
+CI/CD https://en.wikipedia.org/wiki/Continuous_integration
+
+Install the quiz app 🤓
+
+iOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8
+Android https://play.google.com/store/apps/details?id=io.fireship.quizapp
+
+Upgrade to Fireship PRO at https://fireship.io/pro
+Use code lORhwXd2 for 25% off your first payment. 
+
+My VS Code Theme
+
+- Atom One Dark 
+- vscode-icons
+- Fira Code Font",1367869,53083,0,366,"app development, lesson, 100secondsofcode, dev ops, code, devops, cicd, continuous integration, devops baics, devops tutorial, git, github, github actions",N/A
+jdBbFSghM2s,Building Cross-Cloud ML Pipelines with Kubeflow with Spark & Tensorflow - Holden Karau,2019-05-23T13:39:54Z,UCvqbFHwN-nwalWPjPUKpvTA,"Join us for Kubernetes Forums Seoul, Sydney, Bengaluru and Delhi - learn more at kubecon.io
+
+Don't miss KubeCon + CloudNativeCon 2020 events in Amsterdam March 30 - April 2, Shanghai July 28-30 and Boston November 17-20! Learn more at kubecon.io. The conference features presentations from developers and end users of Kubernetes, Prometheus, Envoy, and all of the other CNCF-hosted projects
+
+Building Cross-Cloud ML Pipelines with Kubeflow with Spark & Tensorflow - Holden Karau, Google & Trevor Grant, IBM 
+
+Data Science, Machine Learning, and Artificial Intelligence has exploded in popularity in the last five years, but the nagging question remains, “How to put models into production?” In this talk, we present KubeFlow- an open source project aims to answer this.    This talk will examine how the intricacies involved in taking your pipeline and running it between clouds, mixing data from multiple sources, and building multi-component pipelines. We’ll examine how to tie together multiple tools to prepare your data and train the final model, as well as how to create a serving system to match.    The audience will learn how to use kubernetes as a replacement for YARN simplifying your big data stack and empowering your data scientists to self-serve libraries and avoid being responsible for maintaining 20 different incompatible conda environments. 
+
+https://sched.co/MPaZ",2918,37,0,6,,N/A
+kfXFyv1zNuw,Continuous Deployment Platform for ML Models (Cloud Next '18),2018-07-27T16:05:20Z,UCJS9pqu9BzkAMNTmzNMNhvg,"Applying the machine learning to your business requires a platform for the continuous deployment of ML models. In this session, you will learn key components such as ""Training platform"", ""Validation platform"" and ""Serving platform"", and how to combine them to build an end-to-end platform for the continuous deployment. As a concrete example, we will demonstrate an example architecture consisted of multiple GCP services to explain how data freshness affects your ML models, and why the continuous deployment is critical to keep the quality of your ML models.
+
+MLAI213
+
+Event schedule → http://g.co/next18
+
+Watch more Machine Learning & AI sessions here → http://bit.ly/2zGKfcg
+Next ‘18 All Sessions playlist → http://bit.ly/Allsessions
+
+Subscribe to the Google Cloud channel! → http://bit.ly/NextSub 
+
+
+event: Google Cloud Next 2018; re_ty: Publish; product: Cloud - General; fullname: Etsuji Nakai;",4467,68,0,1,"type: Conference Talk (Full production);, pr_pr: Google Cloud Next, purpose: Educate",N/A
+_jnhXzY1HCw,What is ML Ops? Best Practices for DevOps for ML (Cloud Next '18),2018-07-26T19:23:17Z,UCJS9pqu9BzkAMNTmzNMNhvg,"Creating an ML model is just a starting point. To bring the technology into production service, you need to solve various real-world issues such as building a data pipeline for continuous training, automated validation of the model, version control of the model, scalable serving infra, and ongoing operation of the ML infra with monitoring and alerting. In this session, we will learn concepts of """"ML Ops"""" (DevOps for ML) and how to combine Argo, Kubeflow, and cloud services to build a production ML service infra.
+
+Event schedule → http://g.co/next18
+
+Watch more Machine Learning & AI sessions here → http://bit.ly/2zGKfcg
+Next ‘18 All Sessions playlist → http://bit.ly/Allsessions
+
+Subscribe to the Google Cloud channel! → http://bit.ly/NextSub 
+
+
+re_ty: Publish; product: Cloud - AI and Machine Learning - TensorFlow Enterprise; fullname: Kaz Sato; event: Google Cloud Next 2018;",19799,324,0,9,"type: Conference Talk (Full production);, pr_pr: Google Cloud Next, purpose: Educate",N/A
+rr9cI4u1_88,A practical guide on Docker with projects | Docker Course,2022-11-03T04:30:24Z,UCXgGY0wkgOzynnHvSEVmE3A,"Welcome to a youtube channel dedicated to programming and coding related tutorials. We talk about tech, write code, discuss about cloud and devops. That’s what we do all day, all year. We roll out a lot of series and videos on our channel.
+
+All the learning resources such as code files, documentations, articles and community discussions are available on our website:
+
+https://chaicode.com/
+
+You can find our discord link, github link etc on the above website. 
+
+Twitter/X link: https://x.com/hiteshdotcom
+Discord link: https://hitesh.ai/discord
+
+Learn React with 10 projects: https://www.youtube.com/watch?v=eCU7FfMl5WU&list=PLRAV69dS1uWQos1M1xP6LWN6C-lZvpkmq
+
+Learn Docker: https://youtu.be/rr9cI4u1_88?si=fSK00PNOt0gqBXp6
+
+Learn Kubernetes: https://www.youtube.com/watch?v=7XDeI5fyj3w
+
+How does a browser works: https://youtu.be/5rLFYtXHo9s?si=UW1HrwGUzkk4E7qh
+
+How nodejs works: https://youtu.be/ooBxSg1Cl1w?si=Ks6Wih1smJZSDz4V
+
+Learn Redux-toolkit: https://www.youtube.com/watch?v=pX0SBJF01EU
+
+Learn NextJS: https://www.youtube.com/watch?v=iPGXk-i-VYU&list=PLRAV69dS1uWR7KF-zV6YPYtKYEHENETyE
+
+Learn Typescript: https://www.youtube.com/watch?v=j89BvWz8Eag&list=PLRAV69dS1uWRPSfKzwZsIm-Axxq-LxqhW
+
+Learn Javascript: https://www.youtube.com/watch?v=2md4HQNRqJA&list=PLRAV69dS1uWSxUIk5o3vQY2-_VKsOpXLD
+
+Learn React Native: https://www.youtube.com/watch?v=kGtEax1WQFg&list=PLRAV69dS1uWSjBBJ-egNNOd4mdblt1P4c
+
+Learn Zustand: https://www.youtube.com/watch?v=KCr-UNsM3vA&list=PLRAV69dS1uWQMXekDgw7fRAsHmsbKWkwu
+
+Learn Golang: https://www.youtube.com/watch?v=X4q1OM0voO0&list=PLRAV69dS1uWSR89FRQGZ6q9BR2b44Tr9N",205634,4953,0,261,"devops, cloud, Docker, kubernetes, containers, aws, gcp",N/A
