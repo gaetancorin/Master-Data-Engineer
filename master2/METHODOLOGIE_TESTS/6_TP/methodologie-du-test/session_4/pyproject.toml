@@ -1,0 +1,20 @@
+[tool.ruff]
+include = ["pyproject.toml", "src/**/*.py", "tests/**/*.py"]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = ["tests", "integration"]
+addopts = "-v -ra -q"
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+minversion = "6.0"
+filterwarnings = "ignore"
+
+[tool.mypy]
+strict = true
+files = ["src", "tests"]
+mypy_path = "src"
+ignore_missing_imports = true
+
+['mypy-sklearn.*']
+ignore_errors = true

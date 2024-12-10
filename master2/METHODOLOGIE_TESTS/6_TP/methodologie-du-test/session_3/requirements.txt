@@ -1,0 +1,10 @@
+pytest
+pytest-cov
+python-dotenv
+pandas
+scikit-learn
+great_expectations
+numpy
+
+ruff
+mypy

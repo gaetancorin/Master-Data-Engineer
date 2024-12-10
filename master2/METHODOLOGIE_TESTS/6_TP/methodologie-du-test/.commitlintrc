@@ -1,0 +1,3 @@
+rules:
+  type-enum: [ 2, always, [ "fix", "feat", "chore", "docs", "style", "refactor", "perf", "test"] ]
+  scope-enum: [ 2, always, [ "project", "pipeline" ]]

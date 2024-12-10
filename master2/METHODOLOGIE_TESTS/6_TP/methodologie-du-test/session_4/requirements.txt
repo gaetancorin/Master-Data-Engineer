@@ -1,0 +1,14 @@
+pytest
+pytest-cov
+python-dotenv
+ruff
+bs4
+requests
+python-slugify
+unicode
+mypy
+pandas
+scikit-learn
+hrid
+great_expectations
+numpy

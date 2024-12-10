@@ -1,0 +1,10 @@
+services:
+  server:
+    image: python:3.13
+    command: "/opt/start.sh"
+    working_dir: "/opt"
+    volumes: [ ".:/opt" ]
+    ports: [ "5000:5000" ]
+    user: "${CURRENT_UID:-1000}:${CURRENT_GID:-1000}"
+    environment:
+      APP_HOST: "0.0.0.0"

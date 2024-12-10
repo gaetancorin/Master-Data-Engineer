@@ -1,0 +1,13 @@
+Aller dans le dossier session4, puis réaliser les commande d'environnement virtuel en python3.12:
+python -m venv venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+Tester les tests unitaires:
+pytest
+pytest -v
+
+Lancer la fonction d'entrainement de modèle (a lancer plusieurs fois):
+python src/main.py train
+Lancer la fonction de prédiction de modèle:
+python src/main.py predict
