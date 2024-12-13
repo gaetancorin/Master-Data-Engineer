@@ -1,0 +1,102 @@
+Etapes démarche accompagnement changement :
+
+1. Analyse des Besoins
+	Périmètre : 
+		- Gestion des dossiers patients
+		- Planifications des interventions
+		- Communication entre les services
+
+	Équipe d'analyse : 
+		- Utilisateurs : 
+			Personnel médical (medecin, infirmier, brancardier etc)
+
+		- Experts métiers :
+			Personnel médical senior
+
+		- Responsables de projet
+			
+
+Etape 2 : Analyse de la Situation
+Identifier le type de changement et ses implications : 
+	- Digitalisation des dossiers patients
+	- Digitalisation de la plannification des interventions 
+	- Equivalent Teams (canaux, par service, et services commun)
+
+Identifier les parties prenantes concernées : 
+	Ambassadeur :
+		- Directeur de l'hopital
+		- Medecin (besoin d'acceder rapidement a un grand nombre d'information de manière simple sans intermédiaire (secretaire))
+		- Equipe informatique
+		
+	Suiveurs : 
+		- Personnel médicale
+
+	Opposants :
+		- Personnel administratif (peur de perdre la valeur de leur poste)
+		- Non à l'aise avec les outils numérique
+		- Refractaire à l'évolution de manière générale (vieux jeu)
+
+	Indifférents : 
+		- Personnel administratif 
+
+	Décideurs clés : 
+		- Celui qui a les sous
+		- Equipe informatique
+		- Directeur de l'Hopital
+
+Detecter les sources potentielles de résistances : 
+	- Opposants
+	- Sécurité des données / secret médical (qui a accès a quoi)
+	- Dependant electricité / serveur --> Blocage total
+
+
+Etape 3 :
+Definir une vision claire et les objectifs du changements : 
+	- Accès facilité aux informations utiles aux spécialiste / personnel médical
+	- Éviter les échanges superflux et redondant
+	- Éviter les pertes d'information (format papier = volatil/unique)
+	- Doit simplifier la vie et non la complexifié 
+
+Élaborer une stratégie pour impliquer les parties prenantes : 
+	- Audit du niveau générale d'aisance avec l'outil numérique (adaptation des formations en conséquence)
+	- Implication lors de la création du système d'information
+	- Formation pour les utilisateurs (spécialiste sur le terrain qui expliquera en temps réel comment agir avec les changements (personnel soignant = peu de temps libre))
+	- Récupération des feedback par les testeurs (Suiveurs, Opposants, Indifférents)
+	- Validation de la part des ambassadeur et décideurs clés (retour des feedback récupéré)
+	- Récupération des données générale
+	- Signalement des erreurs dans les dossiers
+	
+Planifier les communication (quoi, quand, comment, à qui)
+	- Quoi
+		- Prevenir de la digitalisation du SI
+		- Session de formation informative (utilisation ordinateur + ERP)
+		- Outils pour s'autoformer (video / tuto / jeu interactif)
+		- Formulaire de retour d'experience utilisateur (feedback)
+		- Mises à jours
+		
+	- Quand
+		- Dés la prise de décision de la digitalisation
+		- Lorsque première version dispo
+		- Avant Mise à jour
+		- Après Mise à jour
+		- Pour l'aspect formation (régulier, tous les mois)
+		- Résultat positif / négatif
+		
+	- Comment
+		- Affiche dans les bureaux
+		- Par email
+		- Réunion / Conférence  
+		 
+	- Qui
+		- chatbot question simple / aide a l'utilisation des outils
+		- Ambassadeurs (equipe informatique)
+
+Déterminer les indicateurs pour mesurer le succès du changement : 
+	- Net Promoter Score (satisfaction)
+	- Temps gagné par l'utilisation du numérique - papier -> Evolution en %
+	- Réactivité des équipes (taux d'attente des patients) 
+	- Nombre de patients traité avant / maintenant (effectif du personnel égal)
+	- Taux d'erreur sur les dossiers patient (informations manquante (possible dans le cas du papier))
+	
+
+	

@@ -1,0 +1,30 @@
+Cas de l'hôpital
+Analyse de l'étude de cas en identifiant
+
+1. Problèmes principaux rencontrés par l'organisation
+
+Résistance au changement : Le personnel administratif craint de perdre leur rôle face à la digitalisation.
+Compétence numérique : Des difficultés avec les outils numériques, notamment chez le personnel administratif.
+Sécurité des données : Risques liés à la protection des données médicales et respect du secret médical.
+Dépendance technologique : Risque de blocage total en cas de panne d’électricité ou de serveurs.
+
+2. Dimensions d’ITIL 4 concernées
+
+Dimension des Organisations et des Personnes : Implication du personnel médical et administratif dans le changement.
+Dimension de la Technologie : Intégration des outils numériques pour la gestion des dossiers et la communication.
+Dimension des Partenariats et Fournisseurs : Collaboration avec l’équipe informatique et les prestataires de services numériques.
+Dimension des Flux de Valeur et des Processus : Révision des processus de gestion des dossiers patients et de planification des interventions.
+
+3. Principes directeurs applicables
+
+Concentrer sur la valeur : S'assurer que les changements apportent une réelle valeur ajoutée pour le personnel médical et améliorent la qualité des soins.
+Commencer où vous êtes : Évaluer les compétences existantes du personnel avant d'implémenter de nouvelles technologies.
+Collaborer et promouvoir la visibilité : Travailler en étroite collaboration avec toutes les parties prenantes pour recueillir leurs retours et ajuster le projet.
+Améliorer de manière itérative avec des retours : Mettre en place des groupes pilotes pour tester les outils et recueillir des feedbacks.
+
+4. Pratiques d’ITIL 4 qui pourraient être utilisées
+
+Gestion des Changements : Gérer la transition vers de nouveaux outils numériques et assurer la formation adéquate.
+Gestion de la Connaissance : Créer des ressources d’auto-formation et des tutoriels pour aider le personnel à s’adapter.
+Gestion des Services : Évaluer et améliorer continuellement les services proposés par le système digitalisé.
+Gestion des Incidents et des Problèmes : Mettre en place des procédures pour résoudre rapidement les problèmes techniques et de sécurité.

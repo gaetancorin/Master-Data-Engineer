@@ -1,0 +1,48 @@
+Accompagnement au changement définition:
+Processus qui permet de fluidifier le changement au sein d'un système complexe afin de simplifier ce changement et d'améliorer les résultats
+
+1- Preparer le changement:
+Montrer les points critiques, exposer les défaillance actuelles
+
+2- Faire un plan d'action:
+Préparer les différentes étapes de changements, anticiper les potentiels freins et difficultés
+
+3- Mise en place du plan d'action:
+Communication et formation sur le plan d'action a implémenter
+Mise en pratique immédiate des premiers changements
+
+4- Adaptation continue suivant les feedback:
+Remonter des premiers retour des personnes impliqués
+Prise en compte et amélioration du plan d'action
+
+////////////////////////////////////////////////////////////////////////////////
+
+Comment faire l'Analyse fonctionnelle des besoins:
+
+1- Audit et solution actuelle de l'entreprise:
+Communication, dialogue, Audit, étude de marché, comparaison avec les solutions concurrentes.
+
+2- Etat du marché:
+Mise en place d'une stratégie de recueille de retour client.
+
+Page 37:
+Analyse de la situation:
+-------------------- Identifier le type de changement et ses implications.
+Les fichiers clients et données transités se feront par le SI plutôt que par format papier.
+Les interventions et planifications se feront directement que sur le SI plutôt que sur des planning ou des rendez-vous.
+Les services prendront rendez vous et communiquerons directement sur la plateforme.
+
+Les dossiers devient aussi transiter directement
+
+Cela implique une formation en interne pour apprendre a utiliser l'outils.
+Cela nécessite de changer les habitudes des collaborateurs, dont certains n'ont potentiellement pas l'habitude des démarches sur l'ordinateurs.
+
+--------------------- Identifier les parties prenantes concernées.
+Les parties prenantes sont les employés de l'hôpital (médecins, secrétaires, aides soignantes), 
+- Détecter les sources potentielles de résistance
+Elaboration du plan d'accompagnement au changement:
+Définir une vision claire et les objectifs du changement.
+- Élaborer une stratégie pour impliquer les parties prenantes.
+- Planifier les communications (quoi, quand, comment, à qui).
+- Prévoir des formations ou des supports nécessaires.
+- Déterminer les indicateurs pour mesurer le succès du changement.
