@@ -1,0 +1,18 @@
+5.0.2:
+TEMPERATURE1
+
+Les limites du modèle de la table temperature1 est que on ne peut pas faire du multi-filtrage sans avoir d'index, ou mettre ALLOW FILTERING qui force le filtrage.
+
+TEMPERATURE2
+
+Les limites du modèle de température2 sont les même que celle de température1
+
+TEMPERATURE3
+
+CREATE TABLE temperature3 ( ville text , jour text , heure text , temperature int , PRIMARY KEY (( ville , jour ), heure ));
+
+INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -20 ’, ’8 ’, 7);
+INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -20 ’, ’9 ’, 8);
+INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -20 ’, ’10 ’ , 7);
+INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -21 ’, ’10 ’ , 7);
+
