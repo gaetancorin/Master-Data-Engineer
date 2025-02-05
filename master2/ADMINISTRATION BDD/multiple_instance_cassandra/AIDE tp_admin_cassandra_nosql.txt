@@ -1,4 +1,0 @@
-docker exec -it cassandra-1 cqlsh
-	CONSISTENCY;
-	CONSISTENCY LOCAL_QUORUM;
-	CONSISTENCY ONE;

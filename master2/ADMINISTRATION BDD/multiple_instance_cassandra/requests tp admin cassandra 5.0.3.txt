@@ -1,0 +1,7 @@
+SELECT nPoste, typePoste FROM Poste WHERE nPoste = 'p8';
+
+SELECT nomPoste , indIP , ad , nSalle FROM Poste WHERE typePoste = 'UNIX' OR typePoste = 'PCWS';
+ne marche pas, adaptation:
+SELECT nomPoste, indIP, ad, nSalle FROM Poste WHERE typePoste IN ('UNIX', 'PCWS') ALLOW FILTERING;
+
+

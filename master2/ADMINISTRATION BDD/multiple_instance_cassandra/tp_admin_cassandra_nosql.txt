@@ -1,3 +1,8 @@
+docker exec -it cassandra-1 cqlsh
+	CONSISTENCY;
+	CONSISTENCY LOCAL_QUORUM;
+	CONSISTENCY ONE;
+
 5.0.2:
 TEMPERATURE1
 
@@ -16,3 +21,126 @@ INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Par
 INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -20 ’, ’10 ’ , 7);
 INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -21 ’, ’10 ’ , 7);
 
+
+
+5.0.3:
+
+---- CAS 1 -----:
+
+---- Non indenté--- :
+
+CREATE KEYSPACE myKeyspace WITH replication = { 'class': 'SimpleStrategy', 'replication_factor': 3};
+DESCRIBE KEYSPACES;
+USE myKeyspace;
+
+DESCRIBE TABLES;
+
+CREATE TABLE Poste ( nPoste text , nomPoste text,  typePoste text , indIP text , ad text , nSalle text , PRIMARY KEY (nPoste) );
+CREATE TABLE Salle ( nSalle text , nomSalle text , PRIMARY KEY (nSalle) );
+CREATE TABLE Segment ( nomSegment text , indIP text , PRIMARY KEY (nomSegment) );
+CREATE TABLE Installer ( nPoste text , nLog text , PRIMARY KEY (nPoste, nLog) );
+CREATE TABLE Logiciel ( nLog text , nomLog text , typeLog text , prix float, dateAch timestamp, PRIMARY KEY (nLog) );
+
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES ('p1', 'poste1', 'UNIX', '130.120.80', 'ad48', 's1');
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p2', 'poste2', 'PCWS', '130.120.80.2', 'ad48', 's1');
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p3', 'poste3', 'PCWS', '130.120.80.1', 'ad48', 's3');
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p4', 'poste4', 'UNIX', '130.120.80', 'ad54', 's1');
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p5', 'poste5', 'TX', '130.120.80', 'ad80', 's2');
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p8', 'poste8', 'TX', '130.120.80', 'ad80', 's2');
+
+SELECT * FROM poste;
+
+INSERT INTO Salle ( nSalle, nomSalle ) VALUES('s1', 'salle1');
+INSERT INTO Salle ( nSalle, nomSalle ) VALUES('s2', 'salle2');
+INSERT INTO Salle ( nSalle, nomSalle ) VALUES('s3', 'salle3');
+
+SELECT * FROM Salle;
+
+INSERT INTO Segment ( nomSegment, indIP ) VALUES('etage48', 'ad48');
+INSERT INTO Segment ( nomSegment, indIP ) VALUES('etage80', 'ad80');
+INSERT INTO Segment ( nomSegment, indIP ) VALUES('etage54', 'ad54');
+
+SELECT * FROM Segment;
+
+INSERT INTO Logiciel ( nLog, nomLog, typeLog, prix, dateAch ) VALUES('log1', 'logiciel1', 'UNIX', 900.00, '2024-02-04');
+INSERT INTO Logiciel ( nLog, nomLog, typeLog, prix, dateAch ) VALUES('log2', 'logiciel2', 'UNIX', 1900.00, '2024-01-04');
+INSERT INTO Logiciel ( nLog, nomLog, typeLog, prix, dateAch ) VALUES('log3', 'logiciel3', 'WINDOWS', 500.00, '2024-01-14');
+
+SELECT * FROM Logiciel;
+
+INSERT INTO Installer ( nPoste, nLog ) VALUES('p1', 'log1');
+INSERT INTO Installer ( nPoste, nLog ) VALUES('p2', 'log1');
+INSERT INTO Installer ( nPoste, nLog ) VALUES('p2', 'log2');
+INSERT INTO Installer ( nPoste, nLog ) VALUES('p2', 'log3');
+INSERT INTO Installer ( nPoste, nLog ) VALUES('p2', 'log3');
+INSERT INTO Installer ( nPoste, nLog ) VALUES('p3', 'log3');
+
+SELECT * FROM Installer;
+
+
+----- Indenté ---------:
+CREATE TABLE Poste (
+    nPoste TEXT, 
+    nomPoste TEXT,  
+    typePoste TEXT, 
+    indIP TEXT, 
+    ad TEXT, 
+    nSalle TEXT, 
+    PRIMARY KEY (nPoste)
+);
+
+CREATE TABLE Salle (
+    nSalle TEXT, 
+    nomSalle TEXT, 
+    PRIMARY KEY (nSalle)
+);
+
+CREATE TABLE Segment (
+    nomSegment TEXT, 
+    indIP TEXT, 
+    PRIMARY KEY (nomSegment)
+);
+
+CREATE TABLE Installer (
+    nPoste TEXT, 
+    nLog TEXT, 
+    PRIMARY KEY (nPoste, nLog)
+);
+
+CREATE TABLE Logiciel (
+    nLog TEXT, 
+    nomLog TEXT, 
+    typeLog TEXT, 
+    prix FLOAT, 
+    dateAch TIMESTAMP, 
+    PRIMARY KEY (nLog)
+);
+
+
+-----  CAS 2 ----- :
+CREATE TABLE Poste (
+    nPoste TEXT, 
+    nomPoste TEXT, 
+    typePoste TEXT,
+    indIP TEXT,
+    nSegment TEXT, 
+    ad TEXT, 
+    nSalle TEXT, 
+    PRIMARY KEY (nPoste)
+);
+
+CREATE TABLE Logiciel (
+    nLog TEXT, 
+    nomLog TEXT, 
+    typeLog TEXT, 
+    prix FLOAT, 
+    dateAch TIMESTAMP,
+    PRIMARY KEY (nLog)
+);
+
+CREATE TABLE Postes_Par_Logiciel (
+    nLog TEXT, 
+    nPoste TEXT,
+    dateIns TIMESTAMP,
+    PRIMARY KEY (nLog, nPoste)
+);
