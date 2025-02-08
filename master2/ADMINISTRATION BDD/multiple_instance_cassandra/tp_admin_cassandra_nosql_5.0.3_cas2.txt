@@ -1,0 +1,90 @@
+----------- exercice 5.0.3 ( CAS 2 ) ---------
+
+-- CAS1 / CAS 2 ---
+CREATE TABLE Poste_By_Type (
+    typePoste text,
+    nPoste text,
+    nomPoste text,
+    indIP text,
+    ad text,
+    nSalle text,
+    PRIMARY KEY (typePoste, nPoste)
+);
+SELECT nPoste, typePoste FROM Poste_By_Type WHERE nPoste = 'p8';
+
+SELECT nomPoste, indIP, ad, nSalle FROM Poste_By_Type WHERE typePoste IN ('UNIX', 'PCWS');
+
+--- CAS3 ---
+CREATE TABLE Poste_By_IndIP (
+    indIP text,
+    nSalle text,
+    nPoste text,
+    nomPoste text,
+    ad text,
+    typePoste text,
+    PRIMARY KEY (indIP, nSalle, nPoste)
+) WITH CLUSTERING ORDER BY (nSalle DESC);
+
+SELECT nomPoste, indIP, ad, nSalle FROM Poste_By_IndIP WHERE indIP = '130.120.80';
+
+--- CAS4 ---
+CREATE TABLE Installer_Count (
+    nPoste text PRIMARY KEY,
+    count counter
+);
+
+UPDATE Installer_Count SET count = count + 1 WHERE nPoste = ?;
+
+SELECT nPoste FROM Installer_Count WHERE count = 2;
+
+--- CAS5 ---
+CREATE TABLE Logiciel_By_Type (
+    typeLog text,
+    nLog text,
+    nomLog text,
+    PRIMARY KEY (typeLog, nLog)
+);
+
+SELECT nomLog FROM Logiciel_By_Type WHERE typeLog = 'UNIX';
+
+--- CAS6 / CAS7 ---
+CREATE TABLE Logiciel (
+    nLog text PRIMARY KEY,
+    nomLog text,
+    typeLog text,
+    prix decimal,
+    dateAch date
+);
+
+SELECT AVG(prix) FROM Logiciel WHERE typeLog = 'UNIX';
+
+SELECT MAX(dateAch) FROM Logiciel;
+
+--- CAS8 ---
+CREATE TABLE Installer_By_Poste (
+    nPoste text,
+    nLog text,
+    PRIMARY KEY (nPoste, nLog)
+);
+
+SELECT nPoste, COUNT(nLog) FROM Installer_By_Poste GROUP BY nPoste;
+
+--- CAS9 ---
+CREATE TABLE Segment_By_TypePoste (
+    typePoste text,
+    indIP text,
+    nomSegment text,
+    PRIMARY KEY (typePoste, indIP)
+);
+
+SELECT nomSegment FROM Segment_By_TypePoste WHERE typePoste = 'TX';
+
+--- CAS10 ---
+CREATE TABLE Salle_By_Logiciel (
+    nomLog text,
+    nSalle text,
+    nomSalle text,
+    PRIMARY KEY (nomLog, nSalle)
+);
+
+SELECT nomSalle FROM Salle_By_Logiciel WHERE nomLog = 'Oracle_6';

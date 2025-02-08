@@ -1,16 +1,22 @@
+Aller sur le node cassandra-1:
 docker exec -it cassandra-1 cqlsh
+
+Voir la consistency(et la changer si nécessaire):
 	CONSISTENCY;
 	CONSISTENCY LOCAL_QUORUM;
 	CONSISTENCY ONE;
 
-5.0.2:
+/////////////////////////////  5.0.2 : //////////////////////////////////////
 TEMPERATURE1
 
-Les limites du modèle de la table temperature1 est que on ne peut pas faire du multi-filtrage sans avoir d'index, ou mettre ALLOW FILTERING qui force le filtrage.
+Les limites du modèle de la table temperature1 est que avec ce type d'index, on ne peux pas avoir plusieurs températures différentes pour une même ville.
+L'ajout d'une nouvelle température d'une ville supprime l'ancienne valeur et la rempalce par la nouvelle. Ce n'est pas ce que nous voulons.
 
 TEMPERATURE2
 
-Les limites du modèle de température2 sont les même que celle de température1
+Le modèle de température2 est déjà mieu que le modèle de temperature1, car il nous permet d'avoir une température par ville et par jour.
+Cependant, pour le cas de la temperature, on peux s'attendre a vouloir obtenir de nombreuses données de température pour une journée donnée à une ville donnée.
+Il faudrait donc donné la possibilité de pouvoir avoir une température par ville, par jour ainsi que par heures et par minutes. et créant un index adéquat a cette usage.
 
 TEMPERATURE3
 
@@ -21,13 +27,15 @@ INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Par
 INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -20 ’, ’10 ’ , 7);
 INSERT INTO temperature3 ( ville , jour , heure , temperature ) VALUES ( ’ Paris ’ , ’ 2014 -01 -21 ’, ’10 ’ , 7);
 
+Les partitions sont différentes pour les 3 modèles température1, température2 et température3.
+Pour température1: PRIMARY KEY ( ville ))
+Pour température2: PRIMARY KEY ( ville , record_date ))
+Pour température3: PRIMARY KEY (( ville , jour ), heure )
+On vois que pour ces modèles, la primarykey devient de plus en plus complexe, pour pouvoir stocker de nouvelles informations sans écraser les anciennes.
+Sur température3, le fait d'avoir ville et jour en clé de partition, et heure en clé de clustering permet de rapidement récupérer l'information lorsqu'elle est lu.
 
 
-5.0.3:
-
----- CAS 1 -----:
-
----- Non indenté--- :
+///////////////////////////////// EXERCICE  5.0.3 (CAS1) /////////////////////////////////////////
 
 CREATE KEYSPACE myKeyspace WITH replication = { 'class': 'SimpleStrategy', 'replication_factor': 3};
 DESCRIBE KEYSPACES;
@@ -35,18 +43,19 @@ USE myKeyspace;
 
 DESCRIBE TABLES;
 
-CREATE TABLE Poste ( nPoste text , nomPoste text,  typePoste text , indIP text , ad text , nSalle text , PRIMARY KEY (nPoste) );
+CREATE TABLE Poste ( nPoste text , nomPoste text,  typePoste text , indIP text , ad text , nSalle text , PRIMARY KEY ((typePoste, indIP), nSalle, nPoste) ) WITH CLUSTERING ORDER BY (nSalle DESC); 
 CREATE TABLE Salle ( nSalle text , nomSalle text , PRIMARY KEY (nSalle) );
-CREATE TABLE Segment ( nomSegment text , indIP text , PRIMARY KEY (nomSegment) );
+CREATE TABLE Segment ( nomSegment text , indIP text ,  typePoste text, PRIMARY KEY((typePoste), indIP, nomSegment ));
 CREATE TABLE Installer ( nPoste text , nLog text , PRIMARY KEY (nPoste, nLog) );
-CREATE TABLE Logiciel ( nLog text , nomLog text , typeLog text , prix float, dateAch timestamp, PRIMARY KEY (nLog) );
+CREATE TABLE Logiciel ( nLog text , nomLog text , typeLog text , prix float, dateAch timestamp, PRIMARY KEY ((typeLog), nLog) );
 
 INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES ('p1', 'poste1', 'UNIX', '130.120.80', 'ad48', 's1');
 INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p2', 'poste2', 'PCWS', '130.120.80.2', 'ad48', 's1');
 INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p3', 'poste3', 'PCWS', '130.120.80.1', 'ad48', 's3');
 INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p4', 'poste4', 'UNIX', '130.120.80', 'ad54', 's1');
 INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p5', 'poste5', 'TX', '130.120.80', 'ad80', 's2');
-INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p8', 'poste8', 'TX', '130.120.80', 'ad80', 's2');
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p6', 'poste6', 'TX', '130.120.80', 'ad80', 's2');
+INSERT INTO Poste (nPoste, nomPoste, typePoste, indIP, ad, nSalle) VALUES('p8', 'poste8', 'UNIX', '130.120.80', 'ad80', 's2');
 
 SELECT * FROM poste;
 
@@ -56,9 +65,9 @@ INSERT INTO Salle ( nSalle, nomSalle ) VALUES('s3', 'salle3');
 
 SELECT * FROM Salle;
 
-INSERT INTO Segment ( nomSegment, indIP ) VALUES('etage48', 'ad48');
-INSERT INTO Segment ( nomSegment, indIP ) VALUES('etage80', 'ad80');
-INSERT INTO Segment ( nomSegment, indIP ) VALUES('etage54', 'ad54');
+INSERT INTO Segment ( nomSegment, indIP, typePoste ) VALUES('etage48', '130.120.80', 'TX');
+INSERT INTO Segment ( nomSegment, indIP, typePoste ) VALUES('etage80',  '130.120.80.2', 'TX');
+INSERT INTO Segment ( nomSegment, indIP, typePoste ) VALUES('etage54','130.120.80.1', 'UNIX');
 
 SELECT * FROM Segment;
 
@@ -77,70 +86,30 @@ INSERT INTO Installer ( nPoste, nLog ) VALUES('p3', 'log3');
 
 SELECT * FROM Installer;
 
+-------------------------------------------------------------------------------------
+Réalisation des nouvelles requêtes avec les nouvelles tables:
+--------------------------------------------------------------------------------------
 
------ Indenté ---------:
-CREATE TABLE Poste (
-    nPoste TEXT, 
-    nomPoste TEXT,  
-    typePoste TEXT, 
-    indIP TEXT, 
-    ad TEXT, 
-    nSalle TEXT, 
-    PRIMARY KEY (nPoste)
-);
+SELECT nPoste, typePoste FROM Poste WHERE nPoste = 'p8';
 
-CREATE TABLE Salle (
-    nSalle TEXT, 
-    nomSalle TEXT, 
-    PRIMARY KEY (nSalle)
-);
+SELECT nomPoste, indIP, ad, nSalle FROM Poste WHERE typePoste IN ('UNIX', 'PCWS') ALLOW FILTERING;
 
-CREATE TABLE Segment (
-    nomSegment TEXT, 
-    indIP TEXT, 
-    PRIMARY KEY (nomSegment)
-);
+SELECT nomPoste, indIP, ad, nSalle FROM Poste WHERE typePoste IN ('UNIX', 'PCWS') AND indIP = '130.120.80';
 
-CREATE TABLE Installer (
-    nPoste TEXT, 
-    nLog TEXT, 
-    PRIMARY KEY (nPoste, nLog)
-);
+SELECT nPoste FROM Installer GROUP BY nPoste HAVING COUNT ( nLog )=2;
+(ne fonctionne pas a cause du count)
 
-CREATE TABLE Logiciel (
-    nLog TEXT, 
-    nomLog TEXT, 
-    typeLog TEXT, 
-    prix FLOAT, 
-    dateAch TIMESTAMP, 
-    PRIMARY KEY (nLog)
-);
+SELECT nomLog FROM Logiciel WHERE typeLog = 'UNIX';
 
+SELECT AVG ( prix ) FROM Logiciel WHERE typeLog = 'UNIX';
 
------  CAS 2 ----- :
-CREATE TABLE Poste (
-    nPoste TEXT, 
-    nomPoste TEXT, 
-    typePoste TEXT,
-    indIP TEXT,
-    nSegment TEXT, 
-    ad TEXT, 
-    nSalle TEXT, 
-    PRIMARY KEY (nPoste)
-);
+SELECT MAX ( dateAch ) FROM Logiciel ;
 
-CREATE TABLE Logiciel (
-    nLog TEXT, 
-    nomLog TEXT, 
-    typeLog TEXT, 
-    prix FLOAT, 
-    dateAch TIMESTAMP,
-    PRIMARY KEY (nLog)
-);
+SELECT nLog, COUNT(nPoste) FROM Installer WHERE nLog = 'log1' ALLOW FILTERING;
+SELECT nPoste, COUNT(nLog) FROM Installer WHERE nPoste = 'p1' ALLOW FILTERING;
+ (necessite allow filtering sur une des 2 requetes, car pour être retiré, la key de partition ne peut être aapter que sur une seule de ces requêtes, )
 
-CREATE TABLE Postes_Par_Logiciel (
-    nLog TEXT, 
-    nPoste TEXT,
-    dateIns TIMESTAMP,
-    PRIMARY KEY (nLog, nPoste)
-);
+SELECT nomSegment FROM Segment WHERE typePoste = 'TX';
+
+SELECT nomSalle FROM Salle NATURAL JOIN Poste NATURAL JOIN Installer NATURAL JOIN Logiciel WHERE nomLog = 'Oracle_6';
+Requête impossible, car les jointures sont impossible, et le fait de modifier la key de poste casserais les requêtes précédentes. 
