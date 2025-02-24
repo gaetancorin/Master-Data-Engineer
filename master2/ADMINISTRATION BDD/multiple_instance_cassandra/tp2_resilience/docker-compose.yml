@@ -1,0 +1,36 @@
+version: '3.9'
+services:
+  cassandra-A:
+    image: cassandra:5.0
+    container_name: cassandra-A
+    hostname: cassandra-A
+    ports:
+      - "9042:9042"
+    environment:
+      - CASSANDRA_SEEDS=cassandra-A
+      - CASSANDRA_CLUSTER_NAME=MyCluster
+      - CASSANDRA_NUM_TOKENS=16
+      - CASSANDRA_DC=DC1
+      - CASSANDRA_RACK=RACK1
+      # - MAX_HEAP_SIZE=2G
+      # - HEAP_NEWSIZE=512M
+    networks:
+      - cassandra-net
+
+  cassandra-B:
+    image: cassandra:5.0
+    container_name: cassandra-B
+    hostname: cassandra-B
+    environment:
+      - CASSANDRA_SEEDS=cassandra-A
+      - CASSANDRA_CLUSTER_NAME=MyCluster
+      - CASSANDRA_NUM_TOKENS=16
+      - CASSANDRA_DC=DC1
+      - CASSANDRA_RACK=RACK2
+      # - MAX_HEAP_SIZE=2G
+      # - HEAP_NEWSIZE=512M
+    networks:
+      - cassandra-net
+
+networks:
+  cassandra-net:

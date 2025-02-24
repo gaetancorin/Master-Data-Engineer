@@ -1,0 +1,40 @@
+---- TP2 ----
+1.-------------
+2.------------
+* Installation de cassandra-driver:
+pip install cassandra-driver
+
+* Aller sur le node cassandra-A:
+docker exec -it cassandra-A cqlsh 127.0.0.1 9042
+
+* Création de la base de test:
+CREATE KEYSPACE IF NOT EXISTS test_retry WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 2};
+USE test_retry;
+CREATE TABLE IF NOT EXISTS users (
+id UUID PRIMARY KEY,
+name TEXT,
+age INT
+);
+
+SELECT * FROM users;
+
+* Sortir du nœud:
+exit
+
+3.-----------------------------
+* Lancer le fichier python
+python .\fichier_python_clean_hand.py
+
+4.-------------------------------------------------
+* Voir l'état des nœuds:
+docker exec -it cassandra-A nodetool status
+
+ou
+
+docker exec -it cassandra-A /bin/bash
+nodetool status
+
+
+DCAwareRoundRobinPolicy
+
+
