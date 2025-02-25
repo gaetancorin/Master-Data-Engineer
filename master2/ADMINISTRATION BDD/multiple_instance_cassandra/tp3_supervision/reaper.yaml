@@ -1,0 +1,7 @@
+cassandra:
+  clusterName: "MyCluster"
+  contactPoints: ["127.0.0.1"]
+  port: 9042
+  # Uncomment and set if authentication is enabled
+  # username: "cassandra_user"
+  # password: "cassandra_pass"
