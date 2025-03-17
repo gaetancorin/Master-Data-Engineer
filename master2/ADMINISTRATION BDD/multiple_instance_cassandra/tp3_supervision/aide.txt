@@ -1,1 +1,53 @@
 docker-compose up -d
+docker exec -it cassandra-C bash
+
+(effacer dossier:
+rm -rf /opt/prometheus
+)
+docker cp "C:\Users\gaeta\Downloads\prometheus-3.2.1.linux-amd64" cassandra-C:/opt/prometheus
+--------------------------------------------------------
+Installer MCAC:
+(GitHub https://github.com/datastax/metric-collector-for-apache-cassandra)
+docker exec -it cassandra-C bash
+cd /opt
+wget https://github.com/datastax/metric-collector-for-apache-cassandra/releases/download/v0.3.5/datastax-mcac-agent-0.3.5-4.1-beta1.tar.gz
+AIDE: (https://github.com/datastax/metric-collector-for-apache-cassandra/releases/tag/v0.3.5)
+tar -xvf datastax-mcac-agent-0.3.5-4.1-beta1.tar.gz
+mv datastax-mcac-agent-0.3.5-4.1-beta1 mcac
+cd mcac
+cd lib
+(on voit la librairie datastax-mcac-agent.jar)
+
+--------------------------------------------------
+Parametrer config cassandra pour utiliser MCAC
+cd ..
+cd etc/cassandra
+apt install nano -y
+nano cassandra-env.sh
+ecrire sur le fichier tout a la fin:
+MCAC_ROOT="/opt/mcac"
+JVM_OPTS="$JVM_OPTS -javaagent:${MCAC_ROOT}/lib/datastax-mcac-agent.jar"
+
+Eteindre et rallumer cassandra avec docker-desktop
+pas de bug -> mcac marche !
+
+------------------------------------------------------
+Installer Prometheus (https://prometheus.io/download/)
+cd /opt
+mkdir prometheus
+cd prometheus
+wget https://github.com/prometheus/prometheus/releases/download/v3.2.1/prometheus-3.2.1.linux-amd64.tar.gz
+tar -xvf prometheus-3.2.1.linux-amd64.tar.gz
+mv prometheus-3.2.1.linux-amd64 prometheus
+cd prometheus
+nano prometheus.yml
+copier dans le fichier:
+  - job_name: 'mcac'
+    static_configs:
+      - targets: ['localhost:8080']
+  - job_name: 'cassandra_reaper'
+    static_configs:
+       - targets: ['localhost:8081']
+
+./prometheus --config.file=prometheus.yml
+

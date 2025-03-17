@@ -18,23 +18,35 @@ age INT
 
 SELECT * FROM users;
 
+----------------------------------------------
 * Sortir du nœud:
 exit
-
-3.-----------------------------
+---------------------------------------------
 * Lancer le fichier python
 python .\fichier_python_clean_hand.py
-
 4.-------------------------------------------------
 * Voir l'état des nœuds:
 docker exec -it cassandra-A nodetool status
-
 ou
-
 docker exec -it cassandra-A /bin/bash
 nodetool status
-
-
+--------------------------------------
 DCAwareRoundRobinPolicy
+--------------------------------------------------
+installer mcac sur un nœud cassandra
 
+docker exec -it cassandra-C bash
+cd /opt
+apt update
+apt install git -y
+git clone https://github.com/datastax/metric-collector-for-apache-cassandra.git mcac
+cd mcac
 
+--------------------------------------------------
+Parametrer config cassandra pour utiliser MCAC
+cd etc/cassandra
+apt install nano -y
+nano cassandra-env.sh
+ecrire sur le fichier tout a la fin:
+MCAC_ROOT=/opt/mcac
+JVM_OPTS="$JVM_OPTS -javaagent:${MCAC_ROOT}/lib/datastax-mcac-agent.jar"
