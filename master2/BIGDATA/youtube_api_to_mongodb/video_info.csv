@@ -1,0 +1,1232 @@
+video_id,title,publishedAt,channelId,description,view_count,like_count,favorite_count,comment_count,tags,defaultLanguage
+BKITcu7muVs,Prefect + Dask | Keynote: Dask & Prefect for Healthcare Machine Learning on AWS | Dask Summit 2021,2021-06-22T22:37:02Z,UCj9eavqmvwaCyKhIlu2GaoA,"Speakers - Joe Schmid, Jie Lou
+
+In early 2019, SymphonyRM started a very ambitious R&D phase to develop machine learning models across many disease areas on clinical healthcare data. To achieve our vision, we needed infrastructure to give our data scientists superpowers. The combination of Dask and Prefect turned out to be incredibly powerful and productive, allowing us to achieve excellent results.
+
+===
+
+The Dask Distributed Summit is where users, contributors, and newcomers can share experiences to learn from one another and grow together. The Dask Distributed Summit provides content, information, and learning opportunities for attendees of all levels of Dask familiarity and expertise.
+
+Check out  for more information. 
+https://summit.dask.org/",790,11,0,0,,N/A
+AXWfdu9f8sU,Finally! An Open Solution to Solve for Persistent Storage,2017-05-08T20:46:20Z,UC76AVf2JkrwjxNKMuPpscHQ,"Storage implementations are changing every few months. From driver interfaces to managed plugins and the store, code is continually being updated to adhere with new attempts at solving ""the storage problem"". Good thing for you, there is an option that allows you to focus on your platform while ensuring interoperability with cloud native platforms. Get a deep-dive into REX-Ray that brings Docker Plugin compatibility to your platform, takes advantage of built-in features such as high availability and a CLI for operations, and solves the persistent storage problem for all.",13761,55,0,1,"docker, containers, CLI, REX-Ray, Operations, interoperablility, interfaces, storage problems, Ecosystem",N/A
+J5R_gtpKnKg,DevOps for Machine Learning Projects,2020-06-24T13:03:47Z,UCDHao9FxNRHw1VyLuGXI_rA,"In this session, Dmitry Pretrov and Ivan Shcheklein - co-founders of DVC - discuss:
+
+1. How software engineering principles apply to Machine Learning development and deployment.
+2. How ML systems are different from traditional applications.
+3. Importance of data versioning.
+
+For more details, visit: https://hasgeek.com/fifthelephant/making-data-science-work-session-3/",228,4,0,0,"hasgeek, The Fifth Elephant, DevOps, software engineering, Machine Learning, Data Version Control",en
+BXHtoSn_9dw,Advanced Spark and TensorFlow Meetup: San Jose Convention Center March 16th,2017-06-02T08:17:00Z,UCFX-U3YT1ANC907BzvhNn7Q,"If you missed the March 16th Advanced Spark and TensorFlow Meetup watch the tech talks on In-Stream Processing, Apache Beam and Flink Streaming. The event was sponsored by Grid Dynamics (https://www.griddynamics.com/), the engineering IT services company known for transformative, mission-critical cloud solutions for retail, finance and technology sectors.
+
+Time-stamped video highlights:
+
+00:00:00 Event Intro
+4:27 Pipeline I/O Update
+9:13 Victoria talk Introduction; Open Blueprint for In-Stream Processing
+16:35 What is “real time,” anyway?
+20:38 Top 6 drivers of real-time applications
+26:42 In-Stream Processing is the emerging platform for real-time analytics
+31:40 Build or buy? Many choices need to be made
+34:46 Grid Dynamics open blueprint for ISP
+44:23 Reference Implementation: Fully-automated Devops stack runs ISP on any modern cloud
+50:01 Demo uses real-time Twitter sentiment analytics for new movie reviews
+1:00:00 Q&A
+1:10:38 Apache Beam
+1:18:12 Millwheel and Windmill 
+1:39:51 Apache Flink Feature Overview
+1:47:33 Advancer Event-Driven Applications
+1:54:18 Flink Demo, with Sample Code
+2:06:57 Q&A; Discussion of Business Uses
+2:22:34 End
+
+Talk info: talk titles, abstracts, and speaker bios
+ 
+00:09:13 Talk #1: Reference Architecture for In-Stream Processing Service, Illustrated by Real-time Twitter Sentiment Analytics application.
+
+by Victoria Livschitz, Founder/CTO of GridDynamics 
+ 
+Abstract: Stream processing architectures are rapidly emerging in various business domains to offer real-time ML and processing applications such as fraud detection, risk management, sentiment analytics and many more.
+
+Topics presented by Victoria will include:
+-Introduction to In-Stream Processing
+-Introduction to Real-time sentiment analysis of Twitter streams applications
+-Overview of Reference Architecture (RA) for ISP using Kafka/Spark Streaming/ Cassandra/Redis/HDFS
+-Overview of Reference Implementation (RI) and devops stack for portable cloud deployment using Docker, Mesos/Marathon, Ansible and Tonomi
+-Demonstration of all technologies at work 
+ 
+Speaker Bio: 
+Victoria Livschitz https://www.linkedin.com/in/victorialivschitz/ is a founder and CTO of Grid Dynamics, the engineering services company that specializes, amongst other things, in the design of big data, real-time analytics and machine learning applications using open source technologies running in a cloud-portable immutable infrastructure. Victoria will present the reference architecture for In-Stream Processing Service that designed with 100% open source components and runs on any cloud. See the slides from the talk here https://www.slideshare.net/griddynamics/open-blueprint-for-realtime-analytics-in-retail
+
+ 
+1:07:41 Talk #2: Deep Dive into Apache Beam
+By Tyler Akidau and Reuven Lax, Google
+
+Abstract: In this talk, Tyler will describe the architecture of Apache Beam and Google Cloud Dataflow, a well-designed, high-performance streaming engine.
+
+Apache Beam is the set of open source SDKs for writing pipelines, and you can then run these Beam pipelines on any platform with a supported Runner (currently: Apache Apex, Apache Flink, Apache Spark, and Google Cloud Dataflow). 
+
+Cloud Dataflow is Google's closed-source execution engine provided as a managed service on Google Cloud for running Beam pipelines.
+
+The goal of this talk is to understand the unique patterns, design choices, and trade-offs that make Apache Beam and Cloud Dataflow compelling options. 
+
+Speaker Bios:
+Tyler Akidau https://www.linkedin.com/in/tyler-akidau-5221672 and Reuven Lax https://www.linkedin.com/in/reuven-lax-a82818/ are Software Engineers at Google. 
+Tyler is focused on the Apache Beam streaming programming model. 
+Reuven is focused on the Google Cloud Dataflow streaming execution engine.
+
+01:39:51 Talk #3 :Deep Dive into Flink Streaming by Jamie Grier, Data Artisans
+
+Abstract: In this talk, Jamie will describe the architecture of Flink Streaming - a well-designed, high-performance streaming engine.
+
+While some comparisons will be made to Spark Streaming, this talk is not intended to convince people to switch to Flink Streaming.  
+
+The goal of this talk is to understand the unique patterns, design choices, and trade-offs that make Flink Streaming a compelling option.  
+
+Speaker Bio:
+Jamie Grier  https://www.linkedin.com/in/jamiegrier (based in San Francisco) is Director of Application Development at Data Artisans (based in Berlin).  
+
+Jamie also serves as Developer Advocate, Solution Architect, Sales Engineer, and many other roles required by a startup!
+
+See more from Grid Dynamics 
+Linkedin https://www.linkedin.com/company/grid-dynamics 
+Twitter https://twitter.com/griddynamics 
+Facebook https://www.facebook.com/griddynamics 
+Google plus https://plus.google.com/b/115302417170674279390/115302417170674279390 
+Youtube channel https://www.youtube.com/channel/UCFX-U3YT1ANC907BzvhNn7Q 
+Technical blog https://blog.griddynamics.com/",459,4,0,0,"Big data, Stream Processing, In-Stream Processing, Victoria Livschitz, Strata Hadoop world, Advanced Spark and Tensorflow Meetup, TensorFlow, Apache Flink, Apache Beam, Spark Streaming, Streaming analytics, Kafka, Cassandra, Redis, HDFS, Docker, Mesos, Marathon, Ansible, Tonomi, Tyler Akidau, Reuven Lax, Google Cloud, Dataflow, Jamie Grier, Data Artisans, Flink Streaming, Real time analytics, Complex event processing",N/A
+vGqQFbVjWng,Scalable Monitoring Using Prometheus with Spark Cluster (Diane Feddema & Zak Hassan),2018-09-23T19:23:06Z,UC3q8O3Bh2Le8Rj1-Q-_UUbA,"Diane Feddem, a, a principal software engineer at Red Hat Inc, and Zak Hassan, a Software Engineer on the Data Analytics Team working on Data Science and Machine Learning, talk about Apache Spark applications moveing to a containerized environment. There are many questions about how to best configure server systems in the container world. In this talk, we will demonstrate a set of tools to better monitor performance and identify optimal configuration settings. 
+
+
+Learn more here: https://databricks.com/session/deep-dive-into-spark-sql-with-advanced-performance-tuning
+
+Article you might like: https://databricks.com/session/how-neural-networks-see-social-networks
+About: Databricks provides a unified data analytics platform, powered by Apache Spark™, that accelerates innovation by unifying data science, engineering and business.
+Read more here: https://databricks.com/product/unified-data-analytics-platform
+
+Connect with us:
+Website: https://databricks.com
+Facebook: https://www.facebook.com/databricksinc
+Twitter: https://twitter.com/databricks
+LinkedIn: https://www.linkedin.com/company/databricks
+Instagram: https://www.instagram.com/databricksinc/ Databricks is proud to announce that Gartner has named us a Leader in both the 2021 Magic Quadrant for Cloud Database Management Systems and the 2021 Magic Quadrant for Data Science and Machine Learning Platforms. Download the reports here. https://databricks.com/databricks-named-leader-by-gartner",1875,15,0,0,"apache spark, promethus, scalable",en
+a93M3AXqkxY,Improving IT Operations and CI/CD with Red Hat OpenShift – Bank of Portugal Success Case | OSL2020,2021-06-18T14:29:29Z,UCpI5K10G91LYmvUKzx8F5_A,"With Tiago Fonseca, CCO @ Syone & Guilherme Aranha, Solution Architect @ Banco de Portugal
+
+- Learn how Bank of Portugal improved its IT operations and implemented an Hybrid Cloud environment with Red Hat Openshift and Container Native Storage. In this talk we’ll further discuss the case of the Portuguese Central Bank Statistical Information Portal to explore information, and how it improved the adoption of DevOps methodologies, Red Hat’s solutions and the utilization of containers.
+
+https://www.opensourcelisbon.com/",17,1,0,0,,N/A
+hTjTnAYqLDI,"AWS Academy Machine Learning Module - Models, Data, Infrastructure",2024-01-24T17:40:38Z,UCNDfiL0D1LUeKWAkRE1xO5Q,"✨I build courses: https://insight.paiml.com/bzf
+Hands-On Courses for Rust, Data, Cloud, AI and LLMs 🚀
+
+  •  📚Rust Programming Specialization:  https://insight.paiml.com/qwh
+  •  📚Rust for DevOps:  https://insight.paiml.com/x14
+  •  📚Rust LLMOps:   https://insight.paiml.com/g3b
+  •  📚Rust Fundamentals: https://insight.paiml.com/qyt
+  •  📚Data Engineering with Rust: https://insight.paiml.com/zm1
+  •  📚Python and Rust with Linux Command Line Tools: https://insight.paiml.com/jot
+
+
+ 
+
+  •  📚Applied Python Data Engineering Specialization: https://insight.paiml.com/5r9
+  •  📚Data Visualization with Python: https://insight.paiml.com/y9p
+  •  📚Virtualization, Docker, and Kubernetes for Data Engineering: https://insight.paiml.com/xtp
+  •  📚Spark, Hadoop, and Snowflake for Data Engineering: https://insight.paiml.com/f6j
+
+
+ 
+
+  •  📚MLOps | Machine Learning Operations Specialization: https://insight.paiml.com/l5u
+  •  📚Python Essentials for MLOps: https://insight.paiml.com/uvm
+  •  📚DevOps, DataOps, MLOps: https://insight.paiml.com/ggi
+  •  📚MLOps Tools: MLflow and Hugging Face: https://insight.paiml.com/y2v
+  •  📚MLOps Platforms: Amazon SageMaker and Azure ML: https://insight.paiml.com/ymb
+
+
+ 
+
+  •  📚Python, Bash and SQL Essentials for Data Engineering Specialization: https://insight.paiml.com/2or
+  •  📚Linux and Bash for Data Engineering: https://insight.paiml.com/d31
+  •  📚Scripting with Python and SQL for Data Engineering: https://insight.paiml.com/n3b
+  •  📚Python and Pandas for Data Engineering: https://insight.paiml.com/nz7
+  •  📚Web Applications and Command-Line Tools for Data Engineering: https://insight.paiml.com/o86
+
+
+ 
+
+  •  📚Building Cloud Computing Solutions at Scale Specialization: https://insight.paiml.com/hrt
+  •  📚Cloud Computing Foundations: https://insight.paiml.com/zrb
+  •  📚Cloud Data Engineering: https://insight.paiml.com/75t
+  •  📚Cloud Machine Learning Engineering and MLOps: https://insight.paiml.com/jjh
+  •  📚Cloud Data Engineering:  https://insight.paiml.com/0y3
+
+
+
+🔥 Hot Course Offers:
+
+  •  🤖 Master GenAI Engineering (https://ds500.paiml.com/learn/course/0bbb5/)  - Build Production AI Systems
+  •  🦀 Learn Professional Rust (https://ds500.paiml.com/learn/course/g6u1k/)  - Industry-Grade Development
+  •  📊 AWS AI & Analytics (https://ds500.paiml.com/learn/course/31si1/)  - Scale Your ML in Cloud
+  •  ⚡ Production GenAI on AWS (https://ds500.paiml.com/learn/course/ehks1/)  - Deploy at Enterprise Scale
+  •  🛠️ Rust DevOps Mastery (https://ds500.paiml.com/learn/course/ex8eu/)  - Automate Everything🚀 Level Up Your Career:
+
+  •  💼 Production ML Program (https://paiml.com)  - Complete MLOps & Cloud Mastery
+  •  🎯 Start Learning Now (https://ds500.paiml.com)  - Fast-Track Your ML Career
+  •  🏢 Trusted by Fortune 500 Teams
+
+Learn end-to-end ML engineering from industry veterans at PAIML.COM (https://paiml.com)",108,4,0,0,,en-US
+BaT5DXDIGVI,Frontiers in Machine Learning: Accelerating Machine Learning with Confidential Computing,2020-07-28T20:00:14Z,UCCb9_Kn8F_Opb3UCGm-lILQ,"In the recent years, Machine Learning (ML) has facilitated key applications, such as medical imaging, video analytics, and financial forecasting. Understanding the massive computing requirements of ML, cloud providers have been investing in accelerated ML computing and a range of ML services. A key concern in such systems, however, is the privacy of the sensitive data being analyzed and the confidentiality of the trained models. Confidential cloud computing provides a vehicle for privacy-preserving ML, enabling multiple entities to collaborate and train accurate models using sensitive data, and to serve these models with assurance that their data and models remain protected, even from privileged attackers. In this session, our speakers will demonstrate applications and advancements in Confidential ML: (i) how confidential computing hardware can accelerate multi-party and collaborative training, creating an incentive for data sharing; and (ii) how emerging cloud accelerator systems can be re-designed to deliver strong privacy guarantees, overcoming the limited performance of CPU-based confidential computing.
+
+See more on-demand sessions from Microsoft Research's Frontiers in Machine Learning 2020 virtual event: https://www.microsoft.com/en-us/research/event/frontiers-in-machine-learning-2020/",1027,16,0,0,"Frontiers in Machine Learning 2020, Microsoft Research, Antoine Delignat-Lavau, Raluca Ada Popa, Emmett Witchel, Azure Confidential Computing, Alex Shamis, Stavros Volos",N/A
+lUT2Y-3gEOs,Cloud Data Driven | 2024-06-20 | Shaping the future of real time data pipeline | Bobur Umurzokov,2024-06-21T08:30:38Z,UCQPzuUsIQdPbVdlcwMqJP3A,"# Shaping the future of real time data pipeline.
+
+----------------------------------------
+# Abstract:
+
+The rise of real-time data processing has transformed business operations, yet navigating its technical challenges remains complex. Organizations often wrestle with managing distinct batch and streaming data workflows, each presenting unique difficulties. Batch processing, while effective for large datasets, can be costly, slow, and not well-suited for streaming API integration. On the other hand, streaming, despite its speed and low latency, often has restricted functionality.
+
+This talk is prepared for developers, data engineers, and tech visionaries eager to explore how to build an efficient, dynamic, and unified data pipeline for both scenarios using streaming platforms in Python. You will see with examples how simple it is to make your batch code run in streaming with serverless infrastructure from day 1.
+
+----------------------------------------
+# Speakers: Bobur Umurzokov
+
+## Bobur Umurzokov
+
+Developer Advocate
+𝐖𝐡𝐨 𝐈 𝐚𝐦
+Bobur is a developer advocate and speaker specializing in software and data engineering. With over 10- years of experience in IT, he blogs about open-source technologies and the community around them.
+
+𝐖𝐡𝐚𝐭 𝐈 𝐝𝐨
+Bobur works with companies at different scales to build awareness, drive adoption, and engage with the community for developer-targeted products. He also creates inspiring content, design, and code use cases, projects, and demo apps to boost learning products.
+
+----------------------------------------
+# *Upcoming!* Future Data Driven Summit 2024
+
+Great opportunity for professionals working in the field of data and related areas to learn about the latest trends, network with industry experts, and gain insights into the future of data-driven technologies.
+
+https://datadrivencommunity.com/FutureDataDriven2024.html
+
+----------------------------------------
+# Data Driven Community
+The Cloud Data-Driven User Group is an integral part of the Data-Driven Community. For a comprehensive list of upcoming events and more information about our community, feel free to visit our website at [https://datadrivencommunity.com].
+We look forward to your participation!
+
+----------------------------------------",42,3,0,0,"Data Driven Community, Cloud Data Driven, Future Data Driven, Azure, real-time, data",N/A
+NhKJ2rQyjWQ,Working with Azure Cognitive Services with Kubernetes  | #GlobalAIBootcamp 2019 | AZ-INDIA,2019-12-15T12:59:50Z,UCTbu1loGYnMMClq1JoiA1Bw,"The video is recording for the very first session of Virtual Global AI Bootcamp 2019, Working with Azure Cognitive Services with Kubernetes in a .NET ecosystem, presented by Ritesh Modi - Hon. Microsoft Regional Director, Author of 8 Bestseller book on Azure, AI, Bots, etc, organized by Dear Azure | AZ-INDIA.
+
+Kindly subscribe to my channel, and hit the bell icon to get notified of all other videos.
+
+Best Regards,
+Kasam Shaikh.",217,7,0,0,"globalaibootcamp, AI, Bots, Kasam Shaikh., globalaibootcamp2019, dearazure, mvpbuzz, mvpindia, gabai, gabai2019, riteshmodi, azindia, azure, azureai, aiforall",N/A
+sgZ6S85T3d4,Machine Learning System Design  - Part 1,2020-07-12T17:30:07Z,UCaHI211fIYKxUybOijecv8w,"This is the Part 1 of my 3 part Introductory Series on Engineering Machine Learning Systems. 
+
+Do Check out Other Parts in the Series. 
+
+► Part 1 - https://youtu.be/sgZ6S85T3d4
+► Part 2 - https://youtu.be/CMPso-eMyaw
+► Part 3 - https://youtu.be/NjryhsJkH2A
+
+#mlops #machinelearning #container #docker #kubernetes
+#datascience #architecture #cloud
+
+Excerpt from OReilly's Book on MLOps.
+ 
+"" ML Ops originated as a derivative of applying DevOps practices to data science and machine learning workflows or pipelines. The term combines ML (machine learning) and operations (Ops). At its core, it represents a repeatable process to deploy, monitor, and maintain these pipelines in operational or production systems. 
+
+Companies that build this kind of methodical thinking into their data science have a big competitive advantage over those that consistently fail to operationalize models and that fail to prioritize action over mere insight ""
+
+Link to the Book - https://www.oreilly.com/library/view/ml-ops-operationalizing/9781492074663/ 
+
+References
+
+► https://towardsdatascience.com/being-a-data-scientist-does-not-make-you-a-software-engineer-c64081526372
+► https://towardsdatascience.com/architecting-a-machine-learning-pipeline-a847f094d1c7",4704,45,0,8,"machine learning, data science, mlops, kubernetes, machine learning system design, artificial intelligence, system design interview, machine learning interview, system design, system design tutorial, what is mlops, what is devops, mlops vs devops, case studies mlops, why mlops, what is modelops, how mlops works, machine learning development life cycle, machine learning tutorial, machine learning tutorial for beginners, what is machine learning",N/A
+bQrtbz2f6so,TechTalk #57 -  DevOps für Maschinelles Lernen mit Kubeflow & Co,2021-11-03T17:08:54Z,UCGSg5IDHT6TF3VZft2Tm_ZA,"Keinen TechTalk mehr verpassen: https://www.meetup.com/de-DE/TechTalk-Beer
+
+Die Erstellung eines Modells für maschinelles Lernen ist nur ein Ausgangspunkt. Um es in die Produktion zu bringen, müssen Sie verschiedene reale Probleme lösen, wie z. B. den Aufbau einer Pipeline für kontinuierliches Modelltraining, die Automatisierung der Validierung der Modelle, die Schaffung einer Serving-Infrastruktur, die Implementierung der Überwachung und vieles mehr.
+Um diese Herausforderungen zu meistern, gibt es verschiedene Lösungen auf dem Markt, wie z.B. Kubeflow, Databricks MLFlow, usw.
+
+In dieser Session zeigt Sascha Dittmann, wie diese Lösungen für Ihre KI-Projekte von Nutzen sein können und wie Sie diese in Ihre tägliche Arbeit integrieren können.
+Sie werden auch die Konzepte von ""MLOps"" (DevOps für Machine Learning) kennenlernen.
+
+Sascha Dittmann ist Cloud Solution Architect bei der Microsoft Deutschland GmbH und unterstützt hierbei Kunden und Partner beim Implementierungsprozess erfolgreicher Cloud-Lösungen. Seine Schwerpunkte liegen in der Softwareentwicklung für die Microsoft Azure Plattform, sowie im SQL Server Business Intelligence, Big Data und Machine Learning Bereich.
+Bevor er Ende 2015 zu Microsoft kam, war er viele Jahre bei der heutigen Ernst & Young GmbH tätig; Davon 13 Jahre als Softwareentwickler und 3 Jahre als Solution Architect. Während dieser Zeit gründete er auch die Community-Webseite cloudbloggers.de und war Mitbegründer des .NET Stammtischs Rheinhessen und der Xamarin User Group Frankfurt. Zwischen 2012 und 2015 wurde er 4-mal von Microsoft mit dem ""Microsoft Most Valuable Professional""-Award für seine Arbeit im Microsoft-Azure-Umfeld ausgezeichnet.
+
+Speaker: Sascha Dittmann (https://www.linkedin.com/in/saschadittmann/)
+
+_____________________________________________________________________________________
+
+TechTalk bei //SEIBERT/MEDIA findet an jedem ersten Mittwoch im Monat um 17 Uhr statt: Erst ein interessanter Fachvortrag, dann noch ein bisschen Socializing, Diskussion und Austausch, und ab ins Wochenende. Aufgrund der aktuellen Situation findet der Talk online statt.
+
+Die Teilnahme ist kostenfrei und steht allen Interessierten offen – ob Experte, der Erfahrungen und Perspektiven von Kollegen kennenlernen möchte, oder ambitionierter Laie, der seinen Horizont erweitern will.
+
+Du würdest auch gerne mal einen TechTalk bei uns halten? Wir freuen uns über Speaker-Tipps und Anfragen, gerne ebenfalls an talk AT seibert-media DOT net .",297,4,0,0,"seibertmedia, atlassian, confluence, jira, zusammenarbeit, integration",N/A
+2hkcMnZiM9E,"Is there Any Room Left for Data Scientists? Nicolas Boitout, Société Générale",2021-08-25T15:55:54Z,UCEXd7HLPQZfd17deVcUTh8A,"Nicolas Boitout spoke at #Data & the Machine Summit about:
+
+👉 With the Emergence of MLops (IT) & Data Citizens (Business), is there Any Room Left for Data Scientists?
+
+SofaSummits 🔴 Professionally Comfortable.
+
+Whether it is to connect with new & potential customers, develop relationships with external business partners or improve internal performance within a company, our virtual summits are ideally suited. 
+
+🔔 For more videos from past events or to participate at one of our future events, please visit 
+All Events: https://www.sofasummits.com/all-events​
+Past Events: https://www.sofasummits.com/past-events​
+
+📌 If you like the videos, hit the Like button, Subscribe and turn on Notifications. Thank you for supporting the channel! 
+
+Follow SofaSummits on Social Media:
+
+Twitter: https://twitter.com/SofaSummits​
+Facebook: https://www.facebook.com/sofasummits​
+Website: https://www.sofasummits.com​
+
+#SofaSummits #Data #MachineLearning #DataScience #AI",36,0,0,0,,N/A
+lL_j7ilk7rc,Microservices Explained in 5 Minutes,2022-12-18T19:43:14Z,UCmucQyVE8bjP5zJhJgHIp2w,"What are Microservices? Microservices are a popular architectural pardigm used to build maintainable, evolvable and scalable applications and systems. This video introduces microservices concepts and ideas in 5 minutes.",854778,21198,0,454,"microservices, software design, architecture pattern, systems design, distributed systems",en
+TvzcehUW_so,Taming Cloud Costs with Docker,2017-05-08T20:57:41Z,UC76AVf2JkrwjxNKMuPpscHQ,"Chien Huey - DevOps Engineer, XO Group Inc.
+
+The container revolution arrived at XO Group as we inverted our DevOps organization and gave squads more control over their deployment pipelines. We used Amazon Elastic Beanstalk to help ease the learning curve associated with moving from homegrown orchestration tools to containerized microservices. As a result, the company has been able to containerize over 90% of our client-facing assets in under a year. Along the way, we realized that as we latched our hopes and dreams onto Beanstalk, we also unleashed a giant. The giant known as AWS spend. In this session, we will analyze our growing cloud spend, developed our cost containment strategy and executed it. We’ll also discuss the results of our implementation of Docker Swarm to improve our instance utilization and lower our cost per vCPU.",372,3,0,0,"docker, containers, dockercon, docker swarm, AWS, microservices, DevOps, Cloud Computing, Community Theater",N/A
+Ic0SMQYZBOk,"Hacker vs Company, Cloud Cyber Security Automated with Kubernetes | Demi Ben-Ari, Panorays",2019-07-18T09:41:22Z,UCV7lV9Lq2sc7t0QEKS4xH7A,"Looking at the ongoing risks on any company today, no matter how much time and money you'll invest in cybersecurity as CISO or any security practitioner, you always arrive at the same conclusion, it's not enough to achieve high standard of security, you have to do it 24/7 according to the changing cyber threats. In the talk we'll give a brief overview of different aspects of Cyber Security in the modern world, talking about Cloud and other external services that any size of a company uses nowadays. We'll show from experience that the best and most fit approach is to achieve ongoing monitoring on your security posture. For the ""why""? because the only thing that is 100% sure, that the attack surface of every company is changing constantly, so we should keep on validating our security posture accordingly. And now the ""How"": We'll share how to build an infrastructure for security researchers that will allow them to concentrate on business logic and writing hacker “tasks”. Using Docker and Kubernetes on Google Cloud, these tasks can then be performed in parallel and without a lot of DevOps hassle. Our technique removes two common barriers: first, long and risky deployment processes and second, low transparency within the production system. Lessons learned promised and a glimpse of the Hackers view because it's always interesting to see how you look from the outside.",185,2,0,0,,N/A
+ilvKoO4Dhpk,"DPS 2021 - Keynote by Anna Hoffman, Bob Ward & Buck Woody (Microsoft)",2021-09-27T05:13:06Z,UCFxy6wiV-pR9c-BTQHrUOCQ,www.DataPlatformVirtualSummit.com,379,4,0,0,"SQL, Server",N/A
+f0_rqqugF9o,Webinar: Highly Scalable SaaS Apps on Kubernetes: Real Life Case Studies,2020-09-09T21:28:44Z,UCvqbFHwN-nwalWPjPUKpvTA,"How do you deal with building global, cloud-native SaaS applications at the speed of DevOps? Ram is a product leader within Oracle Cloud Native team. Via real-life case studies, he will discuss scaling to 100s of clusters across geos, achieving high availability, and providing the necessary monitoring and tracing, while covering all bases from a security standpoint.
+
+Presenters:
+
+Ram Kailasanathan, Senior Director Product Management @Oracle
+Richard Bair, Senior Director Engineering @Oracle",677,8,0,2,"CNCF, SaaS, Kubernetes",N/A
+22mtNlfGEc8,"Key Cloud Economics Concepts Explained - Elasticity, Availability, Agility",2020-12-27T15:38:36Z,UCNDfiL0D1LUeKWAkRE1xO5Q,"I explain fundamental cloud economics concepts like elasticity for auto-scaling, availability and uptime, self-service without bureaucracy, reduced complexity from experts running data centers, total cost of ownership versus one-time costs, operational resilience through redundancy, and business agility from riding the cloud innovation wave.
+
+
+✨I build courses: https://insight.paiml.com/bzf
+
+
+📚LLMOps Specialization: https://insight.paiml.com/a8e
+📚Introduction to Generative AI: https://insight.paiml.com/ee2
+📚Operationalizing LLMs on Azure: https://insight.paiml.com/e2u
+📚Databricks to Local LLMs: https://insight.paiml.com/i6k
+📚Advanced Data Engineering: https://insight.paiml.com/uvi
+
+📚Rust Programming Specialization:  https://insight.paiml.com/qwh 
+📚Rust for DevOps:  https://insight.paiml.com/x14 
+📚Rust LLMOps:   https://insight.paiml.com/g3b 
+📚Rust Fundamentals: https://insight.paiml.com/qyt 
+📚Data Engineering with Rust: https://insight.paiml.com/zm1 
+📚Python and Rust with Linux Command Line Tools: https://insight.paiml.com/jot 
+
+
+📚Applied Python Data Engineering Specialization: https://insight.paiml.com/5r9 
+📚Data Visualization with Python: https://insight.paiml.com/y9p 
+📚Virtualization, Docker, and Kubernetes for Data Engineering: https://insight.paiml.com/xtp 
+📚Spark, Hadoop, and Snowflake for Data Engineering: https://insight.paiml.com/f6j 
+
+
+📚MLOps | Machine Learning Operations Specialization: https://insight.paiml.com/l5u
+📚Python Essentials for MLOps: https://insight.paiml.com/uvm 
+📚DevOps, DataOps, MLOps: https://insight.paiml.com/ggi
+📚MLOps Tools: MLflow and Hugging Face: https://insight.paiml.com/y2v
+📚MLOps Platforms: Amazon SageMaker and Azure ML: https://insight.paiml.com/ymb 
+
+
+📚Python, Bash and SQL Essentials for Data Engineering Specialization: https://insight.paiml.com/2or 
+📚Linux and Bash for Data Engineering: https://insight.paiml.com/d31 
+📚Scripting with Python and SQL for Data Engineering: https://insight.paiml.com/n3b 
+📚Python and Pandas for Data Engineering: https://insight.paiml.com/nz7 
+📚Web Applications and Command-Line Tools for Data Engineering: https://insight.paiml.com/o86 
+
+
+📚Building Cloud Computing Solutions at Scale Specialization: https://insight.paiml.com/hrt
+📚Cloud Computing Foundations: https://insight.paiml.com/zrb
+📚Cloud Data Engineering: https://insight.paiml.com/75t 
+📚Cloud Machine Learning Engineering and MLOps: https://insight.paiml.com/jjh
+📚Cloud Virtualization, Containers and APIs:  https://insight.paiml.com/ce5 
+
+📝 Guided Projects:
+📝Object-Oriented Programming in Python:https://insight.paiml.com/n4h
+📝MySQL-for-Data-Engineering:  https://insight.paiml.com/e1k
+📝Python Generators:  https://insight.paiml.com/i9l
+📝Build a Static Website with Rust and Zola: https://insight.paiml.com/a2h
+📝Building Rust AWS Lambda Microservices with Cargo Lambda: https://insight.paiml.com/8ed
+📝Rust Secret Cipher CLI: https://insight.paiml.com/zzr
+📝Python Decorators:  https://insight.paiml.com/1n5
+📝Bash Command-line tools: insight.paiml.com/zo3
+📝Big O Notation in Python:  https://insight.paiml.com/bnv",1578,19,0,0,,N/A
+IabnpQAGkRo,Office Hours with Stitch Fix Data Platform,2020-09-09T07:55:36Z,UCAezwIIm1SfsqdmbQI-65pA,"Stitch Fix has built one of the most highly respected data teams in the Bay Area. But how did they do it, and what are the best practices and tools they use to operate? Find out with this discussion on ""Architecting for Autonomy""
+
+ABOUT DATA COUNCIL: 
+Data Council (https://www.datacouncil.ai/) is a community and conference series that provides data professionals with the learning and networking opportunities they need to grow their careers. Make sure to subscribe to our channel for more videos, including DC_THURS, our series of live online interviews with leading data professionals from top open source projects and startups. 
+
+FOLLOW DATA COUNCIL: 
+Twitter: https://twitter.com/DataCouncilAI
+LinkedIn: https://www.linkedin.com/company/datacouncil-ai
+Facebook: https://www.facebook.com/datacouncilai
+Eventbrite: https://www.eventbrite.com/o/data-council-30357384520",442,8,0,0,"machine learning, computer vision, AI, big data technology engineering software engineering software development",N/A
+aM28_CQ6GnU,Kubernetes Track: Orchestrate your data- the cloud native way - Vasanth Immanuel,2019-10-07T14:00:00Z,UCJAogNgwF8gNnBqxkRCTV0g,"Kubernetes Track: Orchestrate your data- the cloud native way - Vasanth Immanuel,  Principal Architect
+
+Today, corporate data landscapes are growing increasingly diverse and distributed. Data volume is exploding with unstructured data from the Internet of Things and social media. And many companies are storing data in multiple locations – on premise, in the cloud, in data warehouses, and on edge devices. A Data orchestration solution can help you unlock this treasure trove. It can help to create powerful, scalable data pipelines that connect data sources – without moving the data.
+But what are the current challenges? The session intends to deal with the below
+
+* The challenges in operating and maintaining a data orchestration solution running on kubernetes
+* Learn how Data orchestration done natively on Kubernetes marks a milestone in simplifying landscape requirements and the installation process for customers.
+* Learn how having a fully containerized architecture enables deployments on any platform that supports Kubernetes.
+* Learn how cloud scale workloads can be handled by enterprise grade data orchestration solution
+* Learn about day to day housekeeping to manage kube-system, helm, prometheus, and rook.
+
+Slides:
+https://cutt.ly/1eu8gSl
+
+
+http://cloudnativewarsaw.com/talksspeakers",31,1,0,0,"Kubernetes, Cloud, CloudNative, Serverless",en
+yDjlSiSBMQc,"A Journey through Spring, Containerization and Kubernetes",2021-10-14T12:36:08Z,UCHhaMS9a1ZBfRIUix0cnZ7A,"In this talk, we'll go over their use cases, how they can make shipping Java apps easier, and what’s required to adopt them. We’ll begin with the foundations and build towards the latest advances making their way into the community.
+
+The intended audience is a Java developer or dev ops person at any level.
+
+Speaker: Aaron Wanjala is a Spring Boot and Angular developer whose career has taken him from startups to large corporate environments. He’s had the chance to work on various projects including financial services apps and identity management platforms. Most importantly,  Aaron loves telling stories based on his recent experience and sharing his excitement about new technologies with other devs.",478,18,0,0,"nyjavasig, javasig, frank greco, java",N/A
+5GZqlfKEbJE,Data Engineering Design Principles from AWS-Part 3,2024-01-06T05:24:30Z,UCNDfiL0D1LUeKWAkRE1xO5Q,"Here is a suggested title, tags, and description for your AWS Academy Data Engineering video:
+Title:
+AWS Academy: Data Engineering Module Deep Dive
+Tags:
+aws academy, data engineering, data pipelines, analytics vs ai/ml, data wrangling, infrastructure, roles, modernization
+Description:
+Get an in-depth look at the key topics covered in the AWS Academy's Data Engineering module including:
+Comparing analytics vs AI/ML pipelines
+Layers of a data pipeline
+Data transformation actions
+Data engineer vs data scientist roles
+Building & modernizing data infrastructure
+Breaking down data silos
+Innovation opportunities
+Useful for anyone going through the AWS Academy program or wanting an overview of fundamental data engineering concepts. We explain the core curriculum objectives in detail and connect the foundational ideas organizations need to leverage to become data-driven.
+
+
+Hands-On Courses for Rust, Data, Cloud, AI and LLMs 🚀
+
+Rust Programming Specialization:  https://www.coursera.org/specializations/rust-programming
+Rust for DevOps:  https://www.coursera.org/learn/rust-for-devops?specialization=rust-programming
+Rust LLMOps:   https://www.coursera.org/learn/rust-llmops?specialization=rust-programming
+Rust Fundamentals: https://www.coursera.org/learn/rust-fundamentals
+Data Engineering with Rust: https://www.coursera.org/programs/duke-university-on-coursera-obsio/learn/data-engineering-rust
+Python and Rust with Linux Command Line Tools: https://www.coursera.org/learn/python-rust-linux
+Virtualization, Docker, and Kubernetes for Data Engineering: https://www.coursera.org/learn/virtualization-docker-kubernetes-data-engineering
+Cloud Machine Learning Engineering and MLOps: https://www.coursera.org/learn/cloud-machine-learning-engineering-mlops-duke
+MLOps Tools: MLflow and Hugging Face: https://www.coursera.org/learn/mlops-mlflow-huggingface-duke
+Data Visualization with Python: https://www.coursera.org/learn/data-visualization-python
+Linux and Bash for Data Engineering: https://www.coursera.org/learn/linux-and-bash-for-data-engineering-duke
+Spark, Hadoop, and Snowflake for Data Engineering: https://www.coursera.org/learn/spark-hadoop-snowflake-data-engineering
+Cloud Virtualization, Containers and APIs: https://www.coursera.org/learn/cloud-virtualization-containers-api-duke
+Cloud Data Engineering: https://www.coursera.org/learn/cloud-data-engineering-duke
+Python Essentials for MLOps: https://www.coursera.org/learn/python-mlops-duke
+DevOps, DataOps, MLOps: https://www.coursera.org/learn/devops-dataops-mlops-duke
+Web Applications and Command-Line Tools for Data Engineering: https://www.coursera.org/learn/web-app-command-line-tools-for-data-engineering-duke
+MLOps Platforms: Amazon SageMaker and Azure ML: https://www.coursera.org/learn/mlops-aws-azure-duke
+Scripting with Python and SQL for Data Engineering: https://www.coursera.org/learn/scripting-with-python-sql-for-data-engineering-duke
+Python and Pandas for Data Engineering: https://www.coursera.org/learn/python-and-pandas-for-data-engineering-duke
+Cloud Computing Foundations: https://www.coursera.org/learn/cloud-computing-foundations-duke",322,4,0,0,,en-US
+1sLg689YZtg,From Monolith to Microservices: A small teams journey - Dale Humby - DevFest South Africa 2018,2018-12-09T11:36:50Z,UCtaVFx70895Rty6wcVAR9QA,"Presented at DevFest South Africa 2018. devfest.co.za
+Intro/Outro Music: Thanks to Gerhard Herselman for supplying the music for us to use. 
+
+At Nomanini we built our first payments platform on Google Cloud when it was still only App Engine. As our product grew we built an ever-more-complex monolith. As our start-up pivoted we needed more flexibility, and wanted to experiment with newer technologies. With only three developers we made the bold decision to migrate our platform from an App Engine monolith to microservices running on Docker and Kubernetes. In this frank discussion I talk about the reasons why we made this move, the pitfalls we experienced, the benefits of the move, and why we love Kubernetes on Google Cloud.
+
+Dale Humby
+I'm passionate about product development and the various agile methodologies that enables a team to perform at its peak. I'm a co-founder of Nomanini, a payments platform that allows informal merchants across Africa to provide essential services like airtime, electricity and banking services to rural communities.
+Twitter:",169,6,0,N/A,"kubernetes, microservices, monolith, nomanini, devfest, devfest18, devfestza, google cloud, app engine, docker, pitfalls, pros, cons, development",en
+Aj8bvR2HytE,Towards bridging AI skills gap between Industry & Academia | Persistent Systems,2021-09-06T12:20:15Z,UCcHUpqmNBz3lkTEbIVT_4mQ,"Let’s hear Anibha Athalye Practice Head at Persistent an expert in AI/ ML share her knowledge on how AL/ML is bringing enormous opportunities in the emerging Technology era. Career Recropedia will be back soon with its upcoming TechFlix series session.
+
+Learn more about our Artificial Intelligence & Machine learning offerings: Click here - https://www.persistent.com/services/data-driven-business-and-intelligence/artificial-intelligence-and-machine-learning/
+
+Visit https://www.persistent.com/careers for more details. Interested in helping turn digital challenges into opportunities? 
+
+Apply today - https://persys.co/career 
+
+Learn more - https://www.persistent.com/company-overview/
+
+Subscribe to Persistent Systems: https://persys.co/3BPFqsB 
+Learn more about Persistent Systems:
+Website: https://www.persistent.com/ 
+LinkedIn: https://persys.co/3rwbxc1 
+Twitter: https://persys.co/3kUJMYE 
+Facebook: https://persys.co/3jNImQd 
+Instagram: https://persys.co/38J1YP9 
+About Persistent Systems: Persistent Systems is a trusted Digital Engineering and Enterprise Modernization partner, combining deep technical expertise and industry experience to help clients anticipate what’s next and answer questions before they’re asked. Persistent’s offerings and proven solutions create unique competitive advantage for our clients by giving them the power to #SeeBeyondRiseAbove.",420,17,0,N/A,,N/A
+APcqV6MS_ak,Protecting Data in Red Hat OpenShift. DevSecOps That Scales with Your Kubernetes Deployments,2020-09-16T17:24:37Z,UCIgYEwhic7IdGofFZ9ZJxOA,"Red Hat OpenShift is enabling quicker adoption of DevOps practices in the Public, Financial, Telco and Healthcare sectors. Containers are an essential component of DevOps and the OpenShift Kubernetes Container Platform is integral for orchestration within these environments. Data security is challenged to keep pace with the size and scope of container usage. The migration from legacy in-house deployments to hybrid-cloud installations has created new attack surfaces.
+
+Protecting data is mandatory for compliance and mission critical for further deployment of Kubernetes in production environments. Learn how Zettaset can provide compliant solutions with real-time data protection for Red Hat OpenShift.",50,0,0,0,"DevSecOps, Red Hat OpenShift, Zettaset, Protecting your data, Protecting Healthcare Data",N/A
+zMw1j8mcZE0,DevOps and Modern Cloud Solutions in Real Life Blockchain Implementations,2019-04-26T00:39:50Z,UCEnDhegtH-HLQR15PGlZD7w,"Enterprise organizations are looking to leverage Blockchain technology for their vertical solution, but still have questions around Application Development and Implementation. Some of their questions focus around methodologies, some of their questions focus around technology, and some of their questions focus on lessons learned. During this presentation, you will learn from real-life scenarios how Blockchain implementation can leverage DevOps practices and Modern Cloud Solutions (e.g. Kubernetes, Docker, Microservices, etc.) for successful Application Development, Continuous Integration and Continuous Deployment. Learn more about Envision Blockchain Solutions below.
+
+-------
+
+Envision Blockchain Solutions is a Blockchain Systems Integrator. Our mission is to reshape and align today’s Enterprise systems allowing organizations to recognize the new value in tomorrow’s Industry Vertical Solutions. The management team has years of Fortune 500 experience and has built a team of subject matter experts in Blockchain and Business Transformation Processes within Emerging Technologies. We focus on guiding organizations through 3 major milestones on their Blockchain journey: Use Case Analysis, Proof of Concept Development and Enterprise Scaled Deployments.
+
+System Integration:
+✅ Dynamics 365
+✅ Custom Applications
+
+Blockchain Services:
+✅ PoC & MVP Development
+✅ Functional & Technical Requirements
+✅ Smart Contract Development & Auditing
+✅ Enterprise Tokenization
+✅ Mobile and Web UI/UX Development
+✅ Solution Testing
+✅ Blockchain Migration Services
+✅ Post Go-Live Services
+✅ Support & Advisory Services
+
+Workshops:
+✅ Intro To The Baseline Protocol
+✅ Enterprise Blockchain Tokenization
+✅ Enterprise Blockchain Immersion
+✅ Enterprise Blockchain Discovery
+✅ Decentralized Identity Management Workshop
+
+Feel free to reach out to us at:
+Email: info@envisionblockchain.com
+Website: www.envisionblockchain.com
+Phone: (800) 513-8334",586,15,0,1,"NFT, blockchain stocks, blockchain technology, blockchain wallet, blockchain dream, blockchain bullz, blockchain stocks 2021, blockchain app, blockchain art, blockchain and cryptocurrency, blockchain app tutorial, blockchain and bitcoin, blockchain airdrop, blockchain animation, blockchain bitcoin, blockchain brad, blockchain brown, blockchain business, blockchain buy bitcoin, blockchain bulls, blockchain bitcoin wallet, blockchain backer, blockchain developer",N/A
+mIh02LxFSrM,Real-Time Visibility at Scale with Sumo Logic,2016-10-21T16:24:53Z,UCd6MoB9NC6uYN2grvUNT-Zg,"Learn more about Big Data on AWS here - http://amzn.to/2extPDP 
+Legacy monitoring and troubleshooting tools can limit visibility and control over your infrastructure and applications. Organizations must find monitoring and troubleshooting tools that can scale with the volume, variety and velocity of data generated by today’s complex applications in order to keep pace with business demands. Our upcoming webinar will discuss how Sumo Logic helped Scripps Networks harness cloud-native machine data analytics to improve application quality and reliability on AWS. Sumo Logic allows IT operations teams to visualize and monitor workloads in real-time, identify issues and expedite root-cause analysis across the AWS environment. 
+
+Join us to learn: 
+• How to migrate from traditional on-premises data centers to AWS with confidence 
+• How to improve the monitoring and troubleshooting of modern applications 
+• How Scripps Networks, a leading content developer, used Sumo Logic to optimize their transition to AWS 
+
+Who should attend: 
+Developers, DevOps Director/Manager, IT Operations Director/Manager, Director of Cloud/Infrastructure, VP of Engineering",576,4,0,0,"AWS, Amazon Web Services, Cloud, cloud computing, AWS Cloud",N/A
+U86rKVzmwjA,LIVESTREAM: Running R Data Science Workloads in Massively Scalable Data Platforms,2017-10-19T02:37:57Z,UCIC2TGO-4xNSAJFCJXlJNwA,"Exporting data from a database and importing into a server or desktop environment with commonly used tools for data science (e.g. R, Python) is not an ideal workflow for big data analytics. A few of the issues end users may face include memory and scalability limitations of these tools and the exorbitant costs associated with transferring large amounts of data between different platforms. 
+
+In this session, we will introduce Procedural Language R (PL/R) as a closer integration of R with the Greenplum Database, an open source massively parallel processing (MPP) engine for big data analytics. While the focus of this talk will be on PL/R, the same principles described in the session are applicable to all languages supported by the Procedural Language extension framework (e.g. R, Python, Java, C, Perl) of the Greenplum Database.
+
+We will describe how to get started on PL/R, and walk through code examples from case studies in industries such as retail, telco and utilities that illustrate the flexibility and performance of this framework. Further, we will touch on how tools such as PL/R can be leveraged for scalable statistical and machine learning algorithm development on big data platforms using Bayesian Hierarchical Regression with Gibbs Sampling as an illustrative example.
+
+About Woo J. Jung
+
+Woo J. Jung is a Principal Data Scientist at Pivotal. He joined the team in 2011 and is focused on delivering data science-driven value to clients across a wide range of verticals. Woo is also passionate about the adoption & usability of advanced analytics tools in the Big & Fast Data ecosystem – including the interoperability of R with the Pivotal platform. He was previously Senior Statistician at Bay Area startup, M-Factor (IBM), where he built and delivered demand analysis solutions powered by Bayesian hierarchical models. He holds an MSc from Stanford and a BSc from Cornell.",250,4,0,0,"data, Greenplum, programming",N/A
+4mqFDwIdKh0,Ease ML deployments with TensorFlow Serving  - Cambridge ML Summit ‘19,2019-11-01T23:07:40Z,UC_x5XG1OV2P6uZZ5FSM9Ttw,"Hannes Hapke, Head of Engineering at Caravel, discusses the deployment of machine learning models specifically with TensorFlow Serving. 
+
+Google Developers ML Summit '19 brings together industry professionals in Machine Learning and Artificial Intelligence. If you already work in the ML/AI field, and you are interested in enhancing your skills, while networking and learning from Google's ML/AI experts, this Summit is for you. 
+  
+Cambridge ML Summit 2019 → https://goo.gle/2nE7Vcf  
+Subscribe to Google Developers → https://goo.gle/developers",7853,220,0,12,"Ease ml deployments, ml deployments, TensorFlow serving, TensorFlow, Cambridge ML summit 2019, cambridge ml summit 19, google developers ml summit 2019, google developers ml summit 19, ml summit, ml summit 2019, machine learning, artificial intelligence, google ML, google AI, machine learning summit, cambridge machine learning summit, google developers, Hannes Hapke, Caravel",en
+BLFBJWA0RoI,Learn how to deploy Containerized applications in a hybrid cloud environment - AWS Online Tech Talks,2022-07-19T21:00:04Z,UCT-nPlVzJI-ccQXlxjSvJmw,"Join us to learn more about how to leverage the efficiencies and benefits of Containers in a hybrid environment. Carlos Santa Gadea, Sr. Product Manager with AWS will discuss more about how you can satisfy compliance, data gravity, and other business requirements by running your workloads on infrastructure you own while enjoying simple and familiar container tooling. Learn how you can run containerized data processing workloads at edge locations on your own hardware to allow you to stay close to your end customers and maintain reduced latency. We’ll also cover machine learning, image processing, big data, among other application workloads, without the need to transfer your data to the cloud or manage a third party orchestration software.
+
+Learning Objectives: 
+* Objective 1: Understand the ability to run containerized applications in customer owned infrastructure.
+* Objective 2: Learn how to maintain reduced latency while working with big data, image processing and other workloads.
+* Objective 3: Learn how to avoid transferring data or needing to leverage third party orchestration software
+
+***To learn more about the services featured in this talk, please visit: https://aws.amazon.com/ecs/anywhere Subscribe to AWS Online Tech Talks On AWS: 
+https://www.youtube.com/@AWSOnlineTechTalks?sub_confirmation=1
+
+Follow Amazon Web Services:
+Official Website: https://aws.amazon.com/what-is-aws 
+Twitch: https://twitch.tv/aws
+Twitter: https://twitter.com/awsdevelopers
+Facebook: https://facebook.com/amazonwebservices 
+Instagram: https://instagram.com/amazonwebservices
+
+☁️ AWS Online Tech Talks cover a wide range of topics and expertise levels through technical deep dives, demos, customer examples, and live Q&A with AWS experts. Builders can choose from bite-sized 15-minute sessions, insightful fireside chats, immersive virtual workshops, interactive office hours, or watch on-demand tech talks at your own pace. Join us to fuel your learning journey with AWS.
+
+#AWS",787,14,0,0,"Containers, hybrid, hybrid data, on premise application, Amazon Web Services, AWS, AWS Online Tech Talks, AWS Tutorial",N/A
+xVuuvZkYiNM,Run Containers on GCP's Serverless Infrastructure (Cloud Next '19),2019-04-11T21:50:19Z,UCJS9pqu9BzkAMNTmzNMNhvg,"Dive into GCP's new fully managed serverless platform that enables you to run arbitrary HTTP stateless containers while only paying for what you use and without worrying about the infrastructure. Understand the detailed characteristics of this new product and see demos of new use cases unlocked by running containers in a serverless way. Also, hear from customers who have already been using it.
+
+Running Containers on GCP → http://bit.ly/2UexEHj
+
+Watch more: 
+Next '19 Serverless Sessions here → https://bit.ly/Next19Serverless
+Next ‘19 All Sessions playlist → https://bit.ly/Next19AllSessions
+
+Subscribe to the GCP Channel → https://bit.ly/GCloudPlatform
+
+Speaker(s): Steren Giannini, Michael Helmick, Sebastien Morand, Antoine Castex
+
+Session ID: SVR302
+
+event: Google Cloud Next 2019; re_ty: Publish; product: Cloud - Containers - Cloud Run, Cloud - AI and Machine Learning - AI Infrastructure; fullname: Steren Giannini, Michael Helmick, Sebastien Morand, Antoine Castex; event: Google Cloud Next 2019;",19668,186,0,5,"type: Conference Talk (Full production);, pr_pr: Google Cloud Next, purpose: Educate",en
+IKThPZQfBlM,Integrating Open Source Alluxio in AWS EKS with Terraform,2021-04-01T22:06:47Z,UCpibQsajhwqYPLYhke4RigA,"Alluxio is an open source Data orchestration platform that can be deployed on multiple platforms. However, it can require a lot of thinking and experience to integrate Alluxio into an existing Data Architecture adhering to minimally required DevOps principles meeting Organizational standards. 
+
+The presentation talks about the best practices to set up and techniques to build a cluster with open source Alluxio on AWS EKS, for one of our clients, which made it Scalable, Reliable, and Secure by adapting to Kubernetes RBAC.
+
+Our speaker Vasista Polali will show you how to :  
+- Bootstrap EKS cluster in AWS with Terraform.  
+- Deploy open source Alluxio in a Namespace with persistence in AWS EFS.  
+- Scale up and down the Alluxio worker nodes as Daemon sets by Scaling the EKS nodes with Terraform.  
+- Accessing data with S3 mount.  
+- Controlling the access to Alluxio with Kubernetes port-forwarding, “setfacl” functionality, and Kubernetes service accounts.  
+- Re-using the data/metadata in the persistence layer on a new cluster.",202,1,0,0,,N/A
+vmkLC1etVQA,Deep Learning Container with PyTorch and Azure ML,2022-09-16T18:00:22Z,UCsMica-v34Irf9KVTh6xx-g,"On today's show, we get an overview of the release of Azure Data Science Virtual Machines for PyTorch and Azure Container for PyTorch with Parinita Rahi. Then, Jessica Cioffi joins us to demo how it works!
+
+Chapters:
+00:00 Welcome to the AI Show
+00:22 Deep Learning Container with PyTorch and Azure ML with Parinita Rahi
+09:03 Welcome Jessica Cioffi
+09:42 ACPT Demo 
+19:00 Learn more
+
+Resources: Curated environment https://aka.ms/AML/CuratedEnvironment
+Microsoft Ignite October 12-14 https://aka.ms/MicrosoftIgnite
+Machine Learning for Data Scientists: 
+https://aka.ms/AIShow/MLforDataScientists
+Create a Free account (Azure): https://aka.ms/aishow-seth-azurefree
+
+Connect:
+Seth |@sethjuarez 
+Cassie |@CassieBreviu 
+
+Subscribe to the AI Show: https://aka.ms/AIShowsubscribe
+AI Show Playlist: https://aka.ms/AIShowPlaylist
+Join us every other Friday, for an AI Show livestream on Learn Events and YouTube: https://aka.ms/Learnevents - https://aka.ms/AIShowLive",1997,27,0,1,"Azure, Microsoft, Tech, Technology, Dev, Development, Cloud Computing, Azure AI, Microsoft AI, Developer, Microsoft Developer, PyTorch, Azure ML, DSVM, data science virtual machines",N/A
+6gwF8mG3UUY,Why I Use Golang In 2024,2024-02-14T14:00:04Z,UCUyeluBRhGPCW4rPe_UvBZQ,"Recorded live on twitch, GET IN 
+
+https://twitch.tv/ThePrimeagen
+
+Become a backend engineer.  Its my favorite site
+https://boot.dev/?promo=PRIMEYT
+
+This is also the best way to support me is to support yourself becoming a better backend engineer.  
+
+MY MAIN YT CHANNEL: Has well edited engineering videos
+https://youtube.com/ThePrimeagen
+
+Discord
+https://discord.gg/ThePrimeagen
+
+
+Have something for me to read or react to?: https://www.reddit.com/r/ThePrimeagenReact/
+
+Kinesis Advantage 360: https://bit.ly/Prime-Kinesis
+
+Hey I am sponsored by Turso, an edge database.  I think they are pretty neet.  Give them a try for free and if you want you can get a decent amount off (the free tier is the best (better than planetscale or any other))
+https://turso.tech/deeznuts",392368,9705,0,699,"programming, software engineer, software engineering, developer, web design, web development, programmer humor",en-US
+shAenrbh9ik,Kubeflow: Machine Learning Over K8s,2020-07-08T14:45:38Z,UCV7lV9Lq2sc7t0QEKS4xH7A,"00:01 -  MLOps Challenges
+14:28 - Intro to Kubeflow
+48:31 - Simplifying and extending Kubeflow with serverless ML functions
+1:04:46 - Demo
+1:34:22- Q&A 
+
+// Intro to Kubeflow
+As the involvement of Machine Learning components in software products is increasing rapidly, there is a growing need for tools to operate and orchestrate Machine Learning development and deployment. One of those tools is Kubeflow. Developed by Google for the Open Source community, this tool aims to organize the cycle of model development, testing, and deployment on the infrastructure of Kubernetes. In this talk, we will introduce the tool, its capabilities, and its integration in the infrastructure of organizations.
+
+// Simplifying and extending Kubeflow with serverless ML functions
+
+Serverless can simplify data science by automating the process of code to container and enables users to add instrumentation and auto-scaling with minimum overhead. However, serverless has many limitations involving performance, lack of concurrency, lack of GPU support, limited application patterns and limited debugging possibilities. Yaron Haviv will introduce Kubeflow, and how it works with Nuclio and MLRun, open source projects enabling serverless data-science and full ML lifecycle automation over Kubeflow.
+
+Yaron will show real-world examples and a demo and explain how it can significantly accelerate projects time to market and save resources.",291,4,0,1,,N/A
+EPv9hWj0nZs,The Secret Behind Cloud Computing: From AWS to Quantum Breakthroughs,2025-01-08T14:46:11Z,UC1oWxxuRiUtmKxW5RftWkSg,"🌟 The Secret Behind Cloud Computing: From AWS to Quantum Breakthroughs 🌟
+
+Cloud computing has transformed the tech landscape, empowering innovations from streaming services and AI advancements to IoT and quantum technologies. But how does it work, and what’s driving this revolution? 🌐 Discover the incredible evolution of the cloud, from its early beginnings to cutting-edge tools like Docker, Kubernetes, TensorFlow, and serverless computing.
+
+📖 In This Video, You’ll Learn:
+
+How AWS virtualization sparked the cloud revolution.
+Why Microsoft Azure and Google Cloud dominate the multi-cloud ecosystem.
+The role of Docker and Kubernetes in modern software development.
+The rise of serverless computing, edge computing, and IoT integration.
+The future of cloud computing, including quantum breakthroughs and AI-driven innovation.
+💡 Why This Video Matters:
+Cloud computing is the invisible backbone of modern life, powering industries, startups, and global innovations. Whether you’re a tech enthusiast, developer, or business leader, this video will help you understand how cloud services shape our world and where they’re headed.
+
+🎯 Who This Video is For:
+
+Developers exploring tools like Docker, Kubernetes, and serverless platforms.
+Entrepreneurs and business leaders adopting multi-cloud strategies.
+Anyone curious about the intersection of AI, IoT, and the cloud revolution.
+📌 Chapters:
+0:00 - Introduction
+1:55 - Early Architecture Problem
+3:15 - Amazon’s Eureka Moment: AWS and Virtualization
+4:33 - Building the Cloud: Hypervisor, EC2, and S3
+5:43 - The Cloud Revolution: Rise of Cloud-Native Startups
+6:40 - Rise of Other Cloud Giants: Azure, Google, and More
+8:54 - Modern Cloud: Docker, Kubernetes, Serverless, Edge, and Quantum Computing
+10:42 - Future is Multi-Cloud
+11:42 - Conclusion
+
+🔍 Why It’s Revolutionary:
+From Netflix and Dropbox to AI research and global infrastructure, the cloud has redefined what’s possible in technology. Stay informed about the tools, trends, and strategies that are changing the way businesses and developers operate.
+
+🔔 Subscribe to BloomIntel:
+For more data science, AI, and tech innovation, join BloomIntel! Don’t forget to like, share, and leave a comment to join the conversation.
+
+🚀 SEO Keywords to Highlight:
+#CloudComputing #AWS #Kubernetes #Docker #Azure #GoogleCloud #QuantumComputing #AI #GenerativeAI #TensorFlow #EdgeComputing #ServerlessComputing #BloomIntel #MultiCloud #AIinCloud #CloudComputing #AWS #AmazonWebServices #Azure #GoogleCloud
+#Kubernetes #Docker #TensorFlow #QuantumComputing #EdgeComputing
+#ServerlessComputing #MultiCloud #AIinCloud #MachineLearning
+#ArtificialIntelligence #GenerativeAI #DataScience #CloudInfrastructure
+#CloudPlatforms #CloudSolutions #SoftwareDevelopment #DevOps
+#Virtualization #Hypervisors #CloudNativeApplications #CloudTechnology
+#IoTIntegration #BigData #WhatIsCloudComputing #HowAWSChangedTechnology #KubernetesTutorialForBeginners #DockerExplained #AIonTheCloud #FutureOfCloudComputing
+#QuantumComputingInCloud #EdgeVsCloudComputing
+#BestCloudPlatforms2025 #AWSvsAzurevsGoogleCloud #MultiCloudStrategies #NetflixCloudArchitecture #DropboxCloudStorage
+#HowStartupsUseCloudComputing #CloudForSmallBusinesses
+#AIPoweredAnalyticsInTheCloud #IoTonGoogleCloud
+#QuantumComputingExplained #AWSTraining
+#AzureCertification #GoogleCloudPlatformTutorial
+#DockerAndKubernetesBasics #TensorFlowAIModels #CloudServicesComparison #CloudBasedDevOpsTools #LearnCloudComputing #CloudComputingForBeginners
+#MasterKubernetes #DockerForDevelopers #StartLearningAWS
+#AIAndCloudIntegration #TechnologyTrends2025 #TechRevolution
+#InnovationInTech #DigitalTransformation #FutureOfTechnology
+#SaaS #BestTechTools #HowToBuildAppsInTheCloud #BloomIntel
+#BloomIntelTech #BloomIntelCloudComputing #AIAndCloudByBloomIntel
+
+📽️ Disclaimer:
+Visuals and stock footage in this video are licensed from Envato Elements for educational purposes.",21,1,0,0,"AWS, Amazon Web Services, Azure, Google Cloud, Kubernetes, Docker, TensorFlow, Quantum Computing, Edge Computing, Serverless Computing, Multi-Cloud, AI in Cloud, Machine Learning, Generative AI, Cloud Infrastructure, Cloud Platforms, Software Development, DevOps, Virtualization, Hypervisors, IoT Integration, What is Cloud Computing, Kubernetes Tutorial for Beginners, Docker Explained, Quantum Computing in Cloud, Multi-Cloud Strategies, Master Kubernetes, Docker for Developers",N/A
+Kvxaj6pHeVA,Introduction to MLOps,2021-07-31T16:17:48Z,UCNDfiL0D1LUeKWAkRE1xO5Q,"A walkthrough of Chapter 1 of the O'Reilly book Practical MLOps.
+
+Topics include:
+
+* DevOps
+* MLOps
+* DataOps
+* ML Platforms
+* Sagemaker
+* Continuous Integration and Continuous Deployment
+* MLOps cookbook
+* ML Engineering
+* Data Engineering
+* Spark
+* GCP
+* Azure
+* Containers
+* Kaizen
+
+Buy Copy of Practical MLOps book here:  https://www.amazon.com/Practical-MLOps-Operationalizing-Machine-Learning/dp/1098103017
+
+View Source Code for Practical MLOps book here:  https://github.com/noahgift If you enjoyed this video, here are additional resources to look at:
+
+Coursera + Duke Specialization: Building Cloud Computing Solutions at Scale Specialization: https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale
+
+
+✨I build courses: https://insight.paiml.com/bzf
+
+
+📚LLMOps Specialization: https://insight.paiml.com/a8e
+📚Introduction to Generative AI: https://insight.paiml.com/ee2
+📚Operationalizing LLMs on Azure: https://insight.paiml.com/e2u
+📚Databricks to Local LLMs: https://insight.paiml.com/i6k
+📚Advanced Data Engineering: https://insight.paiml.com/uvi
+📚GenAI and LLMs on AWS: https://insight.paiml.com/3x7
+📚Open Source LLMOps Solutions: https://insight.paiml.com/x0g
+
+
+📚Foundations of Local Large Language models:  https://insight.paiml.com/rvy
+
+
+📚Rust Programming Specialization:  https://insight.paiml.com/qwh 
+📚Rust for DevOps:  https://insight.paiml.com/x14 
+📚Rust LLMOps:   https://insight.paiml.com/g3b 
+📚Rust Fundamentals: https://insight.paiml.com/qyt 
+📚Data Engineering with Rust: https://insight.paiml.com/zm1 
+📚Python and Rust with Linux Command Line Tools: https://insight.paiml.com/jot 
+
+
+📚Applied Python Data Engineering Specialization: https://insight.paiml.com/5r9 
+📚Data Visualization with Python: https://insight.paiml.com/y9p 
+📚Virtualization, Docker, and Kubernetes for Data Engineering: https://insight.paiml.com/xtp 
+📚Spark, Hadoop, and Snowflake for Data Engineering: https://insight.paiml.com/f6j 
+
+
+📚MLOps | Machine Learning Operations Specialization: https://insight.paiml.com/l5u
+📚Python Essentials for MLOps: https://insight.paiml.com/uvm 
+📚DevOps, DataOps, MLOps: https://insight.paiml.com/ggi
+📚MLOps Tools: MLflow and Hugging Face: https://insight.paiml.com/y2v
+📚MLOps Platforms: Amazon SageMaker and Azure ML: https://insight.paiml.com/ymb 
+
+
+📚Python, Bash and SQL Essentials for Data Engineering Specialization: https://insight.paiml.com/2or 
+📚Linux and Bash for Data Engineering: https://insight.paiml.com/d31 
+📚Scripting with Python and SQL for Data Engineering: https://insight.paiml.com/n3b 
+📚Python and Pandas for Data Engineering: https://insight.paiml.com/nz7 
+📚Web Applications and Command-Line Tools for Data Engineering: https://insight.paiml.com/o86 
+
+
+📚Building Cloud Computing Solutions at Scale Specialization: https://insight.paiml.com/hrt
+📚Cloud Computing Foundations: https://insight.paiml.com/zrb
+📚Cloud Data Engineering: https://insight.paiml.com/75t 
+📚Cloud Machine Learning Engineering and MLOps: https://insight.paiml.com/jjh
+📚Cloud Virtualization, Containers and APIs:  https://insight.paiml.com/ce5 
+
+
+O'Reilly Book:  Practical MLOps: https://www.amazon.com/Practical-MLOps-Operationalizing-Machine-Learning/dp/1098103017
+
+O'Reilly Book:  Python for DevOps: https://www.amazon.com/gp/product/B082P97LDW/
+
+Pragmatic AI:  An Introduction to Cloud-based Machine Learning: https://www.amazon.com/gp/product/B07FB8F8QP/
+
+Pragmatic AI Labs Book: Python Command-Line Tools: https://www.amazon.com/gp/product/B0855FSFYZ
+
+Pragmatic AI Labs Book: Cloud Computing for Data Analysis : https://www.amazon.com/gp/product/B0992BN7W8
+
+
+Pragmatic AI Book:  Minimal Python: https://www.amazon.com/gp/product/B0855NSRR7
+
+Pragmatic AI Book:  Testing in Python: https://www.amazon.com/gp/product/B0855NSRR7
+
+Subscribe to Pragmatic AI Labs YouTube Channel: https://www.youtube.com/channel/UCNDfiL0D1LUeKWAkRE1xO5Q
+
+View content on noahgift.com: https://noahgift.com/
+
+View content on Pragmatic AI Labs Website: https://paiml.com/",43126,1061,0,17,mlops,N/A
+uiLUmuecU7I,Deploying JupyterHub with Kubernetes - Camilla Montonen,2018-06-26T17:11:21Z,UCOjD18EJYcsBog4IozkF_7w,"PyData Amsterdam 2018 
+
+JupyterHub is a great way to provide a data analytics environment for a class, a research group or a team of data scientists. In this talk, we will go through JupyterHub: what it is and how it works and how to setup a production ready deployment on a cloud provider using Kubernetes as the underlying infrastructure.
+
+Slides: bit.ly/pydataamsterdam2018-jupyterhub
+--
+www.pydata.org
+
+PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States. PyData provides a forum for the international community of users and developers of data analysis tools to share ideas and learn from each other. The global PyData network promotes discussion of best practices, new approaches, and emerging technologies for data management, processing, analytics, and visualization. PyData communities approach data science using many languages, including (but not limited to) Python, Julia, and R. 
+
+PyData conferences aim to be accessible and community-driven, with novice to advanced level presentations. PyData tutorials and talks bring attendees the latest project features along with cutting-edge use cases. 00:00 Welcome!
+00:10 Help us add time stamps or captions to this video! See the description for details.
+
+Want to help add timestamps to our YouTube videos to help with discoverability? Find out more here: https://github.com/numfocus/YouTubeVideoTimestamps",7288,103,0,0,,N/A
+pO9aS05QDMo,AWS Elastic Services: Scaling and Load Balancing in the Cloud,2024-05-22T16:23:45Z,UCNDfiL0D1LUeKWAkRE1xO5Q,"edX
+
+
+
+ 
+
+
+✨I build courses: https://insight.paiml.com/d69
+
+
+
+ 
+
+
+
+ 
+
+  •  📚edX Professional Certificate in Rust Programming: https://insight.paiml.com/tkg
+       •  📚edX Rust Data Engineering:  https://insight.paiml.com/fhd
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+  •  📚edX Professional Certificate in Large Language Model Operations (LLMOps): https://insight.paiml.com/j8t
+
+
+ 
+
+  •  📚edX Professional Certificate Machine Learning Operations (MLOps): insight.paiml.com/ear (http://insight.paiml.com/ear) 
+       •  📚edX Professional Certificate Python Fundamentals for MLOps: https://insight.paiml.com/h5h
+       •  📚edX Professional Certificate DevOps, DataOps, MLOps:  https://insight.paiml.com/mgk
+       •   📚edX Professional Certificate MLOps Tools: MLflow and Hugging Face: https://insight.paiml.com/rqv
+       •   📚edX Professional Certificate MLOps Platforms: Amazon SageMaker and Azure ML : https://insight.paiml.com/9mg
+
+
+ 
+
+
+
+ 
+
+
+Coursera
+
+
+
+ 
+
+
+
+ 
+
+
+✨I build courses: https://insight.paiml.com/bzf
+
+ 
+
+  •  📚LLMOps Specialization: https://insight.paiml.com/a8e
+  •  📚Introduction to Generative AI: https://insight.paiml.com/ee2
+  •  📚Operationalizing LLMs on Azure: https://insight.paiml.com/e2u
+  •  📚Databricks to Local LLMs: https://insight.paiml.com/i6k
+  •  📚Advanced Data Engineering: https://insight.paiml.com/uvi
+  •  📚GenAI and LLMs on AWS: https://insight.paiml.com/3x7
+  •  📚Open Source LLMOps Solutions: https://insight.paiml.com/x0g
+
+
+ 
+
+  •  📚Foundations of Local Large Language models:  https://insight.paiml.com/rvy
+  •  📚Beginning Llamafile for Local Large Language Models (LLMs): https://insight.paiml.com/5ec
+  •  📚End to End LLMs with Azure:  https://coursera.org/learn/azure-llm-large-language-models
+
+
+ 
+
+
+
+ 
+
+  •  📚Rust Programming Specialization:  https://insight.paiml.com/qwh
+  •  📚Rust for DevOps:  https://insight.paiml.com/x14
+  •  📚Rust LLMOps:   https://insight.paiml.com/g3b
+  •  📚Rust Fundamentals: https://insight.paiml.com/qyt
+  •  📚Data Engineering with Rust: https://insight.paiml.com/zm1
+  •  📚Python and Rust with Linux Command Line Tools: https://insight.paiml.com/jot
+
+
+ 
+
+  •  📚Applied Python Data Engineering Specialization: https://insight.paiml.com/5r9
+  •  📚Data Visualization with Python: https://insight.paiml.com/y9p
+  •  📚Virtualization, Docker, and Kubernetes for Data Engineering: https://insight.paiml.com/xtp
+  •  📚Spark, Hadoop, and Snowflake for Data Engineering: https://insight.paiml.com/f6j
+
+
+ 
+
+  •  📚MLOps | Machine Learning Operations Specialization: https://insight.paiml.com/l5u
+  •  📚Python Essentials for MLOps: https://insight.paiml.com/uvm
+  •  📚DevOps, DataOps, MLOps: https://insight.paiml.com/ggi
+  •  📚MLOps Tools: MLflow and Hugging Face: https://insight.paiml.com/y2v
+  •  📚MLOps Platforms: Amazon SageMaker and Azure ML: https://insight.paiml.com/ymb
+
+
+ 
+
+  •  📚Python, Bash and SQL Essentials for Data Engineering Specialization: https://insight.paiml.com/2or
+  •  📚Linux and Bash for Data Engineering: https://insight.paiml.com/d31
+  •  📚Scripting with Python and SQL for Data Engineering: https://insight.paiml.com/n3b
+  •  📚Python and Pandas for Data Engineering: https://insight.paiml.com/nz7
+  •  📚Web Applications and Command-Line Tools for Data Engineering: https://insight.paiml.com/o86
+
+
+ 
+
+  •  📚Building Cloud Computing Solutions at Scale Specialization: https://insight.paiml.com/hrt
+  •  📚Cloud Computing Foundations: https://insight.paiml.com/zrb
+  •  📚Cloud Data Engineering: https://insight.paiml.com/75t
+  •  📚Cloud Machine Learning Engineering and MLOps: https://insight.paiml.com/jjh
+  •  📚Cloud Virtualization, Containers and APIs:  https://insight.paiml.com/ce5
+
+📝 Guided Projects:
+
+  •  📝Object-Oriented Programming in Python:https://insight.paiml.com/n4h
+  •  📝MySQL-for-Data-Engineering:  https://insight.paiml.com/e1k
+  •  📝Python Generators:  https://insight.paiml.com/i9l
+  •  📝Build a Static Website with Rust and Zola: https://insight.paiml.com/a2h
+  •  📝Building Rust AWS Lambda Microservices with Cargo Lambda: https://insight.paiml.com/8ed
+  •  📝Rust Secret Cipher CLI: https://insight.paiml.com/zzr
+  •  📝Python Decorators:  https://insight.paiml.com/1n5
+  •  📝Bash Command-line tools: insight.paiml.com/zo3
+  •  📝Big O Notation in Python:  https://insight.paiml.com/bnv 
+  •  📝 Rust Axum Microservice: https://insight.paiml.com/n9j
+  •  📝Local LLMs with Llamafile: https://insight.paiml.com/rw1
+
+📚 Must-Read Books:
+
+
+Practical MLOps: https://www.amazon.com/Practical-MLOps-Operationalizing-Machine-Learning/dp/1098103017
+
+
+Python for DevOps: https://www.amazon.com/gp/product/B082P97LDW/
+
+
+Developing on AWS with C#: https://www.amazon.com/Developing-AWS-Comprehensive-Solutions-Platform/dp/1492095877
+
+
+Pragmatic AI Labs Books: https://www.amazon.com/gp/product/B0992BN7W8
+
+
+🎥 Follow & Subscribe:
+
+
+Pragmatic AI Labs YouTube Channel: https://www.youtube.com/channel/UCNDfiL0D1LUeKWAkRE1xO5Q
+
+
+52 Weeks of AWS Podcast: https://52-weeks-of-cloud.simplecast.com
+
+
+noahgift.com: https://noahgift.com/
+
+...",71,1,0,0,,en-US
+1BegV7gjqDo,Web Deployment (5) - Testing & Deployment - Full Stack Deep Learning,2020-07-07T20:40:06Z,UCVchfoB65aVtQiDITbGq2LQ,"New course announcement ✨
+
+We're teaching an in-person LLM bootcamp in the SF Bay Area on November 14, 2023. Come join us if you want to see the most up-to-date materials building LLM-powered products and learn in a hands-on environment.
+
+https://www.scale.bythebay.io/llm-workshop
+
+Hope to see some of you there!
+
+--------------------------------------------------------------------------------------------- How to deploy your models to the web?
+More videos at https://course.fullstackdeeplearning.com
+
+Summary
+- For web deployment, you need to be familiar with the concept of REST API.
+- You can deploy the code to Virtual Machines, and then scale by adding instances.
+- You can deploy the code as containers, and then scale via orchestration.
+- You can deploy the code as a “server-less function.”
+- You can deploy the code via a model serving solution.
+- If you are making CPU inference, you can get away with scaling by launching more servers (Docker), or going serverless (AWS Lambda).
+- If you are using GPU inference, things like TF Serving and Clipper become useful with features such as adaptive batching.",2682,16,0,1,"machine learning, deep learning",en
+kNrSuUk8zX0,"TechEdge 1.1 - Andy Burgin - Kubernetes, from Raspberry Pis to Production",2018-10-31T13:42:52Z,UCKhLYGIGTBiD-9zyGkDwfDA,"Whirlwind introduction to learning Kubernetes, from hacking on a bunch of Raspberry Pis through to running at scale in production.
+
+Who is Andy Burgin? Andy is a Platform Engineer - Kubernetes/Hadoop fettler, and all round Devops nuisance. Follow Andy on Twitter @andyburgin",199,4,0,0,,N/A
+tomUWcQ0P3k,Terraform in 100 Seconds,2021-07-28T15:00:26Z,UCsBjURrPoezykLs9EqgamOA,"Terraform is an Infrastructure as Code (IAC) tool that can provision resources in the cloud. Learn how to setup terraform and connect it to cloud providers like AWS, Google Cloud, Azure, or Docker to automate your infrastructure https://github.com/hashicorp/terraform
+
+This video is NOT sponsored
+
+#cloud #code #100SecondsOfCode
+
+🔗 Resources
+
+Terraform Install https://learn.hashicorp.com/tutorials/terraform/install-cli
+Terraform Google Cloud https://registry.terraform.io/providers/hashicorp/google/latest
+
+ 🤓 Install the quiz app
+
+iOS https://itunes.apple.com/us/app/fireship/id1462592372?mt=8
+Android https://play.google.com/store/apps/details?id=io.fireship.quizapp
+
+🔥 Watch more with Fireship PRO
+
+Upgrade to Fireship PRO at https://fireship.io/pro
+Use code lORhwXd2 for 25% off your first payment. 
+
+🎨 My Editor Settings
+
+- Atom One Dark 
+- vscode-icons
+- Fira Code Font",610363,25528,0,476,"webdev, app development, lesson, tutorial, terraform, cloud, cloud computing, terraform tutorial, docker, aws, google cloud",N/A
+chYKsoVFuVw,EC2 - Introduction to Instance Types and AMI(Golden Image) Creation,2017-11-10T04:25:41Z,UC_evcfxhjjui5hChhLE08tQ,"DevOps Online Training Registration form: https://bit.ly/valaxy-form
+For Online training, connect us on WhatsApp at +91-9642858583 
+
+============ Online Trainings =========
+Online Trainings: 
+DevOps Practitioner Training          ►  https://bit.ly/ValaxySMD
+DevOps Internship Training            ►  https://bit.ly/ValaxyRPT
+Interview Preparation Sessions     ►  https://bit.ly/ValaxyDIP
+Azure DevSecOps  Training            ► https://bit.ly/ValaxyADP 
+CyberSecurity Training                    ►  https://bit.ly/ValaxyCST
+Mean Stack Web Development     ► https://bit.ly/ValaxyMSWD
+Python Complete Course               ► https://bit.ly/ValaxyPC 
+Data Science Training                     ► https://bit.ly/ValaxyDSP                               
+Linux Shell Scripting                        ► https://bit.ly/ValaxyLSS              
+Real-time DevOps Project              ► https://bit.ly/ValaxyDRP             
+Azure Admin Training                     ► https://bit.ly/ValaxyAA
+
+============ Udemy Courses =========
+AR Shankar Udemy Courses              ►  https://bit.ly/udemyshankar
+DevOps Workshop-2                            ►  https://bit.ly/udemydevopsws
+DevOps Project-1                                  ►  https://bit.ly/udemydevops
+Kubernetes microservices                  ►  https://bit.ly/udemykube
+Linux for DevOps                                  ►  https://bit.ly/udemyvinux
+Git for DevOps                                      ►  https://bit.ly/udemygithub
+Ansible for DevOps Beginners           ►  https://bit.ly/udemyansible
+Maven for DevOps                               ►  https://bit.ly/udemymaven
+
+              ============ Our Other Courses ========= 
+Packages:
+Valaxy Ultimate Plan                         ►  https://bit.ly/ValaxyUP
+DevOps AWS and Python                  ►  https://bit.ly/ValaxyDAP
+DevOps AWS and Shell Scripting     ►  https://bit.ly/ValaxyDAS
+AWS Pack                                            ►  https://bit.ly/ValaxyAP
+
+Other Courses: 
+DevOps Course                                   ►  https://bit.ly/ValaxyDCC
+Azure Administration                         ►  https://bit.ly/ValaxyAAD
+Production Ready Project                  ►  https://bit.ly/ValaxyPRP
+Kuberentes Project                             ►  https://bit.ly/ValaxyKP
+AWS (Amazon Web Services)           ►  https://bit.ly/ValaxyAWS
+Python Complete Course                   ► https://bit.ly/ValaxyPCC
+Shell Scripting                                      ► https://bit.ly/ValaxySS
+AWS automation with Boto3              ► https://bit.ly/ValaxyAWSPythonBoto3
+Docker & Kubernetes                           ► https://bit.ly/ValaxyDK
+Ansible for the DevOps                       ► https://bit.ly/ValaxyAD 
+DevOps Diploma Program                  ► https://bit.ly/ValaxyDDP 
+Valaxy PPTs                                          ►  https://bit.ly/ValaxyPPT
+
+                    ============ Free resources =========
+DevOps Resumes                        ►  https://bit.ly/ValaxyDR
+Azure DevOps Resumes            ► https://bit.ly/ValaxyADPR
+Tools to learn in DevOps            ►  https://youtu.be/qasUBr5D9bo
+
+             ============ Connect with Us =========
+Facebook                                     ►  https://bit.ly/ValaxyFB
+Instagram                                    ►  http://bit.ly/valaxyinsta
+LinkedIn                                       ►  https://bit.ly/valaxyln
+Website                                        ►  https://www.valaxy.in/ 
+                                                      ►  https://courses.valaxy.in/                                                         
+
+#Devops #Valaxy #AWS",3655,40,0,3,"aws, amazon web services, demo, introduction, register, enrol, sign-up, sign-in, console, hands-on, solution, contact, classroom, training, fast-track, online, trainers, certification, leader, assistance, instructor-led, vilt, virtual instructor led, cloud computing",en-GB
+ZQx-9gYfzzA,Armada   Building a research platform on top of Openstack and Kubernetes,2023-06-29T16:39:40Z,UCQ74G2gKXdpwZkXEsclzcrA,"Quantitative researchers require a lot of hardware.  The major goals of our research platform are to enable high-throughput scheduling of jobs, use open source software and to provide queueing capabilities once the number of jobs exceeds capacity.  We use Openstack for our hardware provisioning.  However, provisioning hardware is only the first step in building a research platform.  In this talk we will discuss how you can build a research platform on top of OpenStack and Kubernetes to better enable quantitative researchers to run their workflows.  The types of workflows we have to support range from analytics to machine learning.   
+
+Armada is an open source project developed at G-Research.  Armada enables researchers to submit thousands of jobs to a multi cluster Kubernetes compute platform and these jobs get prioritized.
+
+Speakers:
+Kevin Hannon
+
+
+Connect with us:
+OpenInfra Twitter: https://twitter.com/openinfradev
+OpenInfra LinkedIn: https://www.linkedin.com/company/openinfra-foundation
+OpenInfra Facebook: https://www.facebook.com/openinfradev
+OpenInfra Website: https://openinfra.dev/
+
+
+Thank you to our 2023 Headline Sponsor Wind River (https://www.windriver.com/) and our Premier Sponsor Okestro (https://www.okestro.com/)",407,6,0,0,,N/A
+COMEVcZtx1s,Docker for Data Engineers,2023-05-04T04:57:14Z,UCO8XsgcjqArk_mAd1VGBMfg,"▬▬▬▬▬▬ T I M E S T A M P S ⏰  ▬▬▬▬▬▬
+
+0:00 - Intro 
+0:58 - What is Docker
+1:33 - VM vs Docker Use Case
+2:03 - Docker Terminologies
+4:50 - Tutorial of using Docker for Data Engineering
+8:14 - Outro
+
+In this video, we'll dive into the world of Docker and explore how it can be used by data engineers. Docker is an incredibly powerful tool for managing and deploying applications, and it has become an essential part of many data engineering workflows.
+
+We'll start by covering the basics of Docker, including containers, images, and the Dockerfile. 
+
+Throughout the video, we'll provide practical examples and hands-on demos to help you gain a deeper understanding of how Docker can be used in a data engineering context. Whether you're new to Docker or looking to take your skills to the next level, this video is a must-watch for any data engineer.
+
+Topics covered in this video include:
+
+Introduction to Docker and containers
+Creating and managing Docker images
+Using the Dockerfile to build custom images
+Running Docker containers for data engineering applications
+Best practices for using Docker in a data engineering workflow
+Don't forget to like, comment, and subscribe for more content like this!
+
+- **What is a container?**: You can Abstract containers as lightweight virtual machines with their own CPU, Memory and Network Resources
+- software that packages up code and all its dependencies
+- so the application runs quickly and reliably from one computing environment to another.
+- **Docker Image:** To start a container you need a docker image, this image is your blueprint for the container, you can get prebuilt images like MySQ
+- **Dockerfile:** A yaml based instructions for building the image. You can consider it like DNA to the image with all the set of instructions in a place to make the image.
+- **Dockerhub**: Cloud based GitHub for your Docker images; Building and hosting images for sharing across
+
+FOLLOW ME ON
+MEDIUM: https://medium.com/@syal.anuj​
+INSTAGRAM: https://www.instagram.com/anujsyal/​
+TWITTER: https://twitter.com/anuj_syal
+GITHUB: https://github.com/syalanuj​
+WEBSITE: https://anujsyal.com
+
+#Docker #DataEngineering #DataOps #Containerization #DevOps #BigData #DataManagement #DataScience #DataAnalytics #DataInfrastructure #DataArchitecture #CloudComputing #CI/CD #DevSecOps #Agile #SoftwareEngineering #ITOps #DataWarehousing #DataIntegration #DataMigration #DataTransformations #DataProcessing #DataVisualization #MachineLearning #ArtificialIntelligence #DeepLearning #Python #Programming #Technology #IT #SoftwareDevelopment #ComputerScience",4192,83,0,3,,N/A
+EOCtbjuICbA,Cloud-Native Pytest Tips and Tricks from Ground Zero,2022-05-12T19:19:47Z,UCNDfiL0D1LUeKWAkRE1xO5Q,"Learn to master Pytest via these tips and tricks.
+
+00:00 Intro
+01:00 Key Concepts in Testing
+10:00 Key Testing Terminology
+15:00 Kazien equals DevOps
+18:22 Setup Github
+23:00 Setup Github Codespaces
+25:00 Explaining Python pip freeze
+33:00 Create Makefile
+37:00 Pin requirements.txt
+38:00 Cloud development environment concepts:  AWS Cloud9 to Github Codespaces
+43:00 Setup Github Actions
+44:00 Configuring Matrix testing of Python
+48:00 Building simple Python scripts as part of CI/CD and linting them with Pylint
+56:00 Setup AWS CloudShell for CI/CD
+01:00:09 Adding Python 3.7, 3.8, 3.9 and 3.10 to Matrix testing
+01:04:00 Setup AWS Cloud9
+01:11:00 Refactoring Python project to include testing directory and library directory
+01:19:00 Setup Python Test Coverage
+01:22:00 Adding Pytest to Github Actions YAML file
+01:29:00 Creating Python library file that searches wikipedia and tests it
+01:36:00 Adding Python Fire command-line tool 
+01:42:00 Running Pytests by search expression
+01:44:30 Running Pytests by specifying tests
+01:46:00 Marking tests in Pytest and avoiding slow tests
+01:48:00 Profiling testing speed using Pytest
+01:56:39 Doing distributed testing with xdist to spread tests to multiple cores
+02:05:21 Created distributed testing group to distribute to multiple cores
+02:09:00 Setup 32 Core 60GB RAM Cloud9 Machine to run massively parallel Pytests
+02:13:58 Running distributed testing that doubles the speed of the tests
+02:23:00 Setup Cloud-Native AWS Code Build testing with buildspec.yml that does distributed testing to 8 Core Build client
+
+If you enjoyed this video, here are additional resources to look at:
+
+Coursera + Duke Specialization: Building Cloud Computing Solutions at Scale Specialization: https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale
+
+Python, Bash, and SQL Essentials for Data Engineering Specialization: https://www.coursera.org/specializations/python-bash-sql-data-engineering-duke
+
+AWS Certified Solutions Architect - Professional (SAP-C01) Cert Prep: 1 Design for Organizational Complexity: 
+https://www.linkedin.com/learning/aws-certified-solutions-architect-professional-sap-c01-cert-prep-1-design-for-organizational-complexity/design-for-organizational-complexity?autoplay=true
+
+O'Reilly Book:  Practical MLOps: https://www.amazon.com/Practical-MLOps-Operationalizing-Machine-Learning/dp/1098103017
+
+O'Reilly Book:  Python for DevOps: https://www.amazon.com/gp/product/B082P97LDW/
+
+Pragmatic AI:  An Introduction to Cloud-based Machine Learning: https://www.amazon.com/gp/product/B07FB8F8QP/
+
+Pragmatic AI Labs Book: Python Command-Line Tools: https://www.amazon.com/gp/product/B0855FSFYZ
+
+Pragmatic AI Labs Book: Cloud Computing for Data Analysis: https://www.amazon.com/gp/product/B0992BN7W8
+
+Pragmatic AI Book:  Minimal Python: https://www.amazon.com/gp/product/B0855NSRR7
+
+Pragmatic AI Book:  Testing in Python: https://www.amazon.com/gp/product/B0855NSRR7
+
+Subscribe to Pragmatic AI Labs YouTube Channel: https://www.youtube.com/channel/UCNDfiL0D1LUeKWAkRE1xO5Q
+
+Subscribe to 52 Weeks of AWS Podcast:  https://52-weeks-of-cloud.simplecast.com
+
+View content on noahgift.com: https://noahgift.com/
+
+View content on Pragmatic AI Labs Website: https://paiml.com/
+
+#aws #pytest #python",1043,42,0,4,,N/A
+YAg6H92tpQc,Dask + Kubernetes | Advanced Data Transformation Pipeline | Dask Summit 2021,2021-06-22T22:39:11Z,UCj9eavqmvwaCyKhIlu2GaoA,"Speakers - Michael Sebbah, Noureddine Boumlaik, Philippe Cotte
+
+AI algorithms for financial portfolio management require distributed computation based on complex worklows. We are happy to share with you how we transform many financial data based on Dask to reach this goal. Dask distributed on Kubernetes is a simple but powerful solution for that. Furthermore we will present a thin wrapper on top of Dask futures to allow lazy and partial computations.
+
+00:00:23 - Intro/ Noureddine Boumlaik
+00:06:15 - Michael Sebbah
+00:14:33 - Philippe Cotte
+00:23:17- Closing
+
+
+===
+
+The Dask Distributed Summit is where users, contributors, and newcomers can share experiences to learn from one another and grow together. The Dask Distributed Summit provides content, information, and learning opportunities for attendees of all levels of Dask familiarity and expertise.
+
+Check out https://summit.dask.org/ for more information.",1374,6,0,0,,N/A
+RmE8FFTk0L8,Top 5 high paying tech skills for 2025,2024-01-06T13:45:03Z,UCkcqmxjMXaBb0kDWqqSEU1g,"Try my free email crash course to crush technical interviews: https://instabyte.io/
+
+I cover high paying skills other than Web Development, Python, Java, React, Javascript in this video.
+
+► For more content like this, subscribe to our channel: https://www.youtube.com/PowerCouple26
+
+► Follow us on Linkedin:
+https://www.linkedin.com/in/gabag26
+https://www.linkedin.com/in/sarrabounouh
+
+► Let's be FRIENDS! https://www.instagram.com/sahilandsarra/
+
+► For business inquiries, reach us on: powercouplejourney@gmail.com
+
+#programming #softwareengineer #coding 
+
+DISCLAIMER: All opinions shared on this channel are our own and don't express views or opinions of our employers. We only use our experiences and public knowledge to make our content. NO CONFIDENTIAL INFORMATION of our employers is used or shared on this channel. This is not a Professional Coaching channel, it only highlights the public resources that have worked for our careers.",713660,15527,0,466,,N/A
+e6MJ4DRCgj8,Improve Customer Lifetime Value using Azure Databricks   Delta Lake - Niels Berglund,2021-11-11T21:01:43Z,UCQPzuUsIQdPbVdlcwMqJP3A,"Presentation Title:
+Improve Customer Lifetime Value using Azure Databricks & Delta Lake - Niels Berglund
+
+Please feel free to share this invitation to any people you think may be interested.
+
+Agenda:
+Introductions (2 mins)
+Presentation (50 mins)
+Q&A (10-15 mins)
+
+Abstract:
+In this demo filled session we look a what Customer Lifetime Value is, and how Azure Databricks and Delta Lake together with Machine Learning can help you calculating CLV as well as making decisions based on the CLV.
+
+Bio:
+Niels is a Microsoft Data Platform MVP and works as Software Architect at Derivco in Durban South Africa. He develops software as well as ""dreaming"" up new and innovative ways to use existing and new technologies.
+
+Niels has been working with SQL Server since SQL Server 4.2, and co-authored the first SQL Server 2005 book for developers: ""A First Look at SQL 2005 for Developers"".
+
+He is a sought after presenter at technology conferences and has presented at, amongst others: Tech-ED, SQL PASS, DevWeek, SQL Bits, SQL Saturday, etc.",192,2,0,0,"databricks, sql server, sql, azure databricks, database, mysql, oracle, data science, analytics, datalake, data lake, delta lake, data warehouse, azure blob storage, machine learning, powerbi, power bi, azure data factory, azure synapse, tsql, intro to datascience",N/A
