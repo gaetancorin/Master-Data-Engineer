@@ -1,0 +1,30 @@
+version: '3.9'
+services:
+  cassandra-reaper:
+    image: thelastpickle/cassandra-reaper:latest
+    container_name: cassandra-reaper
+    ports:
+      - "8081:8080"
+      - "8082:8081"
+    environment:
+      - CASSANDRA_REAPER_STORAGE_TYPE=memory
+      - CASSANDRA_REAPER_JMX_USERNAME=your_username
+      - CASSANDRA_REAPER_JMX_PASSWORD=your_password
+    volumes:
+      - ./reaper.yaml:/etc/reaper/reaper.yaml
+      
+  cassandra-C:
+    # image: cassandra:4.1
+    image: cassandra:5.0
+    container_name: cassandra-C
+    hostname: cassandra-C
+    ports:
+      - "9042:9042"
+      - "9090:9090"
+    environment:
+      - CASSANDRA_SEEDS=cassandra-C
+      - CASSANDRA_CLUSTER_NAME=MyCluster
+      - CASSANDRA_NUM_TOKENS=16
+      - CASSANDRA_DC=DC1
+      - CASSANDRA_RACK=RACK1
+

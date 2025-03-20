@@ -1,0 +1,11 @@
+dans inspecter:
+	config:
+		https://auth.magic.link/api/magic-client/cGtfbGl2ZV85OUFCRDIzRjlGMUM4MjY2/config
+
+
+dynamic_wallet
+WalletConnect
+
+phantomwallet
+metamask
+

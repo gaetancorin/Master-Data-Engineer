@@ -1,14 +1,22 @@
-docker-compose up -d
-docker exec -it cassandra-C bash
-
+toolbox et notes:
 (effacer dossier:
-rm -rf /opt/prometheus
+rm -rf /folder
 )
 docker cp "C:\Users\gaeta\Downloads\prometheus-3.2.1.linux-amd64" cassandra-C:/opt/prometheus
---------------------------------------------------------
-Installer MCAC:
-(GitHub https://github.com/datastax/metric-collector-for-apache-cassandra)
+
+Voir les logs d'un reaper:
+docker logs cassandra-reaper
+
+lancer prometheus sur Windows:
+.\prometheus.exe --config.file=prometheus.yml
+
+-------------------------------------------------------
+Lancer docker-compose et rentrer nœud cassandra:
+docker-compose up -d
 docker exec -it cassandra-C bash
+apt update
+--------------------------------------------------------
+Installer MCAC: (GitHub https://github.com/datastax/metric-collector-for-apache-cassandra)
 cd /opt
 wget https://github.com/datastax/metric-collector-for-apache-cassandra/releases/download/v0.3.5/datastax-mcac-agent-0.3.5-4.1-beta1.tar.gz
 AIDE: (https://github.com/datastax/metric-collector-for-apache-cassandra/releases/tag/v0.3.5)
@@ -16,11 +24,11 @@ tar -xvf datastax-mcac-agent-0.3.5-4.1-beta1.tar.gz
 mv datastax-mcac-agent-0.3.5-4.1-beta1 mcac
 cd mcac
 cd lib
-(on voit la librairie datastax-mcac-agent.jar)
+ls (on voit la librairie datastax-mcac-agent.jar)
 
 --------------------------------------------------
 Parametrer config cassandra pour utiliser MCAC
-cd ..
+cd / (revenir racine)
 cd etc/cassandra
 apt install nano -y
 nano cassandra-env.sh
@@ -33,6 +41,7 @@ pas de bug -> mcac marche !
 
 ------------------------------------------------------
 Installer Prometheus (https://prometheus.io/download/)
+docker exec -it cassandra-C bash
 cd /opt
 mkdir prometheus
 cd prometheus
@@ -50,4 +59,12 @@ copier dans le fichier:
        - targets: ['localhost:8081']
 
 ./prometheus --config.file=prometheus.yml
+
+---------------------------------------------------------------
+Se connecter a cassandre-repear:
+http://localhost:8081/webui/login.html
+id: admin  ||  mdp: admin
+
+Se connecter sur premetheus:
+http://localhost:9090
 

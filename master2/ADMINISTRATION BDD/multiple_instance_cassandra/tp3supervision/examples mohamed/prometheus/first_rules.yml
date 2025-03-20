@@ -1,0 +1,11 @@
+groups:
+  - name: cassandra-reaper-alerts
+    rules:
+      - alert: CassandraReaperDown
+        expr: up{job="reaper"} == 0
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Cassandra Reaper est down"
+          description: "Le service Reaper n'est plus accessible depuis Prometheus."

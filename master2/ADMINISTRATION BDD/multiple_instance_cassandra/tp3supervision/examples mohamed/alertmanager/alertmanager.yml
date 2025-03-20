@@ -1,0 +1,25 @@
+global:
+  resolve_timeout: 5m
+  smtp_smarthost: 'smtp.gmail.com:587'  # Serveur SMTP (ex: Gmail, Outlook, SMTP interne)
+  smtp_from: 'email@email.com'      # Adresse qui enverra les alertes
+  smtp_auth_username: 'email@email.com'
+  smtp_auth_password: 'password'  # Attention : utiliser un mot de passe d'application !
+
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'mohammed'
+
+receivers:
+- name: 'mohammed'
+  email_configs:
+    - to: 'mohammed.elmalki@ynov.com'
+
+inhibit_rules:
+- source_match:
+    severity: 'critical'
+  target_match:
+    severity: 'warning'
+  equal: ['alertname', 'dev', 'instance']

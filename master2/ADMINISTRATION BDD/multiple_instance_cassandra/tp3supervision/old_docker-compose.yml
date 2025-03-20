@@ -14,11 +14,13 @@ services:
       - ./reaper.yaml:/etc/reaper/reaper.yaml
       
   cassandra-C:
+    # image: cassandra:4.1
     image: cassandra:5.0
     container_name: cassandra-C
     hostname: cassandra-C
     ports:
       - "9042:9042"
+      # - "9090:9090"
     environment:
       - CASSANDRA_SEEDS=cassandra-C
       - CASSANDRA_CLUSTER_NAME=MyCluster
