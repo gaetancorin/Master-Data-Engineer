@@ -1,0 +1,23 @@
+Apres avoir lancer Neo4J desktop:
+
+aller sur http://localhost:7474/browser/
+
+connect url:
+neo4J://neo4j://localhost:7687
+
+database:
+movielensdb (nom de la bdd, pas du cluster de bdd)
+
+authentication type:
+username/password
+
+username:
+neo4j (nom par defaut)
+
+Password:
+se rappeler du password lors de la création, ou le redefinir sur neo4J desktop
+
+
+---------------------------------------------------------------------------------
+pour les fichiers:
+importer sur le cluster bdd les fichiers
