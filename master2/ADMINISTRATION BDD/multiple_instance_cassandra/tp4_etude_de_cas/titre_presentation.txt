@@ -1,0 +1,5 @@
+*etude comparative (ecarter 1 )
+*faire 2 modelisation sur les 3  => retenir 1 modelisation
+*politique de coherence des données 
+*workflow =>sauvegarde, restauration
+*workflow de demarrage consistant (comment rendre le système efficient)

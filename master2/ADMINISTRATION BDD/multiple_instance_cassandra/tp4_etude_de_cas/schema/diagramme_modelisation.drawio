@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.8">
+  <diagram id="kXuAKYr62lFkNnffAVxZ" name="Page-1">
+    <mxGraphModel dx="578" dy="775" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-1" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;POSTE&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;nPoste&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot; style=&quot;&quot;&gt;nom_poste&lt;br&gt;typePoste&lt;br&gt;ad&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="220" y="300" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;SALLE&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;nSalle&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;nomSalle&lt;/font&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="60" y="517" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-3" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;LOGICIEL&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;nLog&lt;br&gt;nomLog&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;TypeLog&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;prix&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;dateAch&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="225" y="520" width="135" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-4" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;SEGMENT&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;nomSegment&lt;br&gt;indIP&lt;/font&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="390" y="517" width="135" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-6" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.675;entryY=0.038;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Zjdh2S-dHVrRLlwnIODN-1" target="Zjdh2S-dHVrRLlwnIODN-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="420" as="sourcePoint" />
+            <mxPoint x="410" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-12" value="LOCALISER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Zjdh2S-dHVrRLlwnIODN-6">
+          <mxGeometry x="-0.086" y="-2" relative="1" as="geometry">
+            <mxPoint y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Zjdh2S-dHVrRLlwnIODN-1" target="Zjdh2S-dHVrRLlwnIODN-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="420" as="sourcePoint" />
+            <mxPoint x="410" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-13" value="INSTALLER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Zjdh2S-dHVrRLlwnIODN-8">
+          <mxGeometry x="-0.0982" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.324;entryY=0.009;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="Zjdh2S-dHVrRLlwnIODN-1" target="Zjdh2S-dHVrRLlwnIODN-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="420" as="sourcePoint" />
+            <mxPoint x="410" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zjdh2S-dHVrRLlwnIODN-14" value="HEBERGER" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Zjdh2S-dHVrRLlwnIODN-9">
+          <mxGeometry x="0.0099" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
