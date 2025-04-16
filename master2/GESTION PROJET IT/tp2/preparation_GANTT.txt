@@ -1,0 +1,8 @@
+F  Voir les salles de bains de mes amis - 4 jours
+E  Communiquer sur ce projet - 3 jours  
+A  Estimer le budget - 1 jour  
+B  Connaitre son besoin - 2 jours  
+C  Acheter matériaux - 3 jours  
+D  Effectuer les travaux - 10 jours  
+G  Finitions - 2 jours 
+H  Faire des photos et nettoyer - 1 jour 

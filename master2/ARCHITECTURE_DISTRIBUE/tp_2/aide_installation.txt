@@ -1,0 +1,5 @@
+C:\Program Files\spark-3.5.5-bin-hadoop3
+Lancer la commande :
+/bin/spark-shell
+Aller sur :
+http://localhost:4040/
