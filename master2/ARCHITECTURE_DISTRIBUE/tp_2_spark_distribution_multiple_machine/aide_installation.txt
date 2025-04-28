@@ -1,5 +1,2 @@
-C:\Program Files\spark-3.5.5-bin-hadoop3
-Lancer la commande :
-/bin/spark-shell
-Aller sur :
-http://localhost:4040/
+Pour changer ma documentation google doc, aller sur:
+https://docs.google.com/document/d/1wWqoawlTt52FEtx0E8vIbQHOndisaNXQ6WV5fMTBp6g/edit?hl=fr&pli=1&tab=t.0
