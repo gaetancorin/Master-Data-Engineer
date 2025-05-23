@@ -1,2 +1,10 @@
 Pour changer ma documentation google doc, aller sur:
 https://docs.google.com/document/d/1wWqoawlTt52FEtx0E8vIbQHOndisaNXQ6WV5fMTBp6g/edit?hl=fr&pli=1&tab=t.0
+
+
+server.1=10.31.32.138:2888:3888
+server.2=10.31.35.181:2888:3888
+server.3=10.31.39.87:2888:3888
+
+REM Configuration Spark
+set SPARK_DAEMON_JAVA_OPTS=-Dspark.deploy.recoveryMode=ZOOKEEPER -Dspark.deploy.zookeeper.url=10.31.32.138:2181,10.31.35.181:2181,10.31.39.87:2181 -Dspark.deploy.zookeeper.dir=/spark_recovery

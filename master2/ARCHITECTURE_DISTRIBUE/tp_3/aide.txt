@@ -1,0 +1,39 @@
+INSTALLER NIFI:
+doc comment utiliser Nifi:
+https://nifi.apache.org/nifi-docs/getting-started.html#who-is-this-guide-for
+
+https://nifi.apache.org/
+(BINARIES 2.3.0 STANDARD)
+Installer le dossier dans une url SANS ESPACE
+terminal dans nifi/bin:
+.\nifi.cmd start
+.\nifi.cmd stop
+
+# relancer
+.\nifi.cmd restart
+# effacer fichier log
+Clear-Content ..\logs\nifi-app.log
+
+aller sur le 
+https://localhost:8443/nifi/#/login
+
+Dans logs/nigi-app.log, chercher le username et password:
+Generated Username [1e4342c9-4788-48b4-9e12-8c474a1c86f8]
+Generated Password [HZPgNPstNrqvE/u2sRT9A/GwNIe7+dfh]
+
+site de flux rss:
+https://rss.feedspot.com/financial_news_rss_feeds/
+
+QUI NE MARCHE PAS
+toutes les actualités de données bancaires en format rss: 
+https://www.lesechos.fr/rss
+un type d'actualité:
+http://services.lesechos.fr/rss/les-echos-economie.xml
+
+CE QUI MARCHE
+test de un https:
+https://www.fonction-publique.gouv.fr/flux-rss-principal
+https://www.lemonde.fr/economie/rss_full.xml
+ 
+
+
