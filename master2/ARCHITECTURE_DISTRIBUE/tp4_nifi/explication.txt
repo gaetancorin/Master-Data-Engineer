@@ -1,0 +1,13 @@
+Gaetan Corin
+
+ Exercice 1 Lecture d’un fichier depuis une source et écriture vers une destination:
+getfile_putfile.json
+
+Exercice 2. Découpage de fichiers
+split_file.json
+
+Exercice 3. Découpage de fichiers distants
+split_file_on_github.json
+
+Exercice Défi. Découpage de fichiers zippés distants
+extract_csv_to_multiple_zip.json
