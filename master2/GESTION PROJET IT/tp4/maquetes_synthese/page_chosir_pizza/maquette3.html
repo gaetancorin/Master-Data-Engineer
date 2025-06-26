@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza New Marseille - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f2f4f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-2px);
+    }
+
+    .section h2 {
+      font-size: 22px;
+      color: #c8102e;
+      margin-bottom: 20px;
+    }
+
+    .pizza-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .pizza-card {
+      flex: 1 1 calc(20% - 20px);
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      transition: all 0.2s ease;
+    }
+
+    .pizza-card:hover {
+      background: #fff;
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .pizza-card h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .pizza-card p {
+      font-size: 14px;
+      margin: 2px 0;
+      color: #555;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #c8102e;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: #c8102e;
+      color: white;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background 0.2s, transform 0.2s;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #a50d26;
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 900px) {
+      .pizza-card {
+        flex: 1 1 calc(45% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .pizza-card {
+        flex: 1 1 100%;
+      }
+
+      nav a {
+        margin-left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍕 Pizza New Marseille</h1>
+    <nav>
+      <a href="#">Connexion</a>
+      <a href="#">Panier (0)</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <div class="section">
+      <h2>Nos pizzas classiques</h2>
+      <div class="pizza-list">
+        <div class="pizza-card">
+          <h3>Margherita</h3>
+          <p>Tomate, Mozzarella, Basilic</p>
+          <p class="price">12€</p>
+        </div>
+        <div class="pizza-card">
+          <h3>4 Fromages</h3>
+          <p>Mozzarella, Chèvre, Roquefort, Parmesan</p>
+          <p class="price">14€</p>
+        </div>
+        <div class="pizza-card">
+          <h3>Reine</h3>
+          <p>Jambon, Champignons, Mozzarella</p>
+          <p class="price">13€</p>
+        </div>
+        <div class="pizza-card">
+          <h3>Orientale</h3>
+          <p>Tomate, Merguez, Poivrons</p>
+          <p class="price">14€</p>
+        </div>
+        <div class="pizza-card">
+          <h3>Végétarienne</h3>
+          <p>Tomate, Mozzarella, Champignons, Poivrons</p>
+          <p class="price">13,50€</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Vos pizzas personnalisées</h2>
+      <div class="pizza-list">
+        <div class="pizza-card">
+          <h3>Ma Super Pizza</h3>
+          <p>Mozzarella, Pepperoni, Bœuf haché</p>
+          <p class="price">15€</p>
+        </div>
+        <div class="pizza-card">
+          <h3>Végétarienne Deluxe</h3>
+          <p>Chèvre, Poivrons, Oignons, Olives</p>
+          <p class="price">13,50€</p>
+        </div>
+        <div class="pizza-card">
+          <h3>La Chèvre Miel</h3>
+          <p>Chèvre, Miel, Noix</p>
+          <p class="price">14,50€</p>
+        </div>
+        <div class="pizza-card">
+          <h3>Spicy Meat</h3>
+          <p>Jambon, Pepperoni, Roquefort, Sauce piquante</p>
+          <p class="price">15,50€</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="btn-primary">➕ Créer une pizza personnalisée</a>
+  </div>
+
+</body>
+</html>

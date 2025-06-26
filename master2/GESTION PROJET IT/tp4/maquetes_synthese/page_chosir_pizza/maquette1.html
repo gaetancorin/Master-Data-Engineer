@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza New Marseille</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+
+    header {
+      background: #c8102e;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav {
+      font-size: 14px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .ingredients {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .ingredients button {
+      padding: 10px 20px;
+      background: #eee;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .ingredients button.selected {
+      background: #c8102e;
+      color: white;
+    }
+
+    .creation, .suggestion {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .creation input[type="text"] {
+      padding: 8px;
+      width: 200px;
+    }
+
+    .creation button {
+      background: #c8102e;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    .suggestion .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 300px;
+    }
+
+    .suggestion .card h3 {
+      margin-top: 0;
+    }
+
+    .suggestion .card button {
+      background: #c8102e;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .creation, .suggestion {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍕 Pizza New Marseille</h1>
+    <nav>
+      <a href="#">Connexion</a>
+      <a href="#">Panier (0)</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    
+    <div class="section">
+      <h2>Composez votre pizza</h2>
+
+      <strong>Fromages</strong>
+      <div class="ingredients">
+        <button>Mozzarella</button>
+        <button>Chèvre</button>
+        <button>Roquefort</button>
+      </div>
+
+      <br><strong>Viandes</strong>
+      <div class="ingredients">
+        <button>Jambon</button>
+        <button>Pepperoni</button>
+        <button>Bœuf haché</button>
+      </div>
+    </div>
+
+    <div class="section creation">
+      <div>
+        <h2>Votre création</h2>
+        <input type="text" placeholder="Nommez votre pizza" />
+        <button>Enregistrer</button>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+
+    <div class="section suggestion">
+      <div class="card">
+        <h3>Margherita</h3>
+        <p>Tomate, Mozzarella, Basilic</p>
+        <p><strong>12€</strong></p>
+        <button>Commander</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

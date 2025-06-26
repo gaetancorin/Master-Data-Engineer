@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Créer votre pizza personnalisée - Pizza New Marseille</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f2f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover { opacity: 0.8; }
+
+    main {
+      flex: 1;
+      padding: 100px 40px 40px 40px;
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #c8102e;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    input[type="text"] {
+      padding: 10px 15px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      width: 100%;
+      box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+      transition: border-color 0.2s;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      border-color: #c8102e;
+      box-shadow: 0 0 6px #c8102e;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ingredients-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+      gap: 12px;
+      max-height: 280px;
+      overflow-y: auto;
+      padding-right: 5px;
+    }
+
+    input[type="checkbox"], input[type="radio"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    .ingredient-label {
+      font-weight: 400;
+      color: #555;
+    }
+
+    .price-display {
+      font-weight: 700;
+      font-size: 20px;
+      color: #c8102e;
+      text-align: right;
+      margin-top: 10px;
+      border-top: 2px solid #c8102e;
+      padding-top: 10px;
+    }
+
+    button.btn-primary {
+      background-color: #c8102e;
+      color: white;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background 0.2s;
+      margin-top: 20px;
+    }
+
+    button.btn-primary:hover {
+      background-color: #a50d26;
+    }
+
+    .ingredients-list::-webkit-scrollbar {
+      width: 8px;
+    }
+    .ingredients-list::-webkit-scrollbar-thumb {
+      background-color: #c8102e;
+      border-radius: 4px;
+    }
+    .ingredients-list::-webkit-scrollbar-track {
+      background: #f2f4f8;
+    }
+
+    @media (max-width: 400px) {
+      main {
+        padding: 80px 20px 20px 20px;
+        max-width: 100%;
+      }
+      .ingredients-list {
+        grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🍕 Pizza New Marseille</h1>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">Panier</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Créer votre pizza personnalisée</h2>
+    <form id="pizzaForm" aria-label="Formulaire création pizza">
+      <label for="pizzaName">Nom de la pizza :</label>
+      <input type="text" id="pizzaName" name="pizzaName" placeholder="Ex : Ma Super Pizza" required />
+
+      <!-- Choix de pâte -->
+      <fieldset>
+        <legend>Choisissez votre pâte :</legend>
+        <label><input type="radio" name="pate" value="fine" data-price="4.00" checked /> Pâte fine (+4€)</label>
+        <label><input type="radio" name="pate" value="épaisse" data-price="4.00" /> Pâte épaisse (+4€)</label>
+      </fieldset>
+
+      <!-- Choix de base -->
+      <fieldset>
+        <legend>Choisissez votre base :</legend>
+        <label><input type="radio" name="base" value="tomate" data-price="3.00" checked /> Sauce tomate (+3€)</label>
+        <label><input type="radio" name="base" value="crème" data-price="3.00" /> Crème fraîche (+3€)</label>
+      </fieldset>
+
+      <!-- Ingrédients -->
+      <fieldset>
+        <legend>Choisissez vos ingrédients :</legend>
+        <div class="ingredients-list" role="group" aria-label="Liste des ingrédients">
+          <label><input type="checkbox" name="ingredients" value="Mozzarella" data-price="1.50" checked /> <span class="ingredient-label">Mozzarella (+1,50€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Pepperoni" data-price="2.00" /> <span class="ingredient-label">Pepperoni (+2,00€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Jambon" data-price="1.80" checked /> <span class="ingredient-label">Jambon (+1,80€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Champignons" data-price="1.20" /> <span class="ingredient-label">Champignons (+1,20€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Poivrons" data-price="1.00" /> <span class="ingredient-label">Poivrons (+1,00€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Olives" data-price="1.30" /> <span class="ingredient-label">Olives (+1,30€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Chèvre" data-price="2.10" /> <span class="ingredient-label">Chèvre (+2,10€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Roquefort" data-price="2.50" /> <span class="ingredient-label">Roquefort (+2,50€)</span></label>
+          <label><input type="checkbox" name="ingredients" value="Parmesan" data-price="2.00" /> <span class="ingredient-label">Parmesan (+2,00€)</span></label>
+        </div>
+      </fieldset>
+
+      <div class="price-display" aria-live="polite">Prix : 0,00€</div>
+
+      <button class="btn-primary" type="submit">Enregistrer la Pizza</button>
+    </form>
+  </main>
+
+  <script>
+    (function(){
+      const form = document.getElementById('pizzaForm');
+      const priceDisplay = form.querySelector('.price-display');
+
+      function getChecked(selector) {
+        return form.querySelector(selector + ':checked');
+      }
+
+      function updatePrice() {
+        let total = 0;
+
+        // Pâte
+        const pate = getChecked('input[name="pate"]');
+        if (pate) total += parseFloat(pate.dataset.price);
+
+        // Base
+        const base = getChecked('input[name="base"]');
+        if (base) total += parseFloat(base.dataset.price);
+
+        // Ingrédients
+        const ingredients = form.querySelectorAll('input[type="checkbox"][name="ingredients"]:checked');
+        ingredients.forEach(cb => total += parseFloat(cb.dataset.price));
+
+        priceDisplay.textContent = 'Prix : ' + total.toFixed(2).replace('.', ',') + '€';
+      }
+
+      form.addEventListener('change', updatePrice);
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const pizzaName = form.pizzaName.value.trim();
+        if(!pizzaName){
+          alert('Merci de donner un nom à votre pizza.');
+          return;
+        }
+
+        const ingredients = Array.from(form.querySelectorAll('input[name="ingredients"]:checked'))
+          .map(cb => cb.value);
+        const pate = getChecked('input[name="pate"]')?.value;
+        const base = getChecked('input[name="base"]')?.value;
+
+        alert(`Pizza : ${pizzaName}\nPâte : ${pate}\nBase : ${base}\nIngrédients : ${ingredients.join(', ')}\n${priceDisplay.textContent}`);
+      });
+
+      updatePrice();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza New Marseille - Accueil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: #f2f4f8;
+      color: #333;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      position: fixed;
+      width: calc(100% - 300px);
+      z-index: 10;
+      top: 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.8;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 100px 40px 40px 40px; /* padding top pour header fixe */
+      max-width: calc(100% - 300px);
+      overflow-y: auto;
+    }
+
+    .section {
+      background-color: white;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-2px);
+    }
+
+    .section h2 {
+      font-size: 22px;
+      color: #c8102e;
+      margin-bottom: 20px;
+    }
+
+    .pizza-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .pizza-card {
+      flex: 1 1 calc(20% - 20px);
+      background: #fafafa;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .pizza-card:hover {
+      background: #fff;
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    .pizza-card h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .pizza-card p {
+      font-size: 14px;
+      margin: 2px 0;
+      color: #555;
+    }
+
+    .price {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #c8102e;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: #c8102e;
+      color: white;
+      padding: 14px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: background 0.2s, transform 0.2s;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .btn-primary:hover {
+      background-color: #a50d26;
+      transform: translateY(-1px);
+    }
+
+    /* Sidebar panier */
+    .sidebar-cart {
+      width: 300px;
+      background: white;
+      box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+      padding: 20px 30px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow-y: auto;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar-cart h2 {
+      color: #c8102e;
+      margin-top: 0;
+      font-size: 20px;
+      border-bottom: 2px solid #c8102e;
+      padding-bottom: 6px;
+    }
+
+    .cart-pizza {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 12px 16px;
+      background: #fafafa;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .cart-pizza h3 {
+      margin: 0 0 8px 0;
+      font-weight: 600;
+      color: #222;
+      font-size: 16px;
+    }
+
+    .ingredients-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 8px 0;
+      max-height: 120px;
+      overflow-y: auto;
+    }
+
+    .ingredients-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 0;
+    }
+
+    .ingredients-list button {
+      background: #c8102e;
+      border: none;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 18px;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .ingredients-list button:hover {
+      background: #a50d26;
+    }
+
+    .cart-price {
+      font-weight: bold;
+      color: #c8102e;
+      text-align: right;
+      font-size: 16px;
+    }
+
+    .total-price {
+      margin-top: auto;
+      font-size: 18px;
+      font-weight: 700;
+      color: #c8102e;
+      border-top: 2px solid #c8102e;
+      padding-top: 10px;
+      text-align: right;
+    }
+
+    .limit-note {
+      font-size: 12px;
+      color: #666;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .pizza-card {
+        flex: 1 1 calc(45% - 20px);
+      }
+      header {
+        width: 100%;
+        position: static;
+      }
+      .main-content {
+        max-width: 100%;
+        padding: 20px;
+      }
+      .sidebar-cart {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        padding: 10px 15px;
+        max-height: none;
+      }
+      body {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .pizza-card {
+        flex: 1 1 100%;
+      }
+      nav a {
+        margin-left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🍕 Pizza New Marseille</h1>
+    <nav>
+      <a href="#">Connexion</a>
+      <a href="#">Panier (2)</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    
+    <div class="section">
+      <h2>Nos pizzas classiques</h2>
+      <div class="pizza-list">
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>Margherita</h3>
+          <p>Tomate, Mozzarella, Basilic</p>
+          <p class="price">12€</p>
+        </div>
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>4 Fromages</h3>
+          <p>Mozzarella, Chèvre, Roquefort, Parmesan</p>
+          <p class="price">14€</p>
+        </div>
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>Reine</h3>
+          <p>Jambon, Champignons, Mozzarella</p>
+          <p class="price">13€</p>
+        </div>
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>Orientale</h3>
+          <p>Tomate, Merguez, Poivrons</p>
+          <p class="price">14€</p>
+        </div>
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>Végétarienne</h3>
+          <p>Tomate, Mozzarella, Champignons, Poivrons</p>
+          <p class="price">13,50€</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Vos pizzas personnalisées</h2>
+      <div class="pizza-list">
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>Ma Super Pizza</h3>
+          <p>Mozzarella, Pepperoni, Bœuf haché</p>
+          <p class="price">15€</p>
+        </div>
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>Végétarienne Deluxe</h3>
+          <p>Chèvre, Poivrons, Oignons, Olives</p>
+          <p class="price">13,50€</p>
+        </div>
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>La Chèvre Miel</h3>
+          <p>Chèvre, Miel, Noix</p>
+          <p class="price">14,50€</p>
+        </div>
+        <div class="pizza-card" tabindex="0" role="button" aria-pressed="false">
+          <h3>Spicy Meat</h3>
+          <p>Jambon, Pepperoni, Roquefort, Sauce piquante</p>
+          <p class="price">15,50€</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="btn-primary">➕ Créer une pizza personnalisée</a>
+  </div>
+
+  <aside class="sidebar-cart" aria-label="Panier">
+    <h2>Panier (2 pizzas)</h2>
+    <div class="limit-note">⚠️ Chaque pizza peut contenir au maximum 10 ingrédients.</div>
+
+    <div class="cart-pizza" data-pizza-index="0">
+      <h3>Ma Super Pizza</h3>
+      <ul class="ingredients-list">
+        <li> Mozzarella <button aria-label="Retirer Mozzarella" data-ingr="Mozzarella">&times;</button></li>
+        <li> Pepperoni <button aria-label="Retirer Pepperoni" data-ingr="Pepperoni">&times;</button></li>
+        <li> Bœuf haché <button aria-label="Retirer Bœuf haché" data-ingr="Bœuf haché">&times;</button></li>
+      </ul>
+      <p class="cart-price">15€</p>
+    </div>
+
+    <div class="cart-pizza" data-pizza-index="1">
+      <h3>Végétarienne Deluxe</h3>
+      <ul class="ingredients-list">
+        <li> Chèvre <button aria-label="Retirer Chèvre" data-ingr="Chèvre">&times;</button></li>
+        <li> Poivrons <button aria-label="Retirer Poivrons" data-ingr="Poivrons">&times;</button></li>
+        <li> Oignons <button aria-label="Retirer Oignons" data-ingr="Oignons">&times;</button></li>
+        <li> Olives <button aria-label="Retirer Olives" data-ingr="Olives">&times;</button></li>
+      </ul>
+      <p class="cart-price">13,50€</p>
+    </div>
+
+    <div class="total-price" aria-live="polite">Total : 28,50€</div>
+  </aside>
+
+  <script>
+    // Gestion suppression ingrédient panier (interface seulement)
+    const cartPizzas = document.querySelectorAll('.cart-pizza');
+    const totalPriceEl = document.querySelector('.total-price');
+
+    function updateTotal() {
+      let total = 0;
+      cartPizzas.forEach(pizza => {
+        const priceText = pizza.querySelector('.cart-price').textContent.replace('€', '').replace(',', '.').trim();
+        total += parseFloat(priceText);
+      });
+      totalPriceEl.textContent = 'Total : ' + total.toFixed(2).replace('.', ',') + '€';
+    }
+
+    cartPizzas.forEach(pizza => {
+      pizza.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.preventDefault();
+          const li = btn.parentElement;
+          li.remove();
+
+          // Ici, tu pourrais aussi recalculer le prix de la pizza selon ingrédients, etc.
+          // Pour la démo, on ne change pas le prix, mais tu peux intégrer ta logique métier.
+
+          // Par exemple, si une pizza n'a plus d'ingrédients, tu peux la retirer du panier.
+
+          // Note: juste un avertissement côté UI, pas de backend ni vraie modification prix.
+
+          // (Si tu veux, on peut étendre ça)
+        });
+      });
+    });
+
+    updateTotal();
+  </script>
+
+</body>
+</html>
